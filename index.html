@@ -154,6 +154,8 @@ main{padding-block:12px}
 .code{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
 .ov{font-size:13px;color:var(--muted);margin:2px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .note{font-size:12px;color:var(--warn)}
+.tw{font-size:12px;color:var(--fg);background:var(--sunk);border-radius:4px;padding:4px 8px;margin-top:4px}.tw b{color:var(--acc)}
+.whl{font-size:12px;color:var(--ok);margin-top:4px}.tag.w{background:var(--ok);color:#fff}
 .more{align-self:flex-start;border:1.5px solid color-mix(in srgb,var(--acc) 55%,var(--line));background:var(--surface);color:var(--acc);font-size:12px;padding:2px 10px;border-radius:999px;margin-top:2px}
 .more:hover{border-color:var(--acc);background:var(--acc-soft)}
 .detail{font-size:13px;line-height:1.65;display:grid;gap:8px;margin-top:4px;padding:10px;background:var(--sunk);border-radius:4px}
@@ -326,7 +328,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
       <input type="file" id="x-file" accept=".xlsx" hidden>
       <span class="xlhint" id="x-msg"></span>
     </div>
-    <p class="sznote fxnote"><b>價格說明</b>台幣價＝韓國 MSRP × 0.0245 直接換算（四捨五入到 10 元），<b>尚未加關稅、運費等成本</b>，僅供下單參考，正式售價另行公告。</p><p class="sznote"><b>數量</b>27FW 原廠目前只開到款號（顏色、尺寸都還是 ASSORTED），先填每款總件數，色別與尺寸確定後再分配。有標尺寸段的會寫在款名下方。</p>
+    <p class="sznote fxnote"><b>價格說明</b>台幣價＝韓國 MSRP × 0.0245 直接換算（四捨五入到 10 元），<b>尚未加關稅、運費等成本</b>，僅供下單參考，正式售價另行公告。</p><p class="sznote"><b>分類</b>上方分「上身／下身／套裝」，下一排依系列篩選（ALPINE A、ALPINE B、TOUGH SHIELD、越野跑、攀岩、滑雪）。「台灣市場」是依台灣氣候給的下單建議。</p><p class="sznote"><b>數量</b>27FW 原廠目前只開到款號（顏色、尺寸還沒定），先填每款總件數，色別與尺寸確定後再分配。商品說明為原廠開發規格，多數款還在打樣階段。</p>
   </div>
   <div class="rail">
     <div class="wrap">
@@ -453,6 +455,7 @@ $('#tabs').addEventListener('click',e=>{ const b=e.target.closest('[data-s]'); i
 $('#months').addEventListener('click',e=>{ const b=e.target.closest('[data-m]'); if(!b) return; const m=b.dataset.m; if(!m) S.months.clear(); else S.months.has(m)?S.months.delete(m):S.months.add(m); renderTabs(); renderList(); });
 let qT=null; $('#q').addEventListener('input',e=>{ clearTimeout(qT); qT=setTimeout(()=>{ S.q=e.target.value.trim().toLowerCase(); renderList(); },150); });
 $('#only').addEventListener('change',e=>{ S.only=e.target.checked; renderList(); });
+if($('#whlonly')) $('#whlonly').addEventListener('change',e=>{ S.whl=e.target.checked; renderTabs(); renderList(); });
 
 // ---------- product list ----------
 function picHTML(it){
@@ -508,10 +511,10 @@ function itemHTML(it){
     <div class="pic">${picHTML(it)}</div>
     <div class="info">
       <div class="t1"><h3>${esc(it.zh||it.en)}</h3>${it.zh?`<span class="en">${esc(it.en)}</span>`:''}</div>
-      <div class="meta"><span class="tag c">${esc(it.color)}${it.cc?' · '+esc(it.cc):''}</span>${it.monTag?`<span class="tag m">${esc(it.monTag)}${it.eta?' · '+esc(it.eta):''}</span>`:''}${it.drop==='DNS'?'<span class="tag">DNS</span>':''}${it.cat?`<span class="tag">${esc(it.cat)}</span>`:''}${it.gen?`<span class="tag">${esc(it.gen)}</span>`:''}${it.icon?`<span class="tag">${esc(it.icon)}</span>`:''}</div>
+      <div class="meta"><span class="tag c">${esc(it.color)}${it.cc?' · '+esc(it.cc):''}</span>${it.monTag?`<span class="tag m">${esc(it.monTag)}${it.eta?' · '+esc(it.eta):''}</span>`:''}${it.drop==='DNS'?'<span class="tag">DNS</span>':''}${it.cat?`<span class="tag">${esc(it.cat)}</span>`:''}${it.gen?`<span class="tag">${esc(it.gen)}</span>`:''}${it.whl?'<span class="tag w">WHL</span>':''}${it.icon?`<span class="tag">${esc(it.icon)}</span>`:''}</div>
       <div class="code">${esc(it.style||'')}${it.sku?' ／ '+esc(it.sku):''}${it.theme&&it.theme!=='CORE'?' ／ '+esc(it.theme)+(it.drop?' '+esc(it.drop):''):''}</div>
       ${it.ov?`<p class="ov">${esc(it.ov)}</p>`:''}
-      ${it.note?`<div class="note">${esc(it.note)}</div>`:''}
+      ${it.note?`<div class="note">${esc(it.note)}</div>`:''}${it.whl?`<div class="whl"><b>WHL 建議款</b>　${esc(it.whlr||'')}</div>`:''}${it.tw?`<div class="tw"><b>台灣市場</b>　${esc(it.tw)}</div>`:''}
       ${(it.dt||it.tech||it.fab)?`<button class="more" data-more>${open?'收合':'商品細節與材質'}</button>`:''}
       ${open?`<div class="detail">${it.ov?`<div><h4>商品概述</h4><p>${esc(it.ov)}</p></div>`:''}${it.dt?`<div><h4>商品細節</h4><p>${esc(it.dt)}</p></div>`:''}${it.tech?`<div><h4>材質與科技</h4><p>${esc(it.tech)}</p></div>`:''}${it.fab?`<div><h4>布料</h4><p>${esc(it.fab)}</p></div>`:''}</div>`:''}
     </div>
@@ -527,7 +530,8 @@ function filtered(){
     if(S.only){ if(!itemQty(i.id)) return false; }
     else if(i.sheet!==S.sheet) return false;
     if(S.months.size && !S.months.has(i.mon)) return false;
-    if(S.q){ const hay=[i.zh,i.en,i.style,i.sku,i.color,i.cc,i.cat,i.theme].join(' ').toLowerCase(); if(!hay.includes(S.q)) return false; }
+    if(S.whl && !i.whl) return false;
+    if(S.q){ const hay=[i.zh,i.en,i.style,i.sku,i.color,i.cc,i.cat,i.theme,i.icon,i.tw,i.whlr].join(' ').toLowerCase(); if(!hay.includes(S.q)) return false; }
     return true;
   });
 }
@@ -932,13 +936,13 @@ async function buildBook(qty, meta){
     ws.getCell('B1').value=`BLACK YAK 27FW 訂單本｜${sh}`; ws.getCell('B1').font={name:'Arial',size:16,bold:true,color:{argb:'FF141414'}};
     ws.getCell('B2').value='台灣建議售價＝韓國 MSRP × 0.0245 直接換算，尚未加關稅、運費等成本。黃色格填訂購數量，灰色為無此尺寸。請勿更動欄位順序與隱藏的 A 欄（KEY），以便重新匯入下單頁。'; ws.getCell('B2').font={...F,color:{argb:'FF6B6B70'}};
     const hr=ws.getRow(4); head.forEach((h,k)=>{ const c=hr.getCell(k+1); c.value=h; c.font={name:'Arial',size:10,bold:true,color:{argb:'FFFFFFFF'}}; c.fill=fill('FF141414'); c.alignment={horizontal:'center',vertical:'middle',wrapText:true}; c.border=border; }); hr.height=30;
-    const widths={'KEY':10,'No.':5,'款式圖':14,'實體圖':14,'月份':7,'主題':16,'Drop':9,'品類':11,'性別':6,'款號':12,'中文品名':22,'英文品名':24,'顏色':16,'色號':7,'色碼 SKU':10,'Icon':12,'布料':22,'系列／尺寸':22,'商品概述':34,'商品細節':40,'材質與科技':26,'備註':18,'韓國入倉':10,'韓國售價 MSRP(KRW)':12,'台灣建議售價':10};
+    const widths={'KEY':10,'No.':5,'款式圖':14,'實體圖':14,'月份':7,'主題':16,'Drop':9,'品類':11,'性別':6,'款號':12,'中文品名':22,'英文品名':24,'顏色':16,'色號':7,'色碼 SKU':10,'Icon':12,'布料':22,'系列／尺寸':22,'商品概述':34,'商品細節':40,'材質與科技':26,'備註':30,'韓國入倉':10,'韓國售價 MSRP(KRW)':12,'台灣建議售價':10};
     head.forEach((h,k)=>{ ws.getColumn(k+1).width = widths[h] || (k+1===cTot?9:k+1===cAmt?13:6.5); });
     ws.getColumn(1).hidden=true;
     let r=5;
     for(const it of its){
       const row=ws.getRow(r); const q=qty[it.id]||{};
-      const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',it.note||'',it.launch||'',it.krw||null,it.price||null];
+      const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',[it.note,it.whl?'WHL 建議款：'+(it.whlr||''):'',it.tw?'台灣市場：'+it.tw:''].filter(Boolean).join('\n'),it.launch||'',it.krw||null,it.price||null];
       vals.forEach((v,k)=>{ const c=row.getCell(k+1); c.value=v; c.font=F; c.border=border; c.alignment={vertical:k>=16&&k<=21?'top':'middle',wrapText:k>=5}; });
       row.getCell(cPrice).numFmt='#,##0'; row.getCell(cPrice-1).numFmt='#,##0';
       sizes.forEach((z,j)=>{ const c=row.getCell(cS0+j); c.border=border; c.alignment={horizontal:'center',vertical:'middle'}; c.font={...F,bold:true};
