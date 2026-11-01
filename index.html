@@ -237,6 +237,16 @@ tfoot td{font-weight:700;background:var(--sunk)}
 .zm-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;border:0;background:rgb(0 0 0 / .45);color:#fff;width:34px;height:34px;border-radius:50%;font-size:18px}
 .zm-arrow.l{left:8px}.zm-arrow.r{right:8px}
 .zm-count{font-family:var(--f-mono);color:#777}
+.adm{position:relative}
+.adm>button{border:1.5px solid rgb(255 255 255 / .45);background:transparent;color:var(--brand-ink);padding:6px 14px;border-radius:999px;font-size:13px;white-space:nowrap}
+.adm>button:hover{border-color:#fff}
+.adm form{position:absolute;right:0;top:calc(100% + 8px);z-index:60;width:230px;background:#fff;color:#141414;border:1px solid #d6d6d6;border-radius:10px;padding:14px;box-shadow:0 10px 28px rgb(0 0 0 / .18);display:flex;flex-direction:column;gap:8px;font-size:13px}
+.adm form[hidden]{display:none}
+.adm input{border:1.5px solid #bdbdbd;border-radius:8px;padding:8px 10px;font-size:15px;letter-spacing:.2em;width:100%}
+.adm input:focus{outline:none;border-color:var(--brand)}
+.adm form button{border:0;background:var(--brand);color:var(--brand-ink);border-radius:8px;padding:8px;font-weight:600;font-size:13px}
+.adm form button:disabled{opacity:.6}
+.adm .e{min-height:1em;color:#b42318;font-size:12px}
 @media (prefers-reduced-motion:reduce){.zm{animation:none}}
 
 /* orders (mine + admin) */
@@ -305,6 +315,9 @@ tfoot td{font-weight:700;background:var(--sunk)}
       <button id="v-mine" aria-pressed="false">我的訂單</button>
       <button id="v-admin" aria-pressed="false" hidden>訂單彙整</button>
     </nav>
+    <div class="adm"><button id="adm-btn" type="button">管理者登入</button>
+      <form id="adm-form" hidden><label for="adm-pw">管理者密碼</label><input id="adm-pw" type="password" inputmode="numeric" autocomplete="current-password"><div class="e" id="adm-err"></div><button type="submit" id="adm-go">登入</button></form>
+    </div>
   </div>
 </header>
 
@@ -1122,5 +1135,26 @@ renderAll();
 })();
 </script>
 
+<script>
+/* 右上角管理者登入：密碼送後台驗證，對了就記在這台裝置 */
+(function(){
+  const K='byf-admin', b=document.getElementById('adm-btn'), f=document.getElementById('adm-form'), pw=document.getElementById('adm-pw'), er=document.getElementById('adm-err'), go=document.getElementById('adm-go');
+  let on=false; try{ on=!!localStorage.getItem(K); }catch(e){}
+  b.textContent=on?'登出管理者':'管理者登入';
+  b.onclick=e=>{ e.stopPropagation(); if(on){ try{ localStorage.removeItem(K); }catch(x){} location.reload(); return; } f.hidden=!f.hidden; if(!f.hidden){ er.textContent=''; pw.value=''; pw.focus(); } };
+  f.onclick=e=>e.stopPropagation();
+  document.addEventListener('click',()=>{ f.hidden=true; });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') f.hidden=true; });
+  f.onsubmit=async e=>{ e.preventDefault(); const v=pw.value.trim(); if(!v) return;
+    const U=((window.SDR_CONFIG||{}).SUBMIT_URL||'').trim(); if(!U){ er.textContent='後台還沒接上'; return; }
+    go.disabled=true; er.textContent='';
+    try{ const r=await fetch(U+(U.includes('?')?'&':'?')+'action=list&key='+encodeURIComponent(v)+'&t='+Date.now()); const j=await r.json();
+      if(j.error){ er.textContent=j.error==='forbidden'?'密碼不對':j.error; pw.select(); }
+      else { try{ localStorage.setItem(K,v); sessionStorage.setItem('adm-open','1'); }catch(x){} location.reload(); return; }
+    }catch(x){ er.textContent='連不到後台，稍後再試'; }
+    go.disabled=false; };
+  try{ if(on&&sessionStorage.getItem('adm-open')){ sessionStorage.removeItem('adm-open'); let n=0; const t=setInterval(()=>{ const v=document.getElementById('v-admin'); if(v&&!v.hidden){ clearInterval(t); v.click(); } else if(++n>50) clearInterval(t); },100); } }catch(e){}
+})();
+</script>
 </body>
 </html>
