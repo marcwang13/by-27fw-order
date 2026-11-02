@@ -406,6 +406,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
     logout(){ try{ localStorage.removeItem(AKEY); }catch(e){} SRV=[]; emit(); } };
   const KNOWN=['login_required','forbidden'];
   window.SDR_ADMIN={ on:!!ADMIN,
+    async list(){ return await adminList(); },
     async del(oid){ const res=await post({action:'admin_delete',oid,key:ADMIN}); if(res==='ok'||res==='deleted') return; const err=new Error(res==='forbidden'?'管理金鑰不正確':res==='void'?'這張訂單已作廢':res); err.code=res; throw err; },
     async save(body){ const res=await post({...body,action:'admin_save',key:ADMIN}); delete body._xlsx; delete body._xlsxName;
       if(res==='ok'||/<html/i.test(res)) return; const err=new Error(res==='forbidden'?'管理金鑰不正確':res==='deleted'?'這張訂單已不在試算表（客人可能已刪除）':res==='void'?'這張訂單已作廢':res); err.code=res; throw err; } };
@@ -890,7 +891,7 @@ function renderAdmin(){
   <div class="section-title">各經銷商訂單</div>
   ${os.length?'<div class="cards">'+os.map(o=>`<div class="oc"><h3>${esc(o.store)} <span class="num" style="font-weight:400;color:var(--muted);font-size:13px">${esc(o.oid)}</span><span class="pill ${o.status==='已確認'?'ok':''}">${esc(o.status||'已送出')}</span>${o.branches&&o.branches.length?`<span class="pill">連鎖 ${o.branches.length} 店</span>`:''}</h3><div class="sub">${esc(o.contact)}${o.phone?' ・ '+esc(o.phone):''}${o.email?' ・ '+esc(o.email):''} ・ ${fmtTime(o.submittedAt)} ・ ${o.styles} 款色 ・ <b>${fmt(o.qty)}</b> 件 ・ 零售 <b>${fmt(o.amount)}</b>${o.note?`<br>備註：${esc(o.note)}`:''}${o.edited?`<br><span style="color:var(--muted)">最後修改：${esc(o.edited)}</span>`:''}</div><div class="acts"><button class="btn sm" data-aedit="${esc(o.uid)}|${esc(o.oid)}">編輯訂單</button><button class="btn sm" data-adet="${esc(o.uid)}|${esc(o.oid)}">${ADET.has(o.oid)?'收起明細':'看明細'}</button><button class="btn sm" data-axls="${esc(o.uid)}|${esc(o.oid)}">Excel</button><button class="btn sm" data-acsv="${esc(o.uid)}|${esc(o.oid)}">CSV</button><button class="btn sm danger" data-adel="${esc(o.uid)}|${esc(o.oid)}">刪除訂單</button>${o.status==='已確認'?'':`<button class="btn sm pri" data-ok="${esc(o.uid)}|${esc(o.oid)}">標記已確認</button>`}</div>${ADET.has(o.oid)?orderDetailHTML(o):''}</div>`).join('')+'</div>':'<div class="msg info">經銷商送出的訂單會即時出現在這裡。把頁面分享給經銷商（Contributor 權限）就能開始收單。</div>'}
   ${aggRows.length?`<div class="section-title">款色彙總</div><div class="tbl"><table><thead><tr><th>分頁</th><th>品名</th><th>顏色</th><th>尺寸分布</th><th class="r">店數</th><th class="r">件數</th><th class="r">零售金額</th></tr></thead><tbody>${aggRows.map(a=>`<tr><td>${esc(a.l.sheet)}</td><td>${esc(a.l.zh||a.l.en)}<div class="code">${esc(a.l.style)} ／ ${esc(a.l.sku)}</div></td><td>${esc(a.l.color)}</td><td class="num" style="font-size:12px">${Object.entries(a.sz).map(([k,v])=>esc(k)+':'+v).join(' ')}</td><td class="r num">${a.stores.size}</td><td class="r num">${a.qty}</td><td class="r num">${fmt(a.qty*a.l.price)}</td></tr>`).join('')}</tbody></table></div>`:''}`;
-  $('#a-handoff').onclick=async()=>{ const b=$('#a-handoff'); b.disabled=true; b.textContent='整理中…'; try{ const out=await exportHandoff(os); if(out) msg('#admin-msg','ok','交單檔已下載：'+out.map(([t,q,n])=>`${t} ${fmt(q)} 件${n?'（'+n+' 店）':''}`).join('、')+'。'); }catch(e){ msg('#admin-msg','err',e.message||'交單檔產生失敗'); } b.disabled=false; b.textContent='一鍵統整交單'; };
+  $('#a-handoff').onclick=async()=>{ const b=$('#a-handoff'); b.disabled=true; b.textContent='讀取最新訂單…'; try{ let use=os; if(window.SDR_ADMIN&&window.SDR_ADMIN.list){ use=await window.SDR_ADMIN.list(); } const bad=handoffCheck(use); if(bad.length){ throw new Error('有訂單的明細還沒完整寫進試算表，交單檔先不產生，請等 1～2 分鐘後再按一次：'+bad.join('、')); } b.textContent='整理中…'; const out=await exportHandoff(use); if(out) msg('#admin-msg','ok','交單檔已下載：'+out.map(([t,q,n])=>`${t} ${fmt(q)} 件${n?'（'+n+' 店）':''}`).join('、')+'。'); }catch(e){ msg('#admin-msg','err',e.message||'交單檔產生失敗'); } b.disabled=false; b.textContent='一鍵統整交單'; };
   $('#a-csv-all').onclick=async()=>{ try{ await saveCSV('BLACKYAK_27FW_全部訂單明細.csv',[CSV_HEAD,...os.flatMap(csvRows)]); }catch(e){ if(e?.code!=='declined'&&e?.code!=='cancelled') msg('#admin-msg','err',e.message||'下載未完成'); } };
   $('#a-csv-sku').onclick=async()=>{ const sizesAll=[]; aggRows.forEach(a=>Object.keys(a.sz).forEach(s=>{ if(!sizesAll.includes(s)) sizesAll.push(s); })); try{ await saveCSV('BLACKYAK_27FW_款色彙總.csv',[['分頁','月份','款號','色碼 SKU','英文品名','中文品名','顏色','店數','件數','台灣建議售價','零售金額',...sizesAll],...aggRows.map(a=>[a.l.sheet,a.l.mon,a.l.style,a.l.sku,a.l.en,a.l.zh,a.l.color,a.stores.size,a.qty,a.l.price,a.qty*a.l.price,...sizesAll.map(s=>a.sz[s]||'')])]); }catch(e){ if(e?.code!=='declined'&&e?.code!=='cancelled') msg('#admin-msg','err',e.message||'下載未完成'); } };
 }
@@ -1017,6 +1018,12 @@ async function buildBook(qty, meta){
   return wb;
 }
 const HO_BRAND='BLACK YAK 27FW', HO_FILE='BLACKYAK_27FW', HO_KEY='byf-ho';
+// 交單前檢查：每張有效訂單的明細件數要等於訂單件數（含各分店加總），避免讀到寫入一半的資料
+function handoffCheck(os){ const bad=[]; for(const o of os){ if(o.status==='作廢') continue; const want=Number(o.qty)||0;
+  const sum=ls=>(ls||[]).reduce((t,l)=>t+(Number(l.qty)||0),0); const got=sum(o.lines);
+  const bsum=(o.branches&&o.branches.length)?o.branches.reduce((t,b)=>t+sum(b.lines),0):got;
+  if(want&&(got!==want||bsum!==want)) bad.push(`${o.store||o.oid}（應 ${fmt(want)} 件，讀到 ${fmt(Math.min(got,bsum))} 件）`); }
+  return bad; }
 // ===== 一鍵統整交單：把所有有效訂單整理成品牌交單格式（APP／ACC／FTW 三頁）=====
 function divOf(it){ if(it.div) return it.div; const t=[it.sheet,it.cat].join(' ');
   if(/鞋|靴|FTW|FOOTWEAR|SHOE|SNEAKER|SANDAL/i.test(t)) return 'FTW';
