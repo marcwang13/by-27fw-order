@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px;font-family:system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>BLACK YAK 27FW 經銷訂貨</title>
+<link rel="icon" type="image/svg+xml" href="https://emerswhl-restock.surge.sh/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="https://emerswhl-restock.surge.sh/brand/favicon-32.png"><link rel="shortcut icon" href="https://emerswhl-restock.surge.sh/brand/favicon.ico"><link rel="apple-touch-icon" href="https://emerswhl-restock.surge.sh/brand/apple-touch-icon.png">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -45,6 +46,11 @@ button{cursor:pointer}
 .mast{background:var(--brand);color:var(--brand-ink)}
 .mast .wrap{display:flex;align-items:center;gap:16px;padding-block:14px;flex-wrap:wrap}
 .brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+/* EMERS-WHL TW 系統標：深色抬頭左側小 LOGO（保留原品牌名） */
+.brand{align-items:center}
+.brand .whl-logo{height:28px;width:auto;display:block;object-fit:contain}
+.brand .whl-sep{width:1px;height:22px;background:rgba(255,255,255,.45);flex:none}
+
 .brand b{font-family:var(--f-disp);font-weight:700;font-size:26px;letter-spacing:.1em;color:var(--brand-ink);line-height:1}
 .brand span{font-family:var(--f-disp);font-weight:600;font-size:18px;letter-spacing:.08em;text-transform:uppercase}
 .brand em{font-style:normal;color:color-mix(in srgb,var(--brand-ink) 70%,transparent);font-size:13px}
@@ -309,7 +315,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
 
 <header class="mast">
   <div class="wrap">
-    <div class="brand"><b>BLACK YAK</b><span>27FW</span><em>台灣經銷線上訂貨</em></div>
+    <div class="brand"><img class="whl-logo" src="https://emerswhl-restock.surge.sh/brand/logo-full.png" alt="EMERS-WHL TW"><span class="whl-sep" aria-hidden="true"></span><b>BLACK YAK</b><span>27FW</span><em>台灣經銷線上訂貨</em></div>
     <nav class="views" aria-label="檢視">
       <button id="v-order" aria-pressed="true">下單</button>
       <button id="v-mine" aria-pressed="false">我的訂單</button>
