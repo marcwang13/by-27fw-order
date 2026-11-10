@@ -33,6 +33,7 @@
 const LOGO_URL = 'https://emerswhl-restock.surge.sh/brand/logo-full.png';
 const NOTIFY_TO = 'marc_wang@emers.com,zero_wang@emers.com,zoe_chang@emers.com,vince_tian@emers.com,david_wu@emers.com,benson_wang@emers.com,max_lee@emers.com,kai_weng@emers.com';
 
+const SHOW_PRICE = false; // 台灣定價公告前，通知信與 Excel 不顯示金額（2026/11/10）
 const ORDER_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '聯絡人', '電話', 'Email', '訂單備註', '款色數', '件數', '零售金額', '分店數', '分店', '狀態', '帳號 Email', '最後修改'];
 const LINE_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '分店', '分頁', '月份', '款號', '色碼 SKU', '英文品名', '中文品名', '顏色', '尺寸', '數量', '台灣建議售價', '零售金額'];
 
@@ -303,7 +304,7 @@ function writeOrderTab_(ss, log, oid, m, rows) {
     ['聯絡人', [m.contact, m.phone, m.email].filter(Boolean).join('  ')],
     ['分店', m.branches || ''],
     ['備註', m.note || ''],
-    ['合計', `${m.styles || order.length} 款色、${m.qty || 0} 件、零售金額 NT$${Number(m.amount || 0).toLocaleString('en-US')}`],
+    ['合計', `${m.styles || order.length} 款色、${m.qty || 0} 件` + (SHOW_PRICE ? `、零售金額 NT$${Number(m.amount || 0).toLocaleString('en-US')}` : '')],
     ['狀態', m.status || ''],
   ];
   sh.getRange(1, 1, info.length, 2).setValues(info);
@@ -333,6 +334,7 @@ function writeOrderTab_(ss, log, oid, m, rows) {
   sh.getRange(top + 1, head.length - 1, all.length - 1, 2).setNumberFormat('#,##0');
   sh.setFrozenRows(top);
   sh.autoResizeColumns(1, head.length);
+  if (!SHOW_PRICE) sh.hideColumns(head.length - 1, 2);
 }
 
 // 用「訂單」＋「明細」把每張訂單的分頁重建一次（第一次安裝或手動整理時在編輯器執行）
@@ -398,7 +400,7 @@ function orderHtml_(d, rows, title, intro, footer) {
     groups[key].sizes.push(`${r[11]}×${r[12]}`); groups[key].qty += Number(r[12]); groups[key].amt += Number(r[14]); });
   const list = Object.values(groups);
   const hasBranch = list.some(g => g.branch);
-  const tr = list.map(g => `<tr>${hasBranch ? `<td>${esc(g.branch)}</td>` : ''}<td>${esc(g.style)}<br><span style="color:#888">${esc(g.sku)}</span></td><td>${esc(g.zh)}</td><td>${esc(g.color)}</td><td>${esc(g.sizes.join('  '))}</td><td style="text-align:right">${g.qty}</td><td style="text-align:right">${fmt(g.amt)}</td></tr>`).join('');
+  const tr = list.map(g => `<tr>${hasBranch ? `<td>${esc(g.branch)}</td>` : ''}<td>${esc(g.style)}<br><span style="color:#888">${esc(g.sku)}</span></td><td>${esc(g.zh)}</td><td>${esc(g.color)}</td><td>${esc(g.sizes.join('  '))}</td><td style="text-align:right">${g.qty}</td>${SHOW_PRICE ? `<td style="text-align:right">${fmt(g.amt)}</td>` : ''}</tr>`).join('');
   const th = s => `<th style="background:#141414;color:#fff;padding:6px 8px;text-align:left;font-weight:600">${s}</th>`;
   return `<div style="font-family:Arial,'Microsoft JhengHei',sans-serif;font-size:14px;color:#222">
   <div style="background:#15181c;padding:18px 22px"><img src="https://emerswhl-restock.surge.sh/brand/logo-full.png" alt="EMERS-WHL TW" width="220" style="height:auto;width:220px;display:block;border:0"></div>
@@ -411,10 +413,10 @@ function orderHtml_(d, rows, title, intro, footer) {
   ${d.account ? `<tr><td style="color:#666;padding:2px 12px 2px 0">下單帳號</td><td>${esc(d.account)}</td></tr>` : ''}
   ${d.note ? `<tr><td style="color:#666;padding:2px 12px 2px 0">備註</td><td>${esc(d.note)}</td></tr>` : ''}
   ${(d.branches || []).length ? `<tr><td style="color:#666;padding:2px 12px 2px 0">分店</td><td>${esc(d.branches.map(b => b.name).join('、'))}</td></tr>` : ''}
-  <tr><td style="color:#666;padding:2px 12px 2px 0">合計</td><td><b>${fmt(d.styles)} 款色、${fmt(d.qty)} 件、零售金額 NT$${fmt(d.amount)}</b></td></tr>
+  <tr><td style="color:#666;padding:2px 12px 2px 0">合計</td><td><b>${fmt(d.styles)} 款色、${fmt(d.qty)} 件${SHOW_PRICE ? `、零售金額 NT$${fmt(d.amount)}` : ''}</b></td></tr>
   </table>
   ${list.length ? `<table style="border-collapse:collapse;font-size:13px" border="1" bordercolor="#ddd" cellpadding="6">
-  <tr>${hasBranch ? th('分店') : ''}${th('款號')}${th('品名')}${th('顏色')}${th('尺寸×數量')}${th('件數')}${th('零售金額')}</tr>${tr}</table>` : ''}
+  <tr>${hasBranch ? th('分店') : ''}${th('款號')}${th('品名')}${th('顏色')}${th('尺寸×數量')}${th('件數')}${SHOW_PRICE ? th('零售金額') : ''}</tr>${tr}</table>` : ''}
   ${footer || ''}</div>`;
 }
 
@@ -422,7 +424,7 @@ function notify_(ss, d, rows, isEdit, kindOverride, att) {
   if (!NOTIFY_TO) return;
   const fmt = n => Number(n || 0).toLocaleString('en-US');
   const kind = kindOverride || (isEdit ? '訂單修改' : '新訂單');
-  const subject = `【BLACK YAK 27FW ${kind}】${d.store || '（未填店名）'}｜${fmt(d.qty)} 件｜NT$${fmt(d.amount)}`;
+  const subject = `【BLACK YAK 27FW ${kind}】${d.store || '（未填店名）'}｜${fmt(d.qty)} 件${SHOW_PRICE ? `｜NT$${fmt(d.amount)}` : ''}`;
   const html = orderHtml_(d, rows, kind, '', `<p><a href="${ss.getUrl()}" style="color:#141414">開啟 Google 試算表看完整訂單</a></p>`);
   const msg = { to: NOTIFY_TO, subject: subject, htmlBody: html, name: 'BLACK YAK 27FW 線上訂貨' };
   if (att) msg.attachments = [att];
