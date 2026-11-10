@@ -19,7 +19,7 @@
  * - 之後客人就算從「我的訂單」修改再送出，也不會再寫進來，網頁會請客人重新下新單
  * - 隱藏分頁「_紀錄」記錄收過的訂單編號，請不要刪除
  *
- * 管理者檢視：網站網址加 ?admin=金鑰 就會出現「訂單彙整」（金鑰在 專案設定 → 指令碼屬性 ADMIN_KEY）
+ * 管理者檢視：訂單彙整只從內部站帶會員票券（網址 hash #admin=，不進伺服器紀錄）開啟。ADMIN_KEY 仍可在後端驗證舊的 key，前台不再提供輸入
  * 管理者編輯：訂單彙整按「編輯訂單」→ 改數量／分店／經銷商資料 → 送出。保留原下單帳號與狀態，
  *   「最後修改」欄記錄「業務 時間」；可選擇是否寄「訂單已由業務調整」信給客人
  * 客人刪除：「我的訂單」按刪除 → 從 訂單／明細 移除、刪掉該訂單分頁、寄「訂單取消」信
@@ -40,6 +40,27 @@ function adminOk_(key) {
   const k = PropertiesService.getScriptProperties().getProperty('ADMIN_KEY');
   return !!k && String(key || '') === k;
 }
+// 會員票券（內部站核發）。密鑰只在指令碼屬性 PREORDER_SSO_SECRET，與帳號後台同一組，不寫在這裡。
+function ssoPad_(s){ const m = s.length % 4; return m ? s + '===='.slice(m) : s; }
+function ssoB64_(data){ return Utilities.base64EncodeWebSafe(data).replace(/=+$/, ''); }
+function memberOk_(ticket){
+  const secret = PropertiesService.getScriptProperties().getProperty('PREORDER_SSO_SECRET');
+  ticket = String(ticket || '');
+  const i = ticket.lastIndexOf('.');
+  if (!secret || i < 1) return false;
+  const body = ticket.slice(0, i), sig = ticket.slice(i + 1);
+  const expect = ssoB64_(Utilities.computeHmacSha256Signature(body, secret));
+  if (expect.length !== sig.length) return false;
+  let diff = 0;
+  for (let n = 0; n < expect.length; n++) diff |= expect.charCodeAt(n) ^ sig.charCodeAt(n);
+  if (diff) return false;
+  try {
+    const p = JSON.parse(Utilities.newBlob(Utilities.base64DecodeWebSafe(ssoPad_(body))).getDataAsString());
+    return !!(p && p.e && Number(p.x) > Date.now());
+  } catch (err) { return false; }
+}
+function staffOk_(d){ return adminOk_(d && d.key) || memberOk_(d && d.ticket); }
+
 
 function doGet(e) {
   const p = (e && e.parameter) || {};
@@ -47,7 +68,7 @@ function doGet(e) {
     if (!adminOk_(p.key)) return json_({ error: 'forbidden' });
     return json_({ orders: listOrders_(SpreadsheetApp.getActiveSpreadsheet()) });
   }
-  return ContentService.createTextOutput('BLACK YAK 27FW 收單程式運作中');
+  return ContentService.createTextOutput('BLACK YAK 27FW 收單程式 v3 運作中');
 }
 
 function json_(o) {
@@ -103,10 +124,12 @@ function doPost(e) {
       if (!acct) return out_('login_required');
       return out_(cancel_(SpreadsheetApp.getActiveSpreadsheet(), String(d.oid), acct));
     }
-    if (d && d.action === 'admin_delete' && d.oid) return out_(adminOk_(d.key) ? cancel_(SpreadsheetApp.getActiveSpreadsheet(), String(d.oid), '', true) : 'forbidden');
-    if (d && d.action === 'status' && d.oid) return out_(adminOk_(d.key) ? setStatus_(SpreadsheetApp.getActiveSpreadsheet(), String(d.oid), String(d.status || '已確認')) : 'forbidden');
+    if (d && d.action === 'member') return out_(JSON.stringify(memberOk_(d.ticket) ? { ok: true } : { error: 'forbidden' }));
+    if (d && d.action === 'list') { if (!staffOk_(d)) return out_(JSON.stringify({ error: 'forbidden' })); return out_(JSON.stringify({ orders: listOrders_(SpreadsheetApp.getActiveSpreadsheet()) })); }
+    if (d && d.action === 'admin_delete' && d.oid) return out_(staffOk_(d) ? cancel_(SpreadsheetApp.getActiveSpreadsheet(), String(d.oid), '', true) : 'forbidden');
+    if (d && d.action === 'status' && d.oid) return out_(staffOk_(d) ? setStatus_(SpreadsheetApp.getActiveSpreadsheet(), String(d.oid), String(d.status || '已確認')) : 'forbidden');
     if (d && d.action === 'admin_save') {
-      if (!adminOk_(d.key)) return out_('forbidden');
+      if (!staffOk_(d)) return out_('forbidden');
       if (!d.oid || !Array.isArray(d.lines)) return out_('invalid');
       return out_(saveOrder_(SpreadsheetApp.getActiveSpreadsheet(), d, '', true));
     }
