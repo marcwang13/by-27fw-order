@@ -29,7 +29,7 @@ Marc 同時用 Claude 和 Grok Bot 維護這四套系統，一次只會有一邊
 | SDR | SUN DAY RED FW27 | 上線收單中（範本） | https://marcwang13.github.io/sdr-fw27-order/ | marcwang13/sdr-fw27-order | 207／105 | `FW27-` | `#610e0e` 酒紅 | `sdr-` |
 | DST | DESCENTE 27FW Early Buy | 上線收單中 | https://marcwang13.github.io/dst-27fw-order/ | marcwang13/dst-27fw-order | 69／23 | `DST27-` | `#0a3f94` 藍 | `dst-` |
 | BYS | BLACK YAK 27SS | 未完成（已上線，未正式開放） | https://marcwang13.github.io/by-27ss-order/ | marcwang13/by-27ss-order | 747／349 | `BYS27-` | `#141414` 黑 | `bys-` |
-| BYF | BLACK YAK 27FW | 未完成（已上線，未正式開放） | https://marcwang13.github.io/by-27fw-order/ | marcwang13/by-27fw-order | 660／271 | `BYF27-` | `#141414` 黑 | `byf-` |
+| BYF | BLACK YAK 27FW | 未完成（已上線，未正式開放） | https://marcwang13.github.io/by-27fw-order/ | marcwang13/by-27fw-order | 685／271 | `BYF27-` | `#141414` 黑 | `byf-` |
 
 ### 各系統後端
 
@@ -274,6 +274,7 @@ Marc 要把四套系統（含後台、管理頁）串進另一個入口網站。
 
 | 日期 | AI | 系統 | 內容 | commit |
 |---|---|---|---|---|
+| 2026-11-10 | Claude | BY27FW | 改讀原廠 RAWDATA xlsx 本體：685 款色／271 款（上一版從文字匯出只抓到 660）；款式圖改成每個顏色各一張，618 款色有圖、67 沒圖 | （本次） |
 | 2026-11-10 | Claude | BY27FW | 商品資料改用原廠 11/9 的 27FW RAWDATA：150 筆→660 款色／271 款（新增配件 89、鞋 30）；拆到款色；不放韓國計畫量；韓國入倉批次換成月份後往後一個月當台灣上市月；新增「台灣主打」標籤與篩選（87 款色／31 款）、每款台灣市場備註、有無樣品備註。新款 CAD 還沒有（319 款色無圖）。產生程式 tools/gen_fw2.py | （本次） |
 | 2026-11-02 | Grok Bot | SDR、BY27SS、BY27FW | 一鍵統整交單：先重抓最新訂單並跑 handoffCheck，件數對不上就警告、不匯出 | b43842b／d0a4f4b／f791e22 |
 | 2026-11-02 | Grok Bot | 四套 | 本文件放進四個 repo，新增同步規則（0.5 節）與變更紀錄 | （本次） |

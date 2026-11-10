@@ -143,7 +143,7 @@ for r in SRC:
     it=dict(id=iid,sheet=sheet,no='',mon=mon,monTag=(f'台灣預計 {tm[1]} 月上市' if tm else ''),theme=mon,drop=('DNS' if r['line']=='DNS' else 'FOOTWEAR' if sheet=='鞋款' else 'CORE'),cat=cat,gen=g,style=key,
         zh=f'{zh}（{g}）' if sheet in ('上身','下身') else zh,en=en or '英文品名待原廠提供',color=zc(col),cc=cc,sku=key+(('-'+cc) if cc else ''),icon=r['mat'],
         fab=clean(r['comp']),series=('產地 越南' if r['origin']=='Vietnam' else ''),ov=ov,dt='',tech='',note='；'.join(note),launch=launch,eta='',
-        krw=krw,sizes=sizes,doll=(o['doll'] if o else ''),run=key,part='top',whl=bool(hero),whlr=hero or '')
+        krw=krw,sizes=sizes,doll=(r.get('img') or (o['doll'] if o else '')),run=key,part='top',whl=bool(hero),whlr=hero or '')
     it['price']=twd(krw); it['tw']=tw_note(it)
     runs.setdefault(key,[])
     for z in sizes:

@@ -15,7 +15,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "ff685965eec8"
 },
 {
 "style": "27WMPD652",
@@ -33,7 +34,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPD653",
@@ -51,7 +53,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "b34aaf78b987"
 },
 {
 "style": "27WWPD653",
@@ -69,7 +72,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMJK654",
@@ -87,7 +91,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "69b3209412a0"
 },
 {
 "style": "27WMJK654",
@@ -105,7 +110,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWJK655",
@@ -123,7 +129,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "128a866fe48e"
 },
 {
 "style": "27WWJK655",
@@ -141,7 +148,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMRT657",
@@ -159,7 +167,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "50c8898bb6e6"
 },
 {
 "style": "27FMRT657",
@@ -177,7 +186,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWRT658",
@@ -195,7 +205,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "20e8e0823b79"
 },
 {
 "style": "27FWRT658",
@@ -213,7 +224,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FURT671",
@@ -231,7 +243,27 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "2dce8ad02c07"
+},
+{
+"style": "27FURT671",
+"group": "Apparel",
+"kr": "트레일엑스 울 다잉 라운드 긴팔티#3",
+"en": "UNI TRAIL-X WOOL DYEING ROUND L/S T-SHIRT",
+"cat": "Crew-neck T-Shirts",
+"line": "Trail Running",
+"mat": "",
+"gen": "Unisex",
+"cc": "TBD",
+"color": "TBD",
+"size": "미확정",
+"krw": "159000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FUHD671",
@@ -249,7 +281,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "19797e7f7dff"
 },
 {
 "style": "27FUHD671",
@@ -267,7 +300,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FURT672",
@@ -285,7 +319,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "d92015309b78"
 },
 {
 "style": "27FURT672",
@@ -303,7 +338,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FURT660",
@@ -321,7 +357,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "9c47b714ac9d"
 },
 {
 "style": "27FURT660",
@@ -339,7 +376,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FURT660",
@@ -357,7 +395,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMHP661",
@@ -375,7 +414,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "a3ee0e16468c"
 },
 {
 "style": "27FWHP662",
@@ -393,7 +433,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c32f6e5b9421"
 },
 {
 "style": "27FWHP662",
@@ -411,7 +452,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMPN663",
@@ -429,7 +471,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c476d6fb52aa"
 },
 {
 "style": "27FMPN663",
@@ -447,7 +490,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK664",
@@ -465,7 +509,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "b5ec2b81ad9d"
 },
 {
 "style": "27FMJK664",
@@ -483,7 +528,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWJK665",
@@ -501,7 +547,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "95c7a9c03504"
 },
 {
 "style": "27FWJK665",
@@ -519,7 +566,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMPN668",
@@ -537,7 +585,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "2411cda6a151"
 },
 {
 "style": "27FMPN668",
@@ -555,7 +604,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWPN669",
@@ -573,7 +623,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "8e38ab609739"
 },
 {
 "style": "27FWPN669",
@@ -591,7 +642,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMGJ030",
@@ -609,7 +661,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "e53852523d5a"
 },
 {
 "style": "27FMGJ030",
@@ -627,7 +680,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWGJ031",
@@ -645,7 +699,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "f3633fc977c3"
 },
 {
 "style": "27FWGJ031",
@@ -663,7 +718,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK064",
@@ -681,7 +737,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d604427a19a2"
 },
 {
 "style": "27FMJK064",
@@ -699,7 +756,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e8226f17348c"
 },
 {
 "style": "27FWJK065",
@@ -717,7 +775,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "b29b9dbe49c3"
 },
 {
 "style": "27FWJK065",
@@ -735,7 +794,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK032",
@@ -753,7 +813,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b500212f27c5"
 },
 {
 "style": "27FMJK032",
@@ -771,7 +832,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK032",
@@ -789,7 +851,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "262b58dc4fc5"
 },
 {
 "style": "27FMJK033",
@@ -807,7 +870,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7ffef6e46414"
 },
 {
 "style": "27FMJK033",
@@ -825,7 +889,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK033",
@@ -843,7 +908,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK033",
@@ -861,7 +927,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWJK036",
@@ -879,7 +946,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "10e60ab30d36"
 },
 {
 "style": "27FWJK036",
@@ -897,7 +965,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWJK036",
@@ -915,7 +984,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMYS037",
@@ -933,7 +1003,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "95813a8b3fa6"
 },
 {
 "style": "27FMYS037",
@@ -951,7 +1022,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "67242a39d0ae"
 },
 {
 "style": "27FMYS038",
@@ -969,7 +1041,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "ca62bee299b7"
 },
 {
 "style": "27FMYS038",
@@ -987,7 +1060,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMYS038",
@@ -1005,7 +1079,27 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27FMYS038",
+"group": "Apparel",
+"kr": "체크 셔츠#1",
+"en": "MEN CHECK SHIRT",
+"cat": "Other Apparel",
+"line": "Alpine A",
+"mat": "",
+"gen": "Men",
+"cc": "LD",
+"color": "TBD",
+"size": "미확정",
+"krw": "179000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA046",
@@ -1023,7 +1117,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "e92ac79d48ea"
 },
 {
 "style": "27WMPA046",
@@ -1041,7 +1136,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA046",
@@ -1059,7 +1155,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA046",
@@ -1077,7 +1174,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA047",
@@ -1095,7 +1193,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7d5b6a76293b"
 },
 {
 "style": "27WMPA047",
@@ -1113,7 +1212,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA047",
@@ -1131,7 +1231,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA048",
@@ -1149,7 +1250,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "5f1dbb916255"
 },
 {
 "style": "27WWPA048",
@@ -1167,7 +1269,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA048",
@@ -1185,7 +1288,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA049",
@@ -1203,7 +1307,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c972d6737722"
 },
 {
 "style": "27WWPA049",
@@ -1221,7 +1326,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA049",
@@ -1239,7 +1345,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA050",
@@ -1257,7 +1364,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a336899a6030"
 },
 {
 "style": "27WMPA050",
@@ -1275,7 +1383,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "fc5abf94102a"
 },
 {
 "style": "27WMPA050",
@@ -1293,7 +1402,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ff31739fca50"
 },
 {
 "style": "27WMPA050",
@@ -1311,7 +1421,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2da6d2c1575f"
 },
 {
 "style": "27WWPA051",
@@ -1329,7 +1440,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8bf174f03cc4"
 },
 {
 "style": "27WWPA051",
@@ -1347,7 +1459,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0fda12dc8b25"
 },
 {
 "style": "27WWPA051",
@@ -1365,7 +1478,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "eb1a7121aca7"
 },
 {
 "style": "27WWPA051",
@@ -1383,7 +1497,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9f2ead7e7cce"
 },
 {
 "style": "27WMPA052",
@@ -1401,7 +1516,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c8e6c18c7299"
 },
 {
 "style": "27WMPA052",
@@ -1419,7 +1535,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA052",
@@ -1437,7 +1554,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA052",
@@ -1455,7 +1573,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA053",
@@ -1473,7 +1592,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "8e3a1c8028e0"
 },
 {
 "style": "27WWPA053",
@@ -1491,7 +1611,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA053",
@@ -1509,13 +1630,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPD680",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 프리마로프트 패딩 60#1",
-"en": "\\[CHINA EXCLUSIVE\\] MEN PRIMALOFT PADDING 60",
+"kr": "[중국단독] 프리마로프트 패딩 60#1",
+"en": "[CHINA EXCLUSIVE] MEN PRIMALOFT PADDING 60",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1527,13 +1649,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "190948dc4d80"
 },
 {
 "style": "27WMPD680",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 프리마로프트 패딩 60#1",
-"en": "\\[CHINA EXCLUSIVE\\] MEN PRIMALOFT PADDING 60",
+"kr": "[중국단독] 프리마로프트 패딩 60#1",
+"en": "[CHINA EXCLUSIVE] MEN PRIMALOFT PADDING 60",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1545,13 +1668,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8cfdd52183ab"
 },
 {
 "style": "27WMPD680",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 프리마로프트 패딩 60#1",
-"en": "\\[CHINA EXCLUSIVE\\] MEN PRIMALOFT PADDING 60",
+"kr": "[중국단독] 프리마로프트 패딩 60#1",
+"en": "[CHINA EXCLUSIVE] MEN PRIMALOFT PADDING 60",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1563,13 +1687,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ac2544e2139e"
 },
 {
 "style": "27WWPD681",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 프리마로프트 패딩 60#2",
-"en": "\\[CHINA EXCLUSIVE\\] WOMEN PRIMALOFT PADDING 60",
+"kr": "[중국단독] 프리마로프트 패딩 60#2",
+"en": "[CHINA EXCLUSIVE] WOMEN PRIMALOFT PADDING 60",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1581,13 +1706,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "6d1538e517ac"
 },
 {
 "style": "27WWPD681",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 프리마로프트 패딩 60#2",
-"en": "\\[CHINA EXCLUSIVE\\] WOMEN PRIMALOFT PADDING 60",
+"kr": "[중국단독] 프리마로프트 패딩 60#2",
+"en": "[CHINA EXCLUSIVE] WOMEN PRIMALOFT PADDING 60",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1599,13 +1725,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "cfc9d4af49f3"
 },
 {
 "style": "27WWPD681",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 프리마로프트 패딩 60#2",
-"en": "\\[CHINA EXCLUSIVE\\] WOMEN PRIMALOFT PADDING 60",
+"kr": "[중국단독] 프리마로프트 패딩 60#2",
+"en": "[CHINA EXCLUSIVE] WOMEN PRIMALOFT PADDING 60",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1617,13 +1744,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c755c2bab47d"
 },
 {
 "style": "27WWPD681",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 프리마로프트 패딩 60#2",
-"en": "\\[CHINA EXCLUSIVE\\] WOMEN PRIMALOFT PADDING 60",
+"kr": "[중국단독] 프리마로프트 패딩 60#2",
+"en": "[CHINA EXCLUSIVE] WOMEN PRIMALOFT PADDING 60",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1635,13 +1763,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "71fa852c3a42"
 },
 {
 "style": "27WMPD690",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 터프쉴드 라이트 인슐레이션 자켓#1",
-"en": "\\[CHINA EXCLUSIVE\\] MEN TOUGH SHIELD LIGHT INSULATION JACKET",
+"kr": "[중국단독] 터프쉴드 라이트 인슐레이션 자켓#1",
+"en": "[CHINA EXCLUSIVE] MEN TOUGH SHIELD LIGHT INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1653,13 +1782,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "7111dbcc4dc6"
 },
 {
 "style": "27WMPD690",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 터프쉴드 라이트 인슐레이션 자켓#1",
-"en": "\\[CHINA EXCLUSIVE\\] MEN TOUGH SHIELD LIGHT INSULATION JACKET",
+"kr": "[중국단독] 터프쉴드 라이트 인슐레이션 자켓#1",
+"en": "[CHINA EXCLUSIVE] MEN TOUGH SHIELD LIGHT INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1671,13 +1801,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ef33853df983"
 },
 {
 "style": "27WMPD690",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 터프쉴드 라이트 인슐레이션 자켓#1",
-"en": "\\[CHINA EXCLUSIVE\\] MEN TOUGH SHIELD LIGHT INSULATION JACKET",
+"kr": "[중국단독] 터프쉴드 라이트 인슐레이션 자켓#1",
+"en": "[CHINA EXCLUSIVE] MEN TOUGH SHIELD LIGHT INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1689,13 +1820,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "22b1bc983ea9"
 },
 {
 "style": "27WMPD690",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 터프쉴드 라이트 인슐레이션 자켓#1",
-"en": "\\[CHINA EXCLUSIVE\\] MEN TOUGH SHIELD LIGHT INSULATION JACKET",
+"kr": "[중국단독] 터프쉴드 라이트 인슐레이션 자켓#1",
+"en": "[CHINA EXCLUSIVE] MEN TOUGH SHIELD LIGHT INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1707,13 +1839,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "cc1403608bf6"
 },
 {
 "style": "27WWPD690",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 터프쉴드 라이트 인슐레이션 자켓#2",
-"en": "\\[CHINA EXCLUSIVE\\] WOMEN TOUGH SHIELD LIGHT INSULATION JACKET",
+"kr": "[중국단독] 터프쉴드 라이트 인슐레이션 자켓#2",
+"en": "[CHINA EXCLUSIVE] WOMEN TOUGH SHIELD LIGHT INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1725,13 +1858,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "bd23211ae9b1"
 },
 {
 "style": "27WWPD690",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 터프쉴드 라이트 인슐레이션 자켓#2",
-"en": "\\[CHINA EXCLUSIVE\\] WOMEN TOUGH SHIELD LIGHT INSULATION JACKET",
+"kr": "[중국단독] 터프쉴드 라이트 인슐레이션 자켓#2",
+"en": "[CHINA EXCLUSIVE] WOMEN TOUGH SHIELD LIGHT INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1743,13 +1877,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f667ddd04f6f"
 },
 {
 "style": "27WWPD690",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 터프쉴드 라이트 인슐레이션 자켓#2",
-"en": "\\[CHINA EXCLUSIVE\\] WOMEN TOUGH SHIELD LIGHT INSULATION JACKET",
+"kr": "[중국단독] 터프쉴드 라이트 인슐레이션 자켓#2",
+"en": "[CHINA EXCLUSIVE] WOMEN TOUGH SHIELD LIGHT INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "Alpine A",
 "mat": "PRIMALOFT",
@@ -1761,7 +1896,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c1041e96f300"
 },
 {
 "style": "27WWPA101",
@@ -1779,7 +1915,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "276523441e50"
 },
 {
 "style": "27WWPA101",
@@ -1797,7 +1934,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA102",
@@ -1815,7 +1953,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "88c321225b4b"
 },
 {
 "style": "27WWPA102",
@@ -1833,7 +1972,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA102",
@@ -1851,7 +1991,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA103",
@@ -1869,7 +2010,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "2a30e83f9e4f"
 },
 {
 "style": "27WWPA103",
@@ -1887,7 +2029,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA103",
@@ -1905,7 +2048,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA104",
@@ -1923,7 +2067,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c939b5b881be"
 },
 {
 "style": "27WMPA104",
@@ -1941,7 +2086,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA104",
@@ -1959,7 +2105,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "caf8c644e466"
 },
 {
 "style": "27WWPA104",
@@ -1977,7 +2124,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "105b70b04f6f"
 },
 {
 "style": "27UWPA156",
@@ -1995,7 +2143,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "44916e6aac01"
 },
 {
 "style": "27UWPA156",
@@ -2013,7 +2162,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27UWPA156",
@@ -2031,7 +2181,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27UWPA156",
@@ -2049,7 +2200,65 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27UWPA156",
+"group": "Apparel",
+"kr": "다이아퓨즈 다운자켓#3",
+"en": "UNI DIAFUSE DOWN JACKET",
+"cat": "Down Parkas",
+"line": "ALPINE B",
+"mat": "PERTEX",
+"gen": "Unisex",
+"cc": "BK",
+"color": "BLACK",
+"size": "미확정",
+"krw": "499000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "High Resolution CAD",
+"img": "44916e6aac01"
+},
+{
+"style": "27UWPA156",
+"group": "Apparel",
+"kr": "다이아퓨즈 다운자켓#3",
+"en": "UNI DIAFUSE DOWN JACKET",
+"cat": "Down Parkas",
+"line": "ALPINE B",
+"mat": "PERTEX",
+"gen": "Unisex",
+"cc": "HE",
+"color": "BITTER CHOCOLATE",
+"size": "미확정",
+"krw": "499000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27UWPA156",
+"group": "Apparel",
+"kr": "다이아퓨즈 다운자켓#3",
+"en": "UNI DIAFUSE DOWN JACKET",
+"cat": "Down Parkas",
+"line": "ALPINE B",
+"mat": "PERTEX",
+"gen": "Unisex",
+"cc": "LG",
+"color": "L/GRAY",
+"size": "미확정",
+"krw": "499000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27UWPA156",
@@ -2067,7 +2276,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d00fabaa7753"
 },
 {
 "style": "27WWPA155",
@@ -2085,7 +2295,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a5e919886ed3"
 },
 {
 "style": "27WWPA155",
@@ -2103,7 +2314,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA155",
@@ -2121,7 +2333,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b892aba6101f"
 },
 {
 "style": "27WWPA155",
@@ -2139,7 +2352,65 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27WWPA155",
+"group": "Apparel",
+"kr": "다이아퓨즈 후디 다운자켓#2",
+"en": "WOMEN DIAFUSE HOODED DOWN JACKET",
+"cat": "Down Parkas",
+"line": "ALPINE B",
+"mat": "PERTEX",
+"gen": "Women",
+"cc": "BK",
+"color": "BLACK",
+"size": "미확정",
+"krw": "499000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "High Resolution CAD",
+"img": "a5e919886ed3"
+},
+{
+"style": "27WWPA155",
+"group": "Apparel",
+"kr": "다이아퓨즈 후디 다운자켓#2",
+"en": "WOMEN DIAFUSE HOODED DOWN JACKET",
+"cat": "Down Parkas",
+"line": "ALPINE B",
+"mat": "PERTEX",
+"gen": "Women",
+"cc": "GP",
+"color": "GRAYISH PINK",
+"size": "미확정",
+"krw": "499000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "High Resolution CAD",
+"img": "b892aba6101f"
+},
+{
+"style": "27WWPA155",
+"group": "Apparel",
+"kr": "다이아퓨즈 후디 다운자켓#2",
+"en": "WOMEN DIAFUSE HOODED DOWN JACKET",
+"cat": "Down Parkas",
+"line": "ALPINE B",
+"mat": "PERTEX",
+"gen": "Women",
+"cc": "LG",
+"color": "L/GRAY",
+"size": "미확정",
+"krw": "499000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA155",
@@ -2157,7 +2428,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5be9a30e0f57"
 },
 {
 "style": "27WMPN100",
@@ -2175,7 +2447,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "ee2d97d08087"
 },
 {
 "style": "27WMPN100",
@@ -2193,7 +2466,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPN100",
@@ -2211,7 +2485,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPN101",
@@ -2229,7 +2504,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "28f8f17a91c7"
 },
 {
 "style": "27WMPN101",
@@ -2247,7 +2523,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPN101",
@@ -2265,7 +2542,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "183c75840d9b"
 },
 {
 "style": "27WWPN101",
@@ -2283,7 +2561,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPN101",
@@ -2301,7 +2580,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPN102",
@@ -2319,7 +2599,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "59fbd1c15d6e"
 },
 {
 "style": "27WMPN102",
@@ -2337,7 +2618,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPN102",
@@ -2355,7 +2637,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "87b95df0bf74"
 },
 {
 "style": "27WWPN102",
@@ -2373,7 +2656,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPN103",
@@ -2391,7 +2675,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "15f20b35c924"
 },
 {
 "style": "27WMPN103",
@@ -2409,7 +2694,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPN103",
@@ -2427,7 +2713,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "0dd95ec8ddc1"
 },
 {
 "style": "27WWPN103",
@@ -2445,12 +2732,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPD501",
 "group": "Apparel",
-"kr": "\\[중국단독\\] ALPINE SKI 패딩자켓#1",
+"kr": "[중국단독] ALPINE SKI 패딩자켓#1",
 "en": "MEN ALPINE SKI PADDING JACKET",
 "cat": "Padded Jackets",
 "line": "SKI",
@@ -2463,12 +2751,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "cd3fa1efcb0f"
 },
 {
 "style": "27WMPD501",
 "group": "Apparel",
-"kr": "\\[중국단독\\] ALPINE SKI 패딩자켓#1",
+"kr": "[중국단독] ALPINE SKI 패딩자켓#1",
 "en": "MEN ALPINE SKI PADDING JACKET",
 "cat": "Padded Jackets",
 "line": "SKI",
@@ -2481,12 +2770,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b60dc65472df"
 },
 {
 "style": "27WWPD501",
 "group": "Apparel",
-"kr": "\\[중국단독\\] ALPINE SKI 패딩자켓#2",
+"kr": "[중국단독] ALPINE SKI 패딩자켓#2",
 "en": "WOMEN ALPINE SKI PADDING JACKET",
 "cat": "Padded Jackets",
 "line": "SKI",
@@ -2499,12 +2789,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "47d4ec2b8a8a"
 },
 {
 "style": "27WWPD501",
 "group": "Apparel",
-"kr": "\\[중국단독\\] ALPINE SKI 패딩자켓#2",
+"kr": "[중국단독] ALPINE SKI 패딩자켓#2",
 "en": "WOMEN ALPINE SKI PADDING JACKET",
 "cat": "Padded Jackets",
 "line": "SKI",
@@ -2517,7 +2808,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "26d6a912fc13"
 },
 {
 "style": "27FMPA408",
@@ -2535,7 +2827,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "85109368dd47"
 },
 {
 "style": "27FMPA408",
@@ -2553,7 +2846,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "feacd11447c2"
 },
 {
 "style": "27FWPA409",
@@ -2571,7 +2865,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "69610a6eb657"
 },
 {
 "style": "27FWPA409",
@@ -2589,13 +2884,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "af7fb6a54139"
 },
 {
 "style": "27FMPD418",
 "group": "Apparel",
 "kr": "DNS 랑가 100 인슐레이션 자켓#1",
-"en": "MEN LANGAR HOODED 100 INSULATION JACKET",
+"en": "MEN LANGAR HOODED 100  INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "DNS",
 "mat": "CORDURA",
@@ -2607,13 +2903,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "ee8decbf7807"
 },
 {
 "style": "27FMPD418",
 "group": "Apparel",
 "kr": "DNS 랑가 100 인슐레이션 자켓#1",
-"en": "MEN LANGAR HOODED 100 INSULATION JACKET",
+"en": "MEN LANGAR HOODED 100  INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "DNS",
 "mat": "CORDURA",
@@ -2625,13 +2922,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWPD419",
 "group": "Apparel",
 "kr": "DNS 랑가 100 인슐레이션 자켓#2",
-"en": "WOMEN LANGAR HOODED 100 INSULATION JACKET",
+"en": "WOMEN LANGAR HOODED 100  INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "DNS",
 "mat": "CORDURA",
@@ -2643,13 +2941,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "400008252101"
 },
 {
 "style": "27FWPD419",
 "group": "Apparel",
 "kr": "DNS 랑가 100 인슐레이션 자켓#2",
-"en": "WOMEN LANGAR HOODED 100 INSULATION JACKET",
+"en": "WOMEN LANGAR HOODED 100  INSULATION JACKET",
 "cat": "Padded Jackets",
 "line": "DNS",
 "mat": "CORDURA",
@@ -2661,7 +2960,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMPD420",
@@ -2679,7 +2979,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a957591f95ca"
 },
 {
 "style": "27FMPD420",
@@ -2697,7 +2998,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8a275937be56"
 },
 {
 "style": "27FMPD420",
@@ -2715,7 +3017,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f5970b0d40d2"
 },
 {
 "style": "27FMPD420",
@@ -2733,7 +3036,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1dce54913292"
 },
 {
 "style": "27FMPD420",
@@ -2751,7 +3055,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d8b59fa06138"
 },
 {
 "style": "27FWPD421",
@@ -2769,7 +3074,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "eab4c8cef90a"
 },
 {
 "style": "27FWPD421",
@@ -2787,7 +3093,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "eb8ef587fa04"
 },
 {
 "style": "27FWPD421",
@@ -2805,7 +3112,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ada2a537b547"
 },
 {
 "style": "27WMRT422",
@@ -2823,7 +3131,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "64170954f5e0"
 },
 {
 "style": "27WMRT422",
@@ -2841,7 +3150,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMRT422",
@@ -2859,7 +3169,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMRT422",
@@ -2877,7 +3188,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMRT422",
@@ -2895,7 +3207,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMPN424",
@@ -2913,7 +3226,27 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "40da54144818"
+},
+{
+"style": "27FMPN424",
+"group": "Apparel",
+"kr": "DNS 랑가 하이브리드 팬츠#1",
+"en": "English name pending",
+"cat": "Pants",
+"line": "DNS",
+"mat": "CORDURA",
+"gen": "Men",
+"cc": "",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "199000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMPD439",
@@ -2931,7 +3264,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "3fabdbcc19d8"
 },
 {
 "style": "27FMPD439",
@@ -2949,7 +3283,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWPD440",
@@ -2967,7 +3302,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "6e26aa527000"
 },
 {
 "style": "27FWPD440",
@@ -2985,7 +3321,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMGJ401-01",
@@ -3003,7 +3340,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMGJ401-01",
@@ -3021,7 +3359,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8d26c165c329"
 },
 {
 "style": "27FMGJ429-01",
@@ -3039,7 +3378,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e623fad86f21"
 },
 {
 "style": "27FMGJ429-01",
@@ -3057,7 +3397,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "99f06e1ebbf9"
 },
 {
 "style": "27FWGJ429-01",
@@ -3075,7 +3416,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWGJ430-01",
@@ -3093,7 +3435,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "17219b667da6"
 },
 {
 "style": "27FWGJ430-01",
@@ -3111,7 +3454,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "7311c8477448"
 },
 {
 "style": "27FMPN403-01",
@@ -3129,7 +3473,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "444e0761d413"
 },
 {
 "style": "27FMPN403-01",
@@ -3147,7 +3492,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a75a2994320e"
 },
 {
 "style": "27FM403-01",
@@ -3165,7 +3511,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c55d4c905333"
 },
 {
 "style": "27FM403-01",
@@ -3183,7 +3530,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a8efec63e089"
 },
 {
 "style": "27FMJK405-01",
@@ -3201,7 +3549,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA406-01",
@@ -3219,7 +3568,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPN407-01",
@@ -3237,7 +3587,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPN410-01",
@@ -3255,7 +3606,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPN410-01",
@@ -3273,7 +3625,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPN410-01",
@@ -3291,7 +3644,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPN411-01",
@@ -3309,7 +3663,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPN411-01",
@@ -3327,7 +3682,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPN411-01",
@@ -3345,7 +3701,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMRT424-01",
@@ -3363,7 +3720,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMRT424-01",
@@ -3381,7 +3739,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMRT424-01",
@@ -3399,7 +3758,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWRT425-01",
@@ -3417,7 +3777,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWRT425-01",
@@ -3435,7 +3796,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMPN441-01",
@@ -3453,7 +3815,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMPN441-01",
@@ -3471,7 +3834,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWGJ427-01",
@@ -3489,7 +3853,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPD428-01",
@@ -3507,7 +3872,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMPN431-01",
@@ -3525,7 +3891,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA434-01",
@@ -3543,7 +3910,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA434-01",
@@ -3561,7 +3929,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA435-01",
@@ -3579,7 +3948,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA435-01",
@@ -3597,7 +3967,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d69c28a059d8"
 },
 {
 "style": "27WWPA436-01",
@@ -3615,7 +3986,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA437-01",
@@ -3633,7 +4005,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA437-01",
@@ -3651,7 +4024,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA438-01",
@@ -3669,7 +4043,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA438-01",
@@ -3687,7 +4062,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMZT441-01",
@@ -3705,7 +4081,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0da9335f1d20"
 },
 {
 "style": "27FMZT441-01",
@@ -3723,7 +4100,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3880c99cb4f6"
 },
 {
 "style": "27FMZT441-01",
@@ -3741,7 +4119,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "7bcfab8235e3"
 },
 {
 "style": "27FMZT441-01",
@@ -3759,7 +4138,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "fe3df145f2c6"
 },
 {
 "style": "27FMZT441-01",
@@ -3777,7 +4157,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9f9d1805baf3"
 },
 {
 "style": "27FWZT442-01",
@@ -3795,7 +4176,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c5102587a1d1"
 },
 {
 "style": "27FWZT442-01",
@@ -3813,7 +4195,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "54d37e332504"
 },
 {
 "style": "27FWZT442-01",
@@ -3831,7 +4214,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b77eda937f08"
 },
 {
 "style": "27FWZT442-01",
@@ -3849,7 +4233,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d6b8b8397d93"
 },
 {
 "style": "27FWZT442-01",
@@ -3867,7 +4252,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "bcf6c2349c0e"
 },
 {
 "style": "27FWGJ410-01",
@@ -3885,7 +4271,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA417-01",
@@ -3903,7 +4290,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c77269972f55"
 },
 {
 "style": "27WMPA417-01",
@@ -3921,7 +4309,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "65b9fc99add0"
 },
 {
 "style": "27WWPA417-01",
@@ -3939,7 +4328,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ab00f77a2e4c"
 },
 {
 "style": "27WWPA417-01",
@@ -3957,7 +4347,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "457fb867ceed"
 },
 {
 "style": "27WWPA417-01",
@@ -3975,7 +4366,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "281839860d0a"
 },
 {
 "style": "27WMPA101",
@@ -3993,7 +4385,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f63dccbfb5e3"
 },
 {
 "style": "27WMPA101",
@@ -4011,7 +4404,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "155aab2bc732"
 },
 {
 "style": "27WMPA101",
@@ -4029,7 +4423,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "76ff3f237236"
 },
 {
 "style": "27WMPA102",
@@ -4047,7 +4442,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c4576995ac35"
 },
 {
 "style": "27WMPA102",
@@ -4065,7 +4461,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c4576995ac35"
 },
 {
 "style": "27WMPA102",
@@ -4083,7 +4480,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c4576995ac35"
 },
 {
 "style": "27WMPA103",
@@ -4101,7 +4499,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c4576995ac35"
 },
 {
 "style": "27WMPA103",
@@ -4119,7 +4518,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "cc2a6c6759ef"
 },
 {
 "style": "27MFJK152",
@@ -4137,7 +4537,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1cf701ac8fbd"
 },
 {
 "style": "27MFJK152",
@@ -4155,7 +4556,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "270664c1e4f2"
 },
 {
 "style": "27WFJK152",
@@ -4173,7 +4575,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "d8ce717fd87c"
 },
 {
 "style": "27WFJK152",
@@ -4191,7 +4594,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "d8ce717fd87c"
 },
 {
 "style": "27FMFJ153",
@@ -4209,7 +4613,65 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27FMFJ153",
+"group": "Apparel",
+"kr": "써모쉴드 프리마로프트 이볼브 자켓 #1",
+"en": "English name pending",
+"cat": "Jackets",
+"line": "ALPINE B",
+"mat": "PRIMALOFT",
+"gen": "Men",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "199000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27FMFJ153",
+"group": "Apparel",
+"kr": "써모쉴드 프리마로프트 이볼브 자켓 #1",
+"en": "English name pending",
+"cat": "Jackets",
+"line": "ALPINE B",
+"mat": "PRIMALOFT",
+"gen": "Men",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "199000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27FMFJ153",
+"group": "Apparel",
+"kr": "써모쉴드 프리마로프트 이볼브 자켓 #1",
+"en": "English name pending",
+"cat": "Jackets",
+"line": "ALPINE B",
+"mat": "PRIMALOFT",
+"gen": "Men",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "199000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWFJ153",
@@ -4227,7 +4689,46 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27FWFJ153",
+"group": "Apparel",
+"kr": "써모쉴드 프리마로프트 이볼브 자켓 #2",
+"en": "English name pending",
+"cat": "Jackets",
+"line": "ALPINE B",
+"mat": "PRIMALOFT",
+"gen": "Women",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "199000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27FWFJ153",
+"group": "Apparel",
+"kr": "써모쉴드 프리마로프트 이볼브 자켓 #2",
+"en": "English name pending",
+"cat": "Jackets",
+"line": "ALPINE B",
+"mat": "PRIMALOFT",
+"gen": "Women",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "199000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FUFJ153",
@@ -4245,7 +4746,46 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27FUFJ153",
+"group": "Apparel",
+"kr": "써모쉴드 프리마로프트 이볼브 리버서블 자켓 #3",
+"en": "English name pending",
+"cat": "Jackets",
+"line": "ALPINE B",
+"mat": "PRIMALOFT",
+"gen": "Unisex",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "279000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "27FUFJ153",
+"group": "Apparel",
+"kr": "써모쉴드 프리마로프트 이볼브 리버서블 자켓 #3",
+"en": "English name pending",
+"cat": "Jackets",
+"line": "ALPINE B",
+"mat": "PRIMALOFT",
+"gen": "Unisex",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "279000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMZT153",
@@ -4263,7 +4803,27 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "4f1b7d31c9aa"
+},
+{
+"style": "27FMZT153",
+"group": "Apparel",
+"kr": "써모쉴드 집업 긴팔티#1",
+"en": "English name pending",
+"cat": "Zip-up T-Shirts",
+"line": "ALPINE B",
+"mat": "",
+"gen": "Men",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "139000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "Workbook CAD",
+"img": "4f1b7d31c9aa"
 },
 {
 "style": "27FWZT153",
@@ -4281,7 +4841,27 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "05eade788323"
+},
+{
+"style": "27FWZT153",
+"group": "Apparel",
+"kr": "써모쉴드 집업 긴팔티#2",
+"en": "English name pending",
+"cat": "Zip-up T-Shirts",
+"line": "ALPINE B",
+"mat": "",
+"gen": "Women",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "139000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "Workbook CAD",
+"img": "05eade788323"
 },
 {
 "style": "27FMZT151",
@@ -4299,7 +4879,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "66d8fac773a6"
 },
 {
 "style": "27FMZT151",
@@ -4317,7 +4898,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "66d8fac773a6"
 },
 {
 "style": "27FWZT151",
@@ -4335,7 +4917,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "ae4d0636bf54"
 },
 {
 "style": "27FWZT151",
@@ -4353,7 +4936,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "ae4d0636bf54"
 },
 {
 "style": "27FMZT152",
@@ -4371,7 +4955,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "3b9c15ae834b"
 },
 {
 "style": "27FMZT152",
@@ -4389,7 +4974,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "3b9c15ae834b"
 },
 {
 "style": "27FMZT152",
@@ -4407,7 +4993,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "3b9c15ae834b"
 },
 {
 "style": "27WMZT151",
@@ -4425,7 +5012,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "8fa3ad9ecc23"
 },
 {
 "style": "27WMZT151",
@@ -4443,7 +5031,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "8fa3ad9ecc23"
 },
 {
 "style": "27WMZT151",
@@ -4461,7 +5050,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "8fa3ad9ecc23"
 },
 {
 "style": "27WWZT151",
@@ -4479,7 +5069,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "174ca756cc1d"
 },
 {
 "style": "27WWZT151",
@@ -4497,7 +5088,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "174ca756cc1d"
 },
 {
 "style": "27WWZT151",
@@ -4515,13 +5107,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "174ca756cc1d"
 },
 {
 "style": "27MWZT152",
 "group": "Apparel",
 "kr": "프리마로프트 집업 긴팔티#1",
-"en": "MEN PADDING ZIP-UP LONG SLEEVE T-SHIRT",
+"en": "MEN PADDING  ZIP-UP LONG SLEEVE T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "ALPINE B",
 "mat": "PRIMALOFT",
@@ -4533,13 +5126,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c843ccf1a225"
 },
 {
 "style": "27MWZT152",
 "group": "Apparel",
 "kr": "프리마로프트 집업 긴팔티#1",
-"en": "MEN PADDING ZIP-UP LONG SLEEVE T-SHIRT",
+"en": "MEN PADDING  ZIP-UP LONG SLEEVE T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "ALPINE B",
 "mat": "PRIMALOFT",
@@ -4551,13 +5145,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c843ccf1a225"
 },
 {
 "style": "27WWZT152",
 "group": "Apparel",
 "kr": "프리마로프트 집업 긴팔티#2",
-"en": "WOMEN PADDING ZIP-UP LONG SLEEVE T-SHIRT",
+"en": "WOMEN PADDING  ZIP-UP LONG SLEEVE T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "ALPINE B",
 "mat": "PRIMALOFT",
@@ -4569,13 +5164,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7cb7b71c2653"
 },
 {
 "style": "27WWZT152",
 "group": "Apparel",
 "kr": "프리마로프트 집업 긴팔티#2",
-"en": "WOMEN PADDING ZIP-UP LONG SLEEVE T-SHIRT",
+"en": "WOMEN PADDING  ZIP-UP LONG SLEEVE T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "ALPINE B",
 "mat": "PRIMALOFT",
@@ -4587,7 +5183,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7cb7b71c2653"
 },
 {
 "style": "27WMZT109",
@@ -4605,7 +5202,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "dcd4f5c1d339"
 },
 {
 "style": "27WMZT109",
@@ -4623,7 +5221,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "116447ef1b72"
 },
 {
 "style": "27WMZT109",
@@ -4641,7 +5240,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9e10977a4f96"
 },
 {
 "style": "27WWZT109",
@@ -4659,7 +5259,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f6214c4b7745"
 },
 {
 "style": "27WWZT109",
@@ -4677,7 +5278,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "52e5eb33f433"
 },
 {
 "style": "27WWZT109",
@@ -4695,7 +5297,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "52e5eb33f433"
 },
 {
 "style": "27WMJK412",
@@ -4713,7 +5316,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f50a8005162c"
 },
 {
 "style": "27WMJK412",
@@ -4731,7 +5335,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "37cf08dc4b55"
 },
 {
 "style": "27WWJK413",
@@ -4749,7 +5354,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "bdbd407fbb9e"
 },
 {
 "style": "27WWJK413",
@@ -4767,7 +5373,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1faafd8def4f"
 },
 {
 "style": "27WMZT414",
@@ -4785,7 +5392,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "25e6ab0676b1"
 },
 {
 "style": "27WMZT414",
@@ -4803,7 +5411,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWZT415",
@@ -4821,7 +5430,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "b1e8e3e2bdc5"
 },
 {
 "style": "27WWZT415",
@@ -4839,7 +5449,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMRT416",
@@ -4857,7 +5468,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "adfdabef68e4"
 },
 {
 "style": "27WMRT416",
@@ -4875,12 +5487,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "78772c534237"
 },
 {
 "style": "27FWGJ682",
 "group": "Apparel",
-"kr": "\\[중국단독\\] THULAGI LT#2",
+"kr": "[중국단독] THULAGI LT#2",
 "en": "WOMEN GORE-TEX 3L TULAGI LIGHT JACKET",
 "cat": "GORE-TEX Jackets",
 "line": "Alpine A",
@@ -4893,12 +5506,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c1f98a4e9993"
 },
 {
 "style": "27FWGJ682",
 "group": "Apparel",
-"kr": "\\[중국단독\\] THULAGI LT#2",
+"kr": "[중국단독] THULAGI LT#2",
 "en": "WOMEN GORE-TEX 3L TULAGI LIGHT JACKET",
 "cat": "GORE-TEX Jackets",
 "line": "Alpine A",
@@ -4911,12 +5525,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "3d60c7dc1c54"
 },
 {
 "style": "27WMJK606",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 본딩 소프트쉘 자켓",
+"kr": "[중국단독] 남성 본딩 소프트쉘 자켓",
 "en": "MEN SOFTSHELL BONDING JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
@@ -4929,12 +5544,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ca7ff254700a"
 },
 {
 "style": "27WMJK606",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 본딩 소프트쉘 자켓",
+"kr": "[중국단독] 남성 본딩 소프트쉘 자켓",
 "en": "MEN SOFTSHELL BONDING JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
@@ -4947,12 +5563,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "32a421bbcefc"
 },
 {
 "style": "27WMJK606",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 본딩 소프트쉘 자켓",
+"kr": "[중국단독] 남성 본딩 소프트쉘 자켓",
 "en": "MEN SOFTSHELL BONDING JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
@@ -4965,12 +5582,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "52746088b831"
 },
 {
 "style": "27WWJK606",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 본딩 소프트쉘 자켓",
+"kr": "[중국단독] 여성 본딩 소프트쉘 자켓",
 "en": "WOMEN SOFTSHELL BONDING JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
@@ -4983,12 +5601,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1d3e746e7527"
 },
 {
 "style": "27WWJK606",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 본딩 소프트쉘 자켓",
+"kr": "[중국단독] 여성 본딩 소프트쉘 자켓",
 "en": "WOMEN SOFTSHELL BONDING JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
@@ -5001,12 +5620,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "126b41e6b463"
 },
 {
 "style": "27WWJK606",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 본딩 소프트쉘 자켓",
+"kr": "[중국단독] 여성 본딩 소프트쉘 자켓",
 "en": "WOMEN SOFTSHELL BONDING JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
@@ -5019,12 +5639,13 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d8b3526c5805"
 },
 {
 "style": "27WWJK606",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 본딩 소프트쉘 자켓",
+"kr": "[중국단독] 여성 본딩 소프트쉘 자켓",
 "en": "WOMEN SOFTSHELL BONDING JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
@@ -5037,7 +5658,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "72bb8c424e04"
 },
 {
 "style": "27WUPA300",
@@ -5055,7 +5677,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "3090ad5b9c10"
 },
 {
 "style": "27WUPA300",
@@ -5073,7 +5696,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "61c19a101662"
 },
 {
 "style": "27WUPA300",
@@ -5091,7 +5715,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0cf15ad8af12"
 },
 {
 "style": "27WUPA300",
@@ -5109,7 +5734,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5d3f2e993098"
 },
 {
 "style": "27WUPA300",
@@ -5127,7 +5753,27 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e7197092266e"
+},
+{
+"style": "27WUPA300",
+"group": "Apparel",
+"kr": "클라이밍 스톤마스터 스탠드넥 다운자켓#3",
+"en": "UNI CLIMBING STONEMASTER STAND NECK DOWN JACKET",
+"cat": "Down Parkas",
+"line": "Climbing",
+"mat": "",
+"gen": "Unisex",
+"cc": "SI",
+"color": "SILVER",
+"size": "미확정",
+"krw": "399000",
+"batch": "겨울2",
+"origin": "",
+"comp": "",
+"cad": "Workbook CAD",
+"img": "3783978a23be"
 },
 {
 "style": "27WUPA300",
@@ -5145,7 +5791,27 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "83fd1239991e"
+},
+{
+"style": "27WUPA300",
+"group": "Apparel",
+"kr": "클라이밍 스톤마스터 스탠드넥 다운자켓#3",
+"en": "UNI CLIMBING STONEMASTER STAND NECK DOWN JACKET",
+"cat": "Down Parkas",
+"line": "Climbing",
+"mat": "",
+"gen": "Unisex",
+"cc": "BK",
+"color": "BLACK",
+"size": "미확정",
+"krw": "399000",
+"batch": "겨울2",
+"origin": "",
+"comp": "",
+"cad": "High Resolution CAD",
+"img": "e7197092266e"
 },
 {
 "style": "27WWPA300",
@@ -5163,7 +5829,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9c3edc8d98be"
 },
 {
 "style": "27WWPA300",
@@ -5181,7 +5848,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5979bdd8b3a1"
 },
 {
 "style": "27WWPA300",
@@ -5199,7 +5867,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "459d784bffc3"
 },
 {
 "style": "27WUPA301",
@@ -5217,7 +5886,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "d76859408e4b"
 },
 {
 "style": "27WUPA301",
@@ -5235,7 +5905,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "cf46bf4c73d6"
 },
 {
 "style": "27WUPA301",
@@ -5253,7 +5924,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1b17c68c8291"
 },
 {
 "style": "27WUPA301",
@@ -5271,7 +5943,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b006060ef7d0"
 },
 {
 "style": "27WUPA301",
@@ -5289,7 +5962,27 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "83da9dd8c96b"
+},
+{
+"style": "27WUPA301",
+"group": "Apparel",
+"kr": "클라이밍 스톤마스터 라이트 스탠드넥 다운자켓#3",
+"en": "UNI CLIMBING STONEMASTER LIGHT STAND NECK DOWN JACKET",
+"cat": "Down Parkas",
+"line": "Climbing",
+"mat": "",
+"gen": "Unisex",
+"cc": "FF",
+"color": "FOG",
+"size": "미확정",
+"krw": "299000",
+"batch": "겨을1",
+"origin": "",
+"comp": "",
+"cad": "High Resolution CAD",
+"img": "cf46bf4c73d6"
 },
 {
 "style": "27WUPA301",
@@ -5307,7 +6000,27 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2b0816d6ba5b"
+},
+{
+"style": "27WUPA301",
+"group": "Apparel",
+"kr": "클라이밍 스톤마스터 라이트 스탠드넥 다운자켓#3",
+"en": "UNI CLIMBING STONEMASTER LIGHT STAND NECK DOWN JACKET",
+"cat": "Down Parkas",
+"line": "Climbing",
+"mat": "",
+"gen": "Unisex",
+"cc": "BK",
+"color": "BLACK",
+"size": "미확정",
+"krw": "299000",
+"batch": "겨을1",
+"origin": "",
+"comp": "",
+"cad": "High Resolution CAD",
+"img": "83da9dd8c96b"
 },
 {
 "style": "27WUPA302",
@@ -5325,7 +6038,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5eabba80d406"
 },
 {
 "style": "27WUPA302",
@@ -5343,7 +6057,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d85896208657"
 },
 {
 "style": "27WUPA302",
@@ -5361,7 +6076,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3e24973adac9"
 },
 {
 "style": "27WUPA010",
@@ -5379,7 +6095,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "294f205ccfc6"
 },
 {
 "style": "27WUPA010",
@@ -5397,7 +6114,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FUTS306",
@@ -5415,7 +6133,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d03c476d4510"
 },
 {
 "style": "27FUTS306",
@@ -5433,7 +6152,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b52e4819b6c5"
 },
 {
 "style": "27FUTS306",
@@ -5451,7 +6171,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "961f3b6e0979"
 },
 {
 "style": "27WUJK308",
@@ -5469,7 +6190,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "355b58460bdd"
 },
 {
 "style": "27WUJK308",
@@ -5487,7 +6209,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d6ec3269d464"
 },
 {
 "style": "27WUJK308",
@@ -5505,7 +6228,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c03e1b1d817c"
 },
 {
 "style": "27WUJK308",
@@ -5523,7 +6247,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1f3e3467f08d"
 },
 {
 "style": "27WUZT307",
@@ -5541,7 +6266,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "0afb3900a15c"
 },
 {
 "style": "27WUZT307",
@@ -5559,7 +6285,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WUZT307",
@@ -5577,7 +6304,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "4a3f559e5782"
 },
 {
 "style": "27WUZT307",
@@ -5595,7 +6323,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWZT307",
@@ -5613,7 +6342,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "230d44cc9523"
 },
 {
 "style": "27WWZT307",
@@ -5631,7 +6361,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWZT307",
@@ -5649,7 +6380,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ce4d5970bc21"
 },
 {
 "style": "27WWZT307",
@@ -5667,13 +6399,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WUHD309",
 "group": "Apparel",
 "kr": "클라이밍 릿지마스터 후드 플리스 자켓#3",
-"en": "UNI CLIMBING RIDGE MASTER HOODED FLEECE JACKET",
+"en": "UNI CLIMBING RIDGE MASTER  HOODED FLEECE JACKET",
 "cat": "Fleece Jackets",
 "line": "Climbing",
 "mat": "POLARTEC",
@@ -5685,13 +6418,14 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "80e8045cb346"
 },
 {
 "style": "27WUHD309",
 "group": "Apparel",
 "kr": "클라이밍 릿지마스터 후드 플리스 자켓#3",
-"en": "UNI CLIMBING RIDGE MASTER HOODED FLEECE JACKET",
+"en": "UNI CLIMBING RIDGE MASTER  HOODED FLEECE JACKET",
 "cat": "Fleece Jackets",
 "line": "Climbing",
 "mat": "POLARTEC",
@@ -5703,13 +6437,14 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "7521b7941c75"
 },
 {
 "style": "27WUHD309",
 "group": "Apparel",
 "kr": "클라이밍 릿지마스터 후드 플리스 자켓#3",
-"en": "UNI CLIMBING RIDGE MASTER HOODED FLEECE JACKET",
+"en": "UNI CLIMBING RIDGE MASTER  HOODED FLEECE JACKET",
 "cat": "Fleece Jackets",
 "line": "Climbing",
 "mat": "POLARTEC",
@@ -5721,7 +6456,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMJA014",
@@ -5739,7 +6475,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2868aeeabb75"
 },
 {
 "style": "27WMJA014",
@@ -5757,7 +6494,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "668dbe1956d8"
 },
 {
 "style": "27WMJA014",
@@ -5775,7 +6513,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "66f40e2b9888"
 },
 {
 "style": "27WWJA014",
@@ -5793,7 +6532,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "97b68d69c5b3"
 },
 {
 "style": "27WWJA014",
@@ -5811,7 +6551,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "55dbee926c6e"
 },
 {
 "style": "27WWJA014",
@@ -5829,7 +6570,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "645404ac5bd2"
 },
 {
 "style": "27FMJK001",
@@ -5847,7 +6589,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "d0bee928fb69"
 },
 {
 "style": "27FMJK001",
@@ -5865,7 +6608,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK001",
@@ -5883,7 +6627,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK001",
@@ -5901,7 +6646,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWJK001",
@@ -5919,7 +6665,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "d5a08aa3089f"
 },
 {
 "style": "27FWJK001",
@@ -5937,7 +6684,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWJK001",
@@ -5955,7 +6703,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWJK001",
@@ -5973,7 +6722,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK002",
@@ -5991,7 +6741,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "6a8636733529"
 },
 {
 "style": "27FMJK002",
@@ -6009,7 +6760,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK002",
@@ -6027,7 +6779,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMJK002",
@@ -6045,7 +6798,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ff727daebe7d"
 },
 {
 "style": "27FMJK002",
@@ -6063,7 +6817,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b1e6e6b18bb7"
 },
 {
 "style": "27FWJK002",
@@ -6081,7 +6836,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "05a3476b4458"
 },
 {
 "style": "27FWJK002",
@@ -6099,7 +6855,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "092800285da6"
 },
 {
 "style": "27FWJK002",
@@ -6117,7 +6874,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "4ec47e628761"
 },
 {
 "style": "English name pending",
@@ -6135,7 +6893,65 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "English name pending",
+"group": "Apparel",
+"kr": "익스페디션 다운자켓#2",
+"en": "English name pending",
+"cat": "Down Parkas",
+"line": "Alpine A",
+"mat": "",
+"gen": "Women",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "499000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "English name pending",
+"group": "Apparel",
+"kr": "익스페디션 라이트 다운자켓#2",
+"en": "English name pending",
+"cat": "Down Parkas",
+"line": "Alpine A",
+"mat": "",
+"gen": "Unisex",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "399000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
+},
+{
+"style": "English name pending",
+"group": "Apparel",
+"kr": "익스페디션 베스트#3",
+"en": "English name pending",
+"cat": "Vests",
+"line": "Alpine A",
+"mat": "",
+"gen": "Unisex",
+"cc": "0",
+"color": "COLOUR PENDING",
+"size": "미확정",
+"krw": "299000",
+"batch": "",
+"origin": "",
+"comp": "",
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA011",
@@ -6153,7 +6969,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "697ccafd6969"
 },
 {
 "style": "27WMPA011",
@@ -6171,7 +6988,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMPA011",
@@ -6189,7 +7007,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA011",
@@ -6207,7 +7026,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "febae5c0987a"
 },
 {
 "style": "27WWPA011",
@@ -6225,7 +7045,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWPA011",
@@ -6243,7 +7064,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WUPA012",
@@ -6261,7 +7083,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "bfec61baa301"
 },
 {
 "style": "27WUPA012",
@@ -6279,7 +7102,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WUPA012",
@@ -6297,7 +7121,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMVS015",
@@ -6315,7 +7140,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "608306c66f5e"
 },
 {
 "style": "27WMVS015",
@@ -6333,7 +7159,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMVS015",
@@ -6351,7 +7178,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMVS015",
@@ -6369,7 +7197,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMVS016",
@@ -6387,7 +7216,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2b9fdc627e2e"
 },
 {
 "style": "27WMVS016",
@@ -6405,7 +7235,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3eeea96e9b4f"
 },
 {
 "style": "27WWVS015",
@@ -6423,7 +7254,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "faae349106bc"
 },
 {
 "style": "27WWVS015",
@@ -6441,7 +7273,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWVS015",
@@ -6459,7 +7292,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWVS016",
@@ -6477,7 +7311,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "8743bb3894db"
 },
 {
 "style": "27WWVS016",
@@ -6495,7 +7330,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "799e1b7d65a0"
 },
 {
 "style": "27WWVS016",
@@ -6513,7 +7349,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWVS016",
@@ -6531,13 +7368,14 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b4032f64aed4"
 },
 {
 "style": "27WMPA602",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 2L 하드쉘 다운자켓",
-"en": "\\[CHINA ONLY\\] MEN 2L HARDSHELL DOWN JACKET",
+"kr": "[중국단독] 남성 2L 하드쉘 다운자켓",
+"en": "[CHINA ONLY] MEN 2L HARDSHELL DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6549,13 +7387,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "581eb83d8a0b"
 },
 {
 "style": "27WMPA602",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 2L 하드쉘 다운자켓",
-"en": "\\[CHINA ONLY\\] MEN 2L HARDSHELL DOWN JACKET",
+"kr": "[중국단독] 남성 2L 하드쉘 다운자켓",
+"en": "[CHINA ONLY] MEN 2L HARDSHELL DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6567,13 +7406,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0e502df4bee1"
 },
 {
 "style": "27WMPA602",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 2L 하드쉘 다운자켓",
-"en": "\\[CHINA ONLY\\] MEN 2L HARDSHELL DOWN JACKET",
+"kr": "[중국단독] 남성 2L 하드쉘 다운자켓",
+"en": "[CHINA ONLY] MEN 2L HARDSHELL DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6585,13 +7425,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d1ed58a836f2"
 },
 {
 "style": "27WWPA602",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 2L 하드쉘 다운자켓",
-"en": "\\[CHINA ONLY\\] WOMEN 2L HARDSHELL DOWN JACKET",
+"kr": "[중국단독] 여성 2L 하드쉘 다운자켓",
+"en": "[CHINA ONLY] WOMEN 2L HARDSHELL DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6603,13 +7444,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "984179bd9700"
 },
 {
 "style": "27WWPA602",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 2L 하드쉘 다운자켓",
-"en": "\\[CHINA ONLY\\] WOMEN 2L HARDSHELL DOWN JACKET",
+"kr": "[중국단독] 여성 2L 하드쉘 다운자켓",
+"en": "[CHINA ONLY] WOMEN 2L HARDSHELL DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6621,13 +7463,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "869ff2247aab"
 },
 {
 "style": "27WWPA602",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 2L 하드쉘 다운자켓",
-"en": "\\[CHINA ONLY\\] WOMEN 2L HARDSHELL DOWN JACKET",
+"kr": "[중국단독] 여성 2L 하드쉘 다운자켓",
+"en": "[CHINA ONLY] WOMEN 2L HARDSHELL DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6639,13 +7482,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "aaf3292ef684"
 },
 {
 "style": "27WMPA603",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 웰딩 롱 다운자켓",
-"en": "\\[CHINA ONLY\\] MEN WELDED LONG DOWN JACKET",
+"kr": "[중국단독] 남성 웰딩 롱 다운자켓",
+"en": "[CHINA ONLY] MEN WELDED LONG DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6657,13 +7501,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "911a78d4aab7"
 },
 {
 "style": "27WMPA603",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 웰딩 롱 다운자켓",
-"en": "\\[CHINA ONLY\\] MEN WELDED LONG DOWN JACKET",
+"kr": "[중국단독] 남성 웰딩 롱 다운자켓",
+"en": "[CHINA ONLY] MEN WELDED LONG DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6675,13 +7520,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f9bc8cbbe07d"
 },
 {
 "style": "27WWPA603",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 웰딩 롱 다운자켓",
-"en": "\\[CHINA ONLY\\] WOMEN WELDED LONG DOWN JACKET",
+"kr": "[중국단독] 여성 웰딩 롱 다운자켓",
+"en": "[CHINA ONLY] WOMEN WELDED LONG DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6693,13 +7539,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ab6383819cb4"
 },
 {
 "style": "27WWPA603",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 웰딩 롱 다운자켓",
-"en": "\\[CHINA ONLY\\] WOMEN WELDED LONG DOWN JACKET",
+"kr": "[중국단독] 여성 웰딩 롱 다운자켓",
+"en": "[CHINA ONLY] WOMEN WELDED LONG DOWN JACKET",
 "cat": "Down Parkas",
 "line": "Alpine A",
 "mat": "",
@@ -6711,13 +7558,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2c46325ca539"
 },
 {
 "style": "27WMJK604",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 3IN1 본딩 자켓",
-"en": "\\[CHINA ONLY\\] MEN 3-IN-1 BONDED JACKET",
+"kr": "[중국단독] 남성 3IN1 본딩 자켓",
+"en": "[CHINA ONLY] MEN 3-IN-1 BONDED JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6729,13 +7577,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "118683eb8489"
 },
 {
 "style": "27WMJK604",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 3IN1 본딩 자켓",
-"en": "\\[CHINA ONLY\\] MEN 3-IN-1 BONDED JACKET",
+"kr": "[중국단독] 남성 3IN1 본딩 자켓",
+"en": "[CHINA ONLY] MEN 3-IN-1 BONDED JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6747,13 +7596,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b7a7adda4111"
 },
 {
 "style": "27WMJK604",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 3IN1 본딩 자켓",
-"en": "\\[CHINA ONLY\\] MEN 3-IN-1 BONDED JACKET",
+"kr": "[중국단독] 남성 3IN1 본딩 자켓",
+"en": "[CHINA ONLY] MEN 3-IN-1 BONDED JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6765,13 +7615,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "656a6dbebb9c"
 },
 {
 "style": "27WWJK604",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 3IN1 본딩 자켓",
-"en": "\\[CHINA ONLY\\] WOMEN 3-IN-1 BONDED JACKET",
+"kr": "[중국단독] 여성 3IN1 본딩 자켓",
+"en": "[CHINA ONLY] WOMEN 3-IN-1 BONDED JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6783,13 +7634,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ee79568e897c"
 },
 {
 "style": "27WWJK604",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 3IN1 본딩 자켓",
-"en": "\\[CHINA ONLY\\] WOMEN 3-IN-1 BONDED JACKET",
+"kr": "[중국단독] 여성 3IN1 본딩 자켓",
+"en": "[CHINA ONLY] WOMEN 3-IN-1 BONDED JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6801,13 +7653,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5e1bc43b36c1"
 },
 {
 "style": "27WMJK605",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 3IN1 다운 자켓",
-"en": "\\[CHINA ONLY\\] MEN 3-IN-1 DOWN JACKET",
+"kr": "[중국단독] 남성 3IN1 다운 자켓",
+"en": "[CHINA ONLY] MEN 3-IN-1 DOWN JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6819,13 +7672,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e21a587fd701"
 },
 {
 "style": "27WMJK605",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 남성 3IN1 다운 자켓",
-"en": "\\[CHINA ONLY\\] MEN 3-IN-1 DOWN JACKET",
+"kr": "[중국단독] 남성 3IN1 다운 자켓",
+"en": "[CHINA ONLY] MEN 3-IN-1 DOWN JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6837,13 +7691,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d4b1d731654a"
 },
 {
 "style": "27WWJK605",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 3IN1 다운 자켓",
-"en": "\\[CHINA ONLY\\] WOMEN 3-IN-1 DOWN JACKET",
+"kr": "[중국단독] 여성 3IN1 다운 자켓",
+"en": "[CHINA ONLY] WOMEN 3-IN-1 DOWN JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6855,13 +7710,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "335c55656037"
 },
 {
 "style": "27WWJK605",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 여성 3IN1 다운 자켓",
-"en": "\\[CHINA ONLY\\] WOMEN 3-IN-1 DOWN JACKET",
+"kr": "[중국단독] 여성 3IN1 다운 자켓",
+"en": "[CHINA ONLY] WOMEN 3-IN-1 DOWN JACKET",
 "cat": "Jackets",
 "line": "Alpine A",
 "mat": "",
@@ -6873,7 +7729,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9af1c7abf4c8"
 },
 {
 "style": "27FMPN302",
@@ -6891,7 +7748,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "06238b095eda"
 },
 {
 "style": "27FMPN302",
@@ -6909,7 +7767,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "13f26b96db15"
 },
 {
 "style": "27FWPN302",
@@ -6927,7 +7786,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "46bb47c96bad"
 },
 {
 "style": "27FWPN302",
@@ -6945,7 +7805,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b9dfc1f0e824"
 },
 {
 "style": "27FMPN303",
@@ -6963,7 +7824,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "4b4cedb975bd"
 },
 {
 "style": "27FMPN303",
@@ -6981,7 +7843,8 @@
 "batch": "겨을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9abaef8b3fed"
 },
 {
 "style": "27FWPN301",
@@ -6999,7 +7862,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ba6ee970bc50"
 },
 {
 "style": "27FWPN301",
@@ -7017,7 +7881,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0e9299550544"
 },
 {
 "style": "27WXPN301",
@@ -7035,7 +7900,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "559b11e8843b"
 },
 {
 "style": "27WXPN301",
@@ -7053,7 +7919,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "559b11e8843b"
 },
 {
 "style": "27WXPN301",
@@ -7071,7 +7938,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "559b11e8843b"
 },
 {
 "style": "27FMPN071",
@@ -7089,7 +7957,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7c967e68dede"
 },
 {
 "style": "27FMPN071",
@@ -7107,7 +7976,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7c967e68dede"
 },
 {
 "style": "27FMPN071",
@@ -7125,7 +7995,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "dcf1c0a738d5"
 },
 {
 "style": "27FWPN070",
@@ -7143,7 +8014,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "18212b83966f"
 },
 {
 "style": "27FWPN070",
@@ -7161,7 +8033,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a1dc06fbffa6"
 },
 {
 "style": "27FWPN070",
@@ -7179,7 +8052,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "769cefbf2291"
 },
 {
 "style": "27FMPN072",
@@ -7197,7 +8071,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3e38e3335b09"
 },
 {
 "style": "27FMPN072",
@@ -7215,7 +8090,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "10d58f0e0c9e"
 },
 {
 "style": "27FWPN071",
@@ -7233,7 +8109,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "4eabc1d9eb69"
 },
 {
 "style": "27FWPN071",
@@ -7251,7 +8128,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "629cc006fc9e"
 },
 {
 "style": "27WMPN070",
@@ -7269,7 +8147,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "addafe88d9c1"
 },
 {
 "style": "27WMPN070",
@@ -7287,7 +8166,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "36fb56af08e8"
 },
 {
 "style": "27WMPN070",
@@ -7305,7 +8185,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "cbfa45340fff"
 },
 {
 "style": "27WWPN070",
@@ -7323,7 +8204,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "64fb36bf1d85"
 },
 {
 "style": "27WWPN070",
@@ -7341,7 +8223,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "64fb36bf1d85"
 },
 {
 "style": "27WWPN070",
@@ -7359,7 +8242,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "64fb36bf1d85"
 },
 {
 "style": "27FMPN073",
@@ -7377,7 +8261,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a8bda8fba11a"
 },
 {
 "style": "27FMPN073",
@@ -7395,7 +8280,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1259bcd64247"
 },
 {
 "style": "27FMPN073",
@@ -7413,7 +8299,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "daf0ed6e5774"
 },
 {
 "style": "27FWPN072",
@@ -7431,7 +8318,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8cd95e872e97"
 },
 {
 "style": "27FWPN072",
@@ -7449,7 +8337,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b499bbb638d4"
 },
 {
 "style": "27FMPN077",
@@ -7467,7 +8356,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "03d7d3a01fc3"
 },
 {
 "style": "27FMPN077",
@@ -7485,7 +8375,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "03d7d3a01fc3"
 },
 {
 "style": "27FWPN073",
@@ -7503,7 +8394,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "9f231e65361c"
 },
 {
 "style": "27FWPN073",
@@ -7521,7 +8413,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "9f231e65361c"
 },
 {
 "style": "27FMPN074",
@@ -7539,7 +8432,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e23c3d1de400"
 },
 {
 "style": "27FWPN074",
@@ -7557,7 +8451,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ddaf754a30f3"
 },
 {
 "style": "27WMPN073",
@@ -7575,7 +8470,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "6029596dc2bb"
 },
 {
 "style": "27WMPN073",
@@ -7593,7 +8489,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "67a11fa2b1c7"
 },
 {
 "style": "27WMPN073",
@@ -7611,7 +8508,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f909b53b5b17"
 },
 {
 "style": "27WMPN073",
@@ -7629,7 +8527,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e73e98a39d8f"
 },
 {
 "style": "27WWPN073",
@@ -7647,7 +8546,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "525259366089"
 },
 {
 "style": "27WWPN073",
@@ -7665,7 +8565,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "189ea4dfbf2f"
 },
 {
 "style": "27WMPN071",
@@ -7683,7 +8584,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "49d6306c6eae"
 },
 {
 "style": "27WMPN071",
@@ -7701,7 +8603,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "38470d944b3a"
 },
 {
 "style": "27WWPN071",
@@ -7719,7 +8622,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8c0b06460270"
 },
 {
 "style": "27WMPN076",
@@ -7737,7 +8641,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "690e253b6a6f"
 },
 {
 "style": "27WMPN076",
@@ -7755,7 +8660,8 @@
 "batch": "가을2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "690e253b6a6f"
 },
 {
 "style": "27WMPN072",
@@ -7773,7 +8679,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "bea14babe314"
 },
 {
 "style": "27WMPN072",
@@ -7791,7 +8698,8 @@
 "batch": "겨울2",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "bea14babe314"
 },
 {
 "style": "27WXPN070",
@@ -7809,7 +8717,8 @@
 "batch": "겨울3",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "fe395e06b8a4"
 },
 {
 "style": "27XMET070",
@@ -7827,7 +8736,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27XWET070",
@@ -7845,7 +8755,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27XMRT071",
@@ -7863,7 +8774,8 @@
 "batch": "비시즌",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a7ad1f3dd03f"
 },
 {
 "style": "27XMPN071",
@@ -7881,7 +8793,8 @@
 "batch": "비시즌",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c4d167c6253e"
 },
 {
 "style": "27XWRT070",
@@ -7899,7 +8812,8 @@
 "batch": "비시즌",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3b4da24e8887"
 },
 {
 "style": "27XWPN070",
@@ -7917,7 +8831,8 @@
 "batch": "비시즌",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "33d901a3e1f9"
 },
 {
 "style": "27WMSJ070",
@@ -7935,7 +8850,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7a06a62b9ec4"
 },
 {
 "style": "27WMSJ070",
@@ -7953,7 +8869,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7a06a62b9ec4"
 },
 {
 "style": "27WWSJ070",
@@ -7971,7 +8888,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7a06a62b9ec4"
 },
 {
 "style": "27WMSB070",
@@ -7989,7 +8907,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7a06a62b9ec4"
 },
 {
 "style": "27WMSB070",
@@ -8007,7 +8926,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7a06a62b9ec4"
 },
 {
 "style": "27WWSB070",
@@ -8025,13 +8945,14 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "7a06a62b9ec4"
 },
 {
 "style": "27FMPN075",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 가을 코듀라 팬츠#1",
-"en": "\\[China Exclusive\\] Men Autumn Cordura Pants",
+"kr": "[중국단독] 가을 코듀라 팬츠#1",
+"en": "[China Exclusive] Men Autumn Cordura Pants",
 "cat": "Pants",
 "line": "Alpine A",
 "mat": "CORDURA",
@@ -8043,13 +8964,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "aa5c62129382"
 },
 {
 "style": "27FMPN075",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 가을 코듀라 팬츠#1",
-"en": "\\[China Exclusive\\] Men Autumn Cordura Pants",
+"kr": "[중국단독] 가을 코듀라 팬츠#1",
+"en": "[China Exclusive] Men Autumn Cordura Pants",
 "cat": "Pants",
 "line": "Alpine A",
 "mat": "CORDURA",
@@ -8061,13 +8983,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "de8857ad4d4b"
 },
 {
 "style": "27FMPN075",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 가을 코듀라 팬츠#1",
-"en": "\\[China Exclusive\\] Men Autumn Cordura Pants",
+"kr": "[중국단독] 가을 코듀라 팬츠#1",
+"en": "[China Exclusive] Men Autumn Cordura Pants",
 "cat": "Pants",
 "line": "Alpine A",
 "mat": "CORDURA",
@@ -8079,13 +9002,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b501c25a3463"
 },
 {
 "style": "27FWPN075",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 가을 코듀라 팬츠#2",
-"en": "\\[China Exclusive\\] Women Autumn Cordura Pants",
+"kr": "[중국단독] 가을 코듀라 팬츠#2",
+"en": "[China Exclusive] Women Autumn Cordura Pants",
 "cat": "Pants",
 "line": "Alpine A",
 "mat": "CORDURA",
@@ -8097,13 +9021,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ef44c823d0a8"
 },
 {
 "style": "27FWPN075",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 가을 코듀라 팬츠#2",
-"en": "\\[China Exclusive\\] Women Autumn Cordura Pants",
+"kr": "[중국단독] 가을 코듀라 팬츠#2",
+"en": "[China Exclusive] Women Autumn Cordura Pants",
 "cat": "Pants",
 "line": "Alpine A",
 "mat": "CORDURA",
@@ -8115,7 +9040,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e87c83db053d"
 },
 {
 "style": "27FMZT039",
@@ -8133,7 +9059,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "15ccd33e2008"
 },
 {
 "style": "27FMZT039",
@@ -8151,7 +9078,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMZT039",
@@ -8169,13 +9097,14 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5647b992bbf6"
 },
 {
 "style": "27FMZT039",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 베이직 집업 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN BASIC ZIP-UP L/S T-SHIRT",
+"kr": "[중국단독] 베이직 집업 긴팔티#1",
+"en": "[CHINA ONLY] MEN BASIC ZIP-UP L/S T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -8187,7 +9116,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d5511ddb7e94"
 },
 {
 "style": "27FWZT003",
@@ -8205,7 +9135,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "6176de6d7eec"
 },
 {
 "style": "27FWZT003",
@@ -8223,7 +9154,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWZT003",
@@ -8241,7 +9173,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "196b5ef97d59"
 },
 {
 "style": "27FMZT040",
@@ -8259,7 +9192,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c6f58d00daa7"
 },
 {
 "style": "27FMZT040",
@@ -8277,7 +9211,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMZT040",
@@ -8295,7 +9230,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWZT004",
@@ -8313,7 +9249,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "f03ab18717d1"
 },
 {
 "style": "27FWZT004",
@@ -8331,7 +9268,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMKT042",
@@ -8349,7 +9287,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "f42fc87e0a4f"
 },
 {
 "style": "27FMKT042",
@@ -8367,7 +9306,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMKT042",
@@ -8385,7 +9325,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0da383040e38"
 },
 {
 "style": "27FMKT042",
@@ -8403,7 +9344,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0e234a575b76"
 },
 {
 "style": "27FWKT005",
@@ -8421,7 +9363,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "89dbf73ff128"
 },
 {
 "style": "27FWKT005",
@@ -8439,7 +9382,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "148aa6c0b234"
 },
 {
 "style": "27FMRT043",
@@ -8457,7 +9401,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "457be1309565"
 },
 {
 "style": "27FMRT043",
@@ -8475,7 +9420,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ec47ddc82de6"
 },
 {
 "style": "27FMRT043",
@@ -8493,7 +9439,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "16602523404e"
 },
 {
 "style": "27FWRT006",
@@ -8511,7 +9458,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2ddf6f2c0983"
 },
 {
 "style": "27FWRT006",
@@ -8529,7 +9477,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f6a75aaba072"
 },
 {
 "style": "27FWRT006",
@@ -8547,7 +9496,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "812fc4547d9d"
 },
 {
 "style": "27FMRT044",
@@ -8565,7 +9515,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a55fc311289e"
 },
 {
 "style": "27FMRT044",
@@ -8583,7 +9534,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a0cc15894e59"
 },
 {
 "style": "27FMRT044",
@@ -8601,13 +9553,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMRT044",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 그리드 텍스처 라운드 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN GRID TEXTURE ROUND L/S T-SHIRT",
+"kr": "[중국단독] 그리드 텍스처 라운드 긴팔티#1",
+"en": "[CHINA ONLY] MEN GRID TEXTURE ROUND L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Other Line",
 "mat": "",
@@ -8619,7 +9572,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "87db92e72add"
 },
 {
 "style": "27FWRT008",
@@ -8637,7 +9591,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "9db56c0e6115"
 },
 {
 "style": "27FWRT008",
@@ -8655,13 +9610,14 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "b344822a6b80"
 },
 {
 "style": "27FWRT008",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 그리드 텍스처 라운드 긴팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN GRID TEXTURE ROUND L/S T-SHIRT",
+"kr": "[중국단독] 그리드 텍스처 라운드 긴팔티#2",
+"en": "[CHINA ONLY] WOMEN GRID TEXTURE ROUND L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -8673,13 +9629,14 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5468a9b08bc5"
 },
 {
 "style": "27FWRT008",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 그리드 텍스처 라운드 긴팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN GRID TEXTURE ROUND L/S T-SHIRT",
+"kr": "[중국단독] 그리드 텍스처 라운드 긴팔티#2",
+"en": "[CHINA ONLY] WOMEN GRID TEXTURE ROUND L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -8691,7 +9648,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2433c43614a7"
 },
 {
 "style": "27FMHD045",
@@ -8709,7 +9667,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "92cca297443c"
 },
 {
 "style": "27FMHD045",
@@ -8727,7 +9686,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMHD045",
@@ -8745,13 +9705,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5a6cd27acdc5"
 },
 {
 "style": "27FMHD045",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 그리드 텍스처 후드 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN GRID TEXTURE HOODED L/S T-SHIRT",
+"kr": "[중국단독] 그리드 텍스처 후드 긴팔티#1",
+"en": "[CHINA ONLY] MEN GRID TEXTURE HOODED L/S T-SHIRT",
 "cat": "Other Apparel",
 "line": "Other Line",
 "mat": "",
@@ -8763,7 +9724,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ad5d5fd11290"
 },
 {
 "style": "27FWHD009",
@@ -8781,7 +9743,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "44765ff602e0"
 },
 {
 "style": "27FWHD009",
@@ -8799,13 +9762,14 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9d78b9fca70c"
 },
 {
 "style": "27FWHD009",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 그리드 텍스처 후드 긴팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN GRID TEXTURE HOODED L/S T-SHIRT",
+"kr": "[중국단독] 그리드 텍스처 후드 긴팔티#2",
+"en": "[CHINA ONLY] WOMEN GRID TEXTURE HOODED L/S T-SHIRT",
 "cat": "Other Apparel",
 "line": "Alpine A",
 "mat": "",
@@ -8817,7 +9781,8 @@
 "batch": "가을1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b508cfb237db"
 },
 {
 "style": "27WMZT058",
@@ -8835,7 +9800,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "8b4dc2f292c4"
 },
 {
 "style": "27WMZT058",
@@ -8853,7 +9819,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMZT058",
@@ -8871,7 +9838,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMKT060",
@@ -8889,7 +9857,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "2d4c9ef14135"
 },
 {
 "style": "27WMKT060",
@@ -8907,7 +9876,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMKT060",
@@ -8925,13 +9895,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d487e37425f9"
 },
 {
 "style": "27WMKT060",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 양면 기모 카라 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN DOUBLE-SIDED BRUSHED POLO L/S T-SHIRT",
+"kr": "[중국단독] 양면 기모 카라 긴팔티#1",
+"en": "[CHINA ONLY] MEN DOUBLE-SIDED BRUSHED POLO L/S T-SHIRT",
 "cat": "Other Apparel",
 "line": "Alpine A",
 "mat": "",
@@ -8943,13 +9914,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "39336e2b0998"
 },
 {
 "style": "27WMKT060",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 양면 기모 카라 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN DOUBLE-SIDED BRUSHED POLO L/S T-SHIRT",
+"kr": "[중국단독] 양면 기모 카라 긴팔티#1",
+"en": "[CHINA ONLY] MEN DOUBLE-SIDED BRUSHED POLO L/S T-SHIRT",
 "cat": "Other Apparel",
 "line": "Alpine A",
 "mat": "",
@@ -8961,7 +9933,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "b4cc8f787d18"
 },
 {
 "style": "27WWZT017",
@@ -8979,7 +9952,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "e499e1cc072e"
 },
 {
 "style": "27WWZT017",
@@ -8997,7 +9971,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WWZT017",
@@ -9015,7 +9990,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMRT062",
@@ -9033,7 +10009,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8ed856cf834d"
 },
 {
 "style": "27WMRT062",
@@ -9051,7 +10028,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "734b97653fa4"
 },
 {
 "style": "27WWRT018",
@@ -9069,7 +10047,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "36a00eb3c374"
 },
 {
 "style": "27WWRT018",
@@ -9087,7 +10066,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ef19cdb109d2"
 },
 {
 "style": "27WWRT018",
@@ -9105,7 +10085,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "ea330adc6c94"
 },
 {
 "style": "27WMZT059",
@@ -9123,7 +10104,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "406eb34da389"
 },
 {
 "style": "27WMZT059",
@@ -9141,7 +10123,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMRT063",
@@ -9159,7 +10142,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "783a948c7416"
 },
 {
 "style": "27WMRT063",
@@ -9177,7 +10161,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "27e44a839a23"
 },
 {
 "style": "27WWRT019",
@@ -9195,7 +10180,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "46ffe8a3a8d3"
 },
 {
 "style": "27WWRT019",
@@ -9213,7 +10199,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "02cc25176a96"
 },
 {
 "style": "27WUHD020",
@@ -9231,7 +10218,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "5451b29672d4"
 },
 {
 "style": "27WUHD020",
@@ -9249,7 +10237,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "bdc47d0ad90a"
 },
 {
 "style": "27WUHD020",
@@ -9267,7 +10256,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "733eb1324895"
 },
 {
 "style": "27WUHD021",
@@ -9285,7 +10275,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMRT063",
@@ -9303,7 +10294,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c9762f805f2e"
 },
 {
 "style": "27WMRT063",
@@ -9321,13 +10313,14 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27WMZT064",
 "group": "Apparel",
 "kr": "코듀라 핫멜트 집업 긴팔티#1",
-"en": "MER CORDURA HOTMELT POCKET ZIP-UP L/S T-SHIRT",
+"en": "MER CORDURA HOTMELT POCKET  ZIP-UP L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Other Line",
 "mat": "CORDURA",
@@ -9339,7 +10332,8 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "c9762f805f2e"
 },
 {
 "style": "27WMZT064",
@@ -9357,12 +10351,13 @@
 "batch": "겨울1",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FMRT686",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 잠재권축 핫멜트 반팔티#1",
+"kr": "[중국단독] 잠재권축 핫멜트 반팔티#1",
 "en": "MER CORDURA HOTMELT POCKET PULLOVER L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
@@ -9375,13 +10370,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "234fd047c4c4"
 },
 {
 "style": "27FMRT686",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 잠재권축 핫멜트 반팔티#1",
-"en": "\\[CHINA ONLY\\] MEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
+"kr": "[중국단독] 잠재권축 핫멜트 반팔티#1",
+"en": "[CHINA ONLY] MEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9393,13 +10389,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1d1c799d49bf"
 },
 {
 "style": "27FMRT686",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 잠재권축 핫멜트 반팔티#1",
-"en": "\\[CHINA ONLY\\] MEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
+"kr": "[중국단독] 잠재권축 핫멜트 반팔티#1",
+"en": "[CHINA ONLY] MEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9411,13 +10408,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0679f4a3b3fd"
 },
 {
 "style": "27FWRT686",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 잠재권축 핫멜트 반팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
+"kr": "[중국단독] 잠재권축 핫멜트 반팔티#2",
+"en": "[CHINA ONLY] WOMEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9429,13 +10427,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c0e0bd10798b"
 },
 {
 "style": "27FWRT686",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 잠재권축 핫멜트 반팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
+"kr": "[중국단독] 잠재권축 핫멜트 반팔티#2",
+"en": "[CHINA ONLY] WOMEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9447,13 +10446,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWRT686",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 잠재권축 핫멜트 반팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
+"kr": "[중국단독] 잠재권축 핫멜트 반팔티#2",
+"en": "[CHINA ONLY] WOMEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9465,13 +10465,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "No CAD"
+"cad": "No CAD",
+"img": ""
 },
 {
 "style": "27FWRT686",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 잠재권축 핫멜트 반팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
+"kr": "[중국단독] 잠재권축 핫멜트 반팔티#2",
+"en": "[CHINA ONLY] WOMEN LATENT CRIMP YARN HOTMELT ROUND S/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9483,13 +10484,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0936bccbc9a2"
 },
 {
 "style": "27FMZT687",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 집업 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN ZIP-UP L/S T-SHIRT",
+"kr": "[중국단독] 집업 긴팔티#1",
+"en": "[CHINA ONLY] MEN ZIP-UP L/S T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9501,13 +10503,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "88d4c4965b4c"
 },
 {
 "style": "27FMZT687",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 집업 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN ZIP-UP L/S T-SHIRT",
+"kr": "[중국단독] 집업 긴팔티#1",
+"en": "[CHINA ONLY] MEN ZIP-UP L/S T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9519,13 +10522,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "7ad4e2cc5617"
 },
 {
 "style": "27FMZT687",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 집업 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN ZIP-UP L/S T-SHIRT",
+"kr": "[중국단독] 집업 긴팔티#1",
+"en": "[CHINA ONLY] MEN ZIP-UP L/S T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9537,13 +10541,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "56637bd88bb5"
 },
 {
 "style": "27FMZT687",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 집업 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN ZIP-UP L/S T-SHIRT",
+"kr": "[중국단독] 집업 긴팔티#1",
+"en": "[CHINA ONLY] MEN ZIP-UP L/S T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9555,13 +10560,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3ed84d739387"
 },
 {
 "style": "27FWZT687",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 집업 긴팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN ZIP-UP L/S T-SHIRT",
+"kr": "[중국단독] 집업 긴팔티#2",
+"en": "[CHINA ONLY] WOMEN ZIP-UP L/S T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9573,13 +10579,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "68e78125e25c"
 },
 {
 "style": "27FWZT687",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 집업 긴팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN ZIP-UP L/S T-SHIRT",
+"kr": "[중국단독] 집업 긴팔티#2",
+"en": "[CHINA ONLY] WOMEN ZIP-UP L/S T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9591,13 +10598,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "26f4ab39cef5"
 },
 {
 "style": "27FWZT687",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 집업 긴팔티#2",
-"en": "\\[CHINA ONLY\\] WOMEN ZIP-UP L/S T-SHIRT",
+"kr": "[중국단독] 집업 긴팔티#2",
+"en": "[CHINA ONLY] WOMEN ZIP-UP L/S T-SHIRT",
 "cat": "Zip-up T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9609,13 +10617,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "0290a724b63e"
 },
 {
 "style": "27FMKT688",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 울 카라 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN WOOL POLO L/S T-SHIRT",
+"kr": "[중국단독] 울 카라 긴팔티#1",
+"en": "[CHINA ONLY] MEN WOOL POLO L/S T-SHIRT",
 "cat": "Other Apparel",
 "line": "Alpine A",
 "mat": "",
@@ -9627,13 +10636,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "02b9a99137f1"
 },
 {
 "style": "27FMKT688",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 울 카라 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN WOOL POLO L/S T-SHIRT",
+"kr": "[중국단독] 울 카라 긴팔티#1",
+"en": "[CHINA ONLY] MEN WOOL POLO L/S T-SHIRT",
 "cat": "Other Apparel",
 "line": "Alpine A",
 "mat": "",
@@ -9645,13 +10655,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "693c57badb4e"
 },
 {
 "style": "27FMKT688",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 울 카라 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN WOOL POLO L/S T-SHIRT",
+"kr": "[중국단독] 울 카라 긴팔티#1",
+"en": "[CHINA ONLY] MEN WOOL POLO L/S T-SHIRT",
 "cat": "Other Apparel",
 "line": "Alpine A",
 "mat": "",
@@ -9663,13 +10674,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "4871626d57dd"
 },
 {
 "style": "27WMRT689",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 울 라운드 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN WOOL ROUND L/S T-SHIRT",
+"kr": "[중국단독] 울 라운드 긴팔티#1",
+"en": "[CHINA ONLY] MEN WOOL ROUND L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9681,13 +10693,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d1b3cd5d1a86"
 },
 {
 "style": "27WMRT689",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 울 라운드 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN WOOL ROUND L/S T-SHIRT",
+"kr": "[중국단독] 울 라운드 긴팔티#1",
+"en": "[CHINA ONLY] MEN WOOL ROUND L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9699,13 +10712,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "15e2f420d6e8"
 },
 {
 "style": "27WMRT689",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 울 라운드 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN WOOL ROUND L/S T-SHIRT",
+"kr": "[중국단독] 울 라운드 긴팔티#1",
+"en": "[CHINA ONLY] MEN WOOL ROUND L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9717,13 +10731,14 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e39332041e6f"
 },
 {
 "style": "27WMRT689",
 "group": "Apparel",
-"kr": "\\[중국단독\\] 울 라운드 긴팔티#1",
-"en": "\\[CHINA ONLY\\] MEN WOOL ROUND L/S T-SHIRT",
+"kr": "[중국단독] 울 라운드 긴팔티#1",
+"en": "[CHINA ONLY] MEN WOOL ROUND L/S T-SHIRT",
 "cat": "Crew-neck T-Shirts",
 "line": "Alpine A",
 "mat": "",
@@ -9735,7 +10750,8 @@
 "batch": "",
 "origin": "",
 "comp": "",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "22bb1e1d10a5"
 },
 {
 "style": "27FWKS02",
@@ -9752,8 +10768,9 @@
 "krw": "219000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 100 % Lining : Polyester 100 %",
-"cad": "High Resolution CAD"
+"comp": "Shell : Nylon 100 %\nLining :  Polyester 100 %",
+"cad": "High Resolution CAD",
+"img": "e29629e32c6b"
 },
 {
 "style": "27FWKS02",
@@ -9770,8 +10787,9 @@
 "krw": "219000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 100 % Lining : Polyester 100 %",
-"cad": "High Resolution CAD"
+"comp": "Shell : Nylon 100 %\nLining :  Polyester 100 %",
+"cad": "High Resolution CAD",
+"img": "491f1b92e4a1"
 },
 {
 "style": "27FWKS03",
@@ -9788,8 +10806,9 @@
 "krw": "469000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 100 % Lining : Polyester 100 %",
-"cad": "High Resolution CAD"
+"comp": "Shell : Nylon 100 %\nLining :  Polyester 100 %",
+"cad": "High Resolution CAD",
+"img": "ea9dfc7ae30f"
 },
 {
 "style": "27FWKS05",
@@ -9806,8 +10825,9 @@
 "krw": "39000",
 "batch": "",
 "origin": "",
-"comp": "Shell 1 : Nylon 79.5 % / Polyester 20.5 % Shell 2 : Nylon 100 % Lining : Polyester 100 %",
-"cad": "High Resolution CAD"
+"comp": "Shell 1 : Nylon 79.5 % / Polyester 20.5 %\nShell 2 : Nylon 100 %\nLining : Polyester 100 %",
+"cad": "High Resolution CAD",
+"img": "7bc37dedb560"
 },
 {
 "style": "27FWKS05-1",
@@ -9824,8 +10844,9 @@
 "krw": "49000",
 "batch": "",
 "origin": "",
-"comp": "Shell 1 : Nylon 79.5 % / Polyester 20.5 % Shell 2 : Nylon 100 % Lining : Polyester 100 %",
-"cad": "Workbook CAD"
+"comp": "Shell 1 : Nylon 79.5 % / Polyester 20.5 %\nShell 2 : Nylon 100 %\nLining : Polyester 100 %",
+"cad": "Workbook CAD",
+"img": "f3f541f6d4cc"
 },
 {
 "style": "27FWKS06",
@@ -9843,7 +10864,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 90 % / Polyurethane 10 %",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2cbd7b53fc1d"
 },
 {
 "style": "27FWKS04",
@@ -9860,8 +10882,9 @@
 "krw": "799000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Polyester 71 % / Dyneema® 29% Lining : Nylon 100 %",
-"cad": "High Resolution CAD"
+"comp": "Shell : Polyester 71 % /  Dyneema® 29%\nLining :  Nylon 100 %",
+"cad": "High Resolution CAD",
+"img": "b9bafce83a5f"
 },
 {
 "style": "27FWKS12",
@@ -9878,8 +10901,9 @@
 "krw": "259000",
 "batch": "",
 "origin": "",
-"comp": "Shell 1 : Nylon 100 % Shell 2 : Nylon 100 % Lining : Nylon 100 %",
-"cad": "High Resolution CAD"
+"comp": "Shell 1 : Nylon 100 %\nShell 2 : Nylon 100 %\nLining :  Nylon 100 %",
+"cad": "High Resolution CAD",
+"img": "ee428dbf93ff"
 },
 {
 "style": "27FWXX17",
@@ -9897,7 +10921,8 @@
 "batch": "",
 "origin": "",
 "comp": "Nylon 100 %",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3b54b6a7adac"
 },
 {
 "style": "27FWXX17",
@@ -9915,7 +10940,8 @@
 "batch": "",
 "origin": "",
 "comp": "Nylon 100 %",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3c458f0fb2a5"
 },
 {
 "style": "27FWXX19",
@@ -9933,7 +10959,8 @@
 "batch": "",
 "origin": "",
 "comp": "Mylon 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "64e1157214bb"
 },
 {
 "style": "27FWXX19",
@@ -9951,7 +10978,8 @@
 "batch": "",
 "origin": "",
 "comp": "Mylon 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c796a0efe45b"
 },
 {
 "style": "27FWGV03",
@@ -9969,7 +10997,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyuretane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9e7575ac238b"
 },
 {
 "style": "27FWGV03",
@@ -9987,7 +11016,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyuretane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "198c9a0623b5"
 },
 {
 "style": "27FWGV03",
@@ -10005,7 +11035,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyuretane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "212e59543211"
 },
 {
 "style": "27FWGV02",
@@ -10023,7 +11054,8 @@
 "batch": "",
 "origin": "",
 "comp": "Nylon 40% / Polyester 50% / Polyurethane 10%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e668df1afdc0"
 },
 {
 "style": "27FWGV02",
@@ -10041,7 +11073,8 @@
 "batch": "",
 "origin": "",
 "comp": "Nylon 40% / Polyester 50% / Polyurethane 10%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "122c259916d9"
 },
 {
 "style": "27FWGV02",
@@ -10059,7 +11092,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 95%, Polyurethane 5%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3afd95892deb"
 },
 {
 "style": "27FWGV05",
@@ -10077,7 +11111,8 @@
 "batch": "",
 "origin": "",
 "comp": "Shell : Nylon 40% / Polyester 50% / Polyurethane 10% Polyurethane 9% / Lining : Polyester 100",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "758a2c3f4cf0"
 },
 {
 "style": "27FWGV05",
@@ -10095,7 +11130,8 @@
 "batch": "",
 "origin": "",
 "comp": "Shell : Nylon 40% / Polyester 50% / Polyurethane 10% Polyurethane 9% / Lining : Polyester 100",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "cc4a83c21278"
 },
 {
 "style": "27FWGV083",
@@ -10112,8 +11148,9 @@
 "krw": "99000",
 "batch": "",
 "origin": "",
-"comp": "Shell 1 : Nylon 92% / Polyurethane 8% Shell 2 : Polyester 52% / Nylon 39% / Polyurethane 9% Contrast : Goat Leather",
-"cad": "High Resolution CAD"
+"comp": "Shell 1 : Nylon 92% / Polyurethane 8%\nShell 2 : Polyester 52% / Nylon 39% / Polyurethane 9%\nContrast : Goat Leather",
+"cad": "High Resolution CAD",
+"img": "17b14bcaec18"
 },
 {
 "style": "27FWGV08",
@@ -10130,8 +11167,9 @@
 "krw": "92000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Polyester 100% / Lining : Polyester 100% Filling: Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell : Polyester 100% / Lining : Polyester 100%\nFilling: Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "d78359681f98"
 },
 {
 "style": "27FWGV08",
@@ -10148,8 +11186,9 @@
 "krw": "92000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Polyester 100% / Lining : Polyester 100% Filling: Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell : Polyester 100% / Lining : Polyester 100%\nFilling: Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "b497deda2277"
 },
 {
 "style": "27FWGV06",
@@ -10167,7 +11206,8 @@
 "batch": "",
 "origin": "",
 "comp": "Shell: Polyester 100% / Thumb: Polyurethane 100% / Palm: Goat Leather / Lining: Polyester 100% / Filling: Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8c3b6be9233e"
 },
 {
 "style": "27FWGV06",
@@ -10185,7 +11225,8 @@
 "batch": "",
 "origin": "",
 "comp": "Shell: Polyester 100% / Thumb: Polyurethane 100% / Palm: Goat Leather / Lining: Polyester 100% / Filling: Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8b619e842a76"
 },
 {
 "style": "27FWGV07",
@@ -10202,8 +11243,9 @@
 "krw": "199000",
 "batch": "",
 "origin": "",
-"comp": "Shell: Polyester 100% / Thumb: Polyurethane 100% / Palm: Goat Leather / Lining: Polyester 100% / Filling: Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell:  Polyester 100% / Thumb: Polyurethane 100% / Palm: Goat Leather / Lining: Polyester 100% / Filling: Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "bf3015cab63c"
 },
 {
 "style": "27FWGV07",
@@ -10220,8 +11262,9 @@
 "krw": "199000",
 "batch": "",
 "origin": "",
-"comp": "Shell: Polyester 100% / Thumb: Polyurethane 100% / Palm: Goat Leather / Lining: Polyester 100% / Filling: Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell:  Polyester 100% / Thumb: Polyurethane 100% / Palm: Goat Leather / Lining: Polyester 100% / Filling: Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "f5a15ef598a5"
 },
 {
 "style": "27FWXX12",
@@ -10238,8 +11281,9 @@
 "krw": "99000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 85 % / Polyurethane 15% Lining : Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell : Nylon 85 % / Polyurethane 15%\nLining :  Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "2423a88dbb4d"
 },
 {
 "style": "27FWXX12",
@@ -10256,8 +11300,9 @@
 "krw": "99000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 85 % / Polyurethane 15% Lining : Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell : Nylon 85 % / Polyurethane 15%\nLining :  Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "b1e26de4c7f9"
 },
 {
 "style": "27FWXX04",
@@ -10275,7 +11320,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyuretane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "97469793c1b6"
 },
 {
 "style": "27FWXX04",
@@ -10293,7 +11339,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyuretane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2ed9799074e9"
 },
 {
 "style": "27FWXX03",
@@ -10311,7 +11358,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "f18423f343f3"
 },
 {
 "style": "27FWXX03",
@@ -10329,7 +11377,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "9bc103d07427"
 },
 {
 "style": "27FWXX15",
@@ -10346,8 +11395,9 @@
 "krw": "69000",
 "batch": "",
 "origin": "",
-"comp": "Sell 1: Nylon 100% Sell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
-"cad": "High Resolution CAD"
+"comp": "Sell 1: Nylon 100%\nSell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
+"cad": "High Resolution CAD",
+"img": "c8b9870af365"
 },
 {
 "style": "27FWXX15",
@@ -10364,8 +11414,9 @@
 "krw": "69000",
 "batch": "",
 "origin": "",
-"comp": "Sell 1: Nylon 100% Sell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
-"cad": "Workbook CAD"
+"comp": "Sell 1: Nylon 100%\nSell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
+"cad": "Workbook CAD",
+"img": "b4937712c604"
 },
 {
 "style": "27FWXX11",
@@ -10383,7 +11434,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "1391747d8d8c"
 },
 {
 "style": "27FWXX11",
@@ -10401,7 +11453,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "fe970cf48607"
 },
 {
 "style": "27FWXX12-1",
@@ -10418,8 +11471,9 @@
 "krw": "72000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 85 % / Polyurethane 15% Lining : Polyester 100%",
-"cad": "Workbook CAD"
+"comp": "Shell : Nylon 85 % / Polyurethane 15%\nLining :  Polyester 100%",
+"cad": "Workbook CAD",
+"img": "7aacf03c1663"
 },
 {
 "style": "27FWXX12-1",
@@ -10436,8 +11490,9 @@
 "krw": "72000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 85 % / Polyurethane 15% Lining : Polyester 100%",
-"cad": "Workbook CAD"
+"comp": "Shell : Nylon 85 % / Polyurethane 15%\nLining :  Polyester 100%",
+"cad": "Workbook CAD",
+"img": "7aacf03c1663"
 },
 {
 "style": "27FWXX07",
@@ -10455,7 +11510,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyurethane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "90bb9ff0acf6"
 },
 {
 "style": "27FWXX07",
@@ -10473,7 +11529,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyurethane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3b2023de71d2"
 },
 {
 "style": "27FWXX06",
@@ -10491,7 +11548,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 53%, Nylon 38%, Polyurethane 9%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d9d228c15049"
 },
 {
 "style": "27FWXX06",
@@ -10509,7 +11567,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 95%, Polyurethane 5%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "054de6985457"
 },
 {
 "style": "27FWXX10",
@@ -10527,7 +11586,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyuretane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "174b59842b12"
 },
 {
 "style": "27FWXX10",
@@ -10545,7 +11605,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyuretane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "c25937599b00"
 },
 {
 "style": "27FWXX13",
@@ -10563,7 +11624,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 53%, Nylon 38%, Polyurethane 9%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3bf5a1c1aa3b"
 },
 {
 "style": "27FWXX13",
@@ -10581,7 +11643,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 95%, Polyurethane 5%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3b67d9420d4d"
 },
 {
 "style": "27FWXX14",
@@ -10599,7 +11662,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 44%, Acrylic 26%, Nylon 21%, Wool 9%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "00d7beeeebe7"
 },
 {
 "style": "27FWXX14",
@@ -10617,7 +11681,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 44%, Acrylic 26%, Nylon 21%, Wool 9%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "e031786c6ba7"
 },
 {
 "style": "27FWXX01",
@@ -10635,7 +11700,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "4f2779dfadea"
 },
 {
 "style": "27FWHT06",
@@ -10653,7 +11719,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyurethane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "24c66a2d3589"
 },
 {
 "style": "27FWHT06",
@@ -10671,7 +11738,8 @@
 "batch": "",
 "origin": "",
 "comp": "Merino Wool 75%, Nylon 21%, Polyurethane 4%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a4ea9569eafc"
 },
 {
 "style": "27FWHT07",
@@ -10688,8 +11756,9 @@
 "krw": "79000",
 "batch": "",
 "origin": "",
-"comp": "Sell 1: Nylon 92%, Span 8% Sell 2: Merino Wool 75%, Nylon 21%, Polyurethane 4%",
-"cad": "High Resolution CAD"
+"comp": "Sell 1: Nylon 92%, Span 8%\nSell 2: Merino Wool 75%, Nylon 21%, Polyurethane 4%",
+"cad": "High Resolution CAD",
+"img": "741cf45e57b2"
 },
 {
 "style": "27FWHT07",
@@ -10706,8 +11775,9 @@
 "krw": "79000",
 "batch": "",
 "origin": "",
-"comp": "Sell 1: Nylon 92%, Span 8% Sell 2: Merino Wool 75%, Nylon 21%, Polyurethane 4%",
-"cad": "High Resolution CAD"
+"comp": "Sell 1: Nylon 92%, Span 8%\nSell 2: Merino Wool 75%, Nylon 21%, Polyurethane 4%",
+"cad": "High Resolution CAD",
+"img": "84e5c087e98d"
 },
 {
 "style": "27FWHT01",
@@ -10725,7 +11795,8 @@
 "batch": "",
 "origin": "",
 "comp": "Cotton 60%, Nylon 30%, Wool 10%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "3dbaea787793"
 },
 {
 "style": "27FWHT01",
@@ -10743,7 +11814,8 @@
 "batch": "",
 "origin": "",
 "comp": "Cotton 60%, Nylon 30%, Wool 10%",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "a89165282103"
 },
 {
 "style": "27FWHT01",
@@ -10761,7 +11833,8 @@
 "batch": "",
 "origin": "",
 "comp": "Cotton 60%, Nylon 30%, Wool 10%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2fbf6536237c"
 },
 {
 "style": "27FWHT13",
@@ -10779,7 +11852,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 40%, Wool 20%, Nylon 20%, Acrylic 20%",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "cb72db8d85a1"
 },
 {
 "style": "27FWHT13",
@@ -10797,7 +11871,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 40%, Wool 20%, Nylon 20%, Acrylic 20%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "25204458d444"
 },
 {
 "style": "27FWHT13",
@@ -10815,7 +11890,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 40%, Wool 20%, Nylon 20%, Acrylic 20%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "95c34205ab4b"
 },
 {
 "style": "27FWHT05",
@@ -10833,7 +11909,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 44%, Acrylic 26%, Nylon 21%, Wool 9%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "73ce02a78d5a"
 },
 {
 "style": "27FWHT05",
@@ -10851,7 +11928,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 44%, Acrylic 26%, Nylon 21%, Wool 9%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "d3b5e41b8f24"
 },
 {
 "style": "27FWHT05",
@@ -10869,12 +11947,13 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 44%, Acrylic 26%, Nylon 21%, Wool 9%",
-"cad": "Workbook CAD"
+"cad": "Workbook CAD",
+"img": "971ff5498b85"
 },
 {
 "style": "27FWHT16-1",
 "group": "Accessories",
-"kr": "파워스트레치 이어플랩비니",
+"kr": "파워스트레치\n이어플랩비니",
 "en": "POWER STRETCH EARFLAP BEANIE",
 "cat": "Caps & Hats",
 "line": "BP",
@@ -10887,12 +11966,13 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 53%, Nylon 38%, Polyurethane 9%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a987b1f59fa0"
 },
 {
 "style": "27FWHT16-1",
 "group": "Accessories",
-"kr": "파워스트레치 이어플랩비니",
+"kr": "파워스트레치\n이어플랩비니",
 "en": "POWER STRETCH EARFLAP BEANIE",
 "cat": "Caps & Hats",
 "line": "BP",
@@ -10905,7 +11985,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 95%, Polyurethane 5%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a36c47b342f6"
 },
 {
 "style": "27FWHT02",
@@ -10923,7 +12004,8 @@
 "batch": "",
 "origin": "",
 "comp": "Cotton 50%, Modal 50%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "806fe68a221b"
 },
 {
 "style": "27FWHT02",
@@ -10941,7 +12023,8 @@
 "batch": "",
 "origin": "",
 "comp": "Cotton 50%, Modal 50%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "2df987d0c444"
 },
 {
 "style": "27FWHT02-1",
@@ -10959,7 +12042,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "bacab515546c"
 },
 {
 "style": "27FWHT02-1",
@@ -10977,7 +12061,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "8163bdf421d0"
 },
 {
 "style": "27FWHT27",
@@ -10994,8 +12079,9 @@
 "krw": "99000",
 "batch": "",
 "origin": "",
-"comp": "Sell 1: Nylon 100% Sell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
-"cad": "High Resolution CAD"
+"comp": "Sell 1: Nylon 100%\nSell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
+"cad": "High Resolution CAD",
+"img": "89062907d66f"
 },
 {
 "style": "27FWHT27",
@@ -11012,8 +12098,9 @@
 "krw": "99000",
 "batch": "",
 "origin": "",
-"comp": "Sell 1: Nylon 100% Sell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
-"cad": "High Resolution CAD"
+"comp": "Sell 1: Nylon 100%\nSell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
+"cad": "High Resolution CAD",
+"img": "8a7097a46ca3"
 },
 {
 "style": "27FWHT27",
@@ -11030,8 +12117,9 @@
 "krw": "99000",
 "batch": "",
 "origin": "",
-"comp": "Sell 1: Nylon 100% Sell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
-"cad": "Workbook CAD"
+"comp": "Sell 1: Nylon 100%\nSell 2: CH 40%, Polyester 43%, Tencell 12%, Rayon 3%, Span 2%",
+"cad": "Workbook CAD",
+"img": "6c5bbe512e62"
 },
 {
 "style": "27FWHT08",
@@ -11049,7 +12137,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "962089f8c5f1"
 },
 {
 "style": "27FWHT08",
@@ -11067,7 +12156,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "65daabc1e24f"
 },
 {
 "style": "27FWHT17",
@@ -11084,8 +12174,9 @@
 "krw": "129000",
 "batch": "",
 "origin": "",
-"comp": "Sell: Polyester 100% Lining: Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Sell: Polyester 100%\nLining: Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "15307bf63afe"
 },
 {
 "style": "27FWHT19",
@@ -11102,8 +12193,9 @@
 "krw": "89000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 85 % / Polyurethane 15% Lining : Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell : Nylon 85 % / Polyurethane 15%\nLining :  Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "14f42767e036"
 },
 {
 "style": "27FWHT19",
@@ -11120,8 +12212,9 @@
 "krw": "89000",
 "batch": "",
 "origin": "",
-"comp": "Shell : Nylon 85 % / Polyurethane 15% Lining : Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell : Nylon 85 % / Polyurethane 15%\nLining :  Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "951728379b42"
 },
 {
 "style": "27FWSC01",
@@ -11138,8 +12231,9 @@
 "krw": "20000",
 "batch": "",
 "origin": "",
-"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% / Polyurethane 4 %",
-"cad": "High Resolution CAD"
+"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% /  Polyurethane 4 %",
+"cad": "High Resolution CAD",
+"img": "7f6ed5e5f64b"
 },
 {
 "style": "27FWSC01",
@@ -11156,8 +12250,9 @@
 "krw": "20000",
 "batch": "",
 "origin": "",
-"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% / Polyurethane 4 %",
-"cad": "High Resolution CAD"
+"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% /  Polyurethane 4 %",
+"cad": "High Resolution CAD",
+"img": "be0c09176eb5"
 },
 {
 "style": "27FWSC01",
@@ -11174,8 +12269,9 @@
 "krw": "20000",
 "batch": "",
 "origin": "",
-"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% / Polyurethane 4 %",
-"cad": "High Resolution CAD"
+"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% /  Polyurethane 4 %",
+"cad": "High Resolution CAD",
+"img": "0a833af925da"
 },
 {
 "style": "27FWSC02",
@@ -11192,8 +12288,9 @@
 "krw": "29000",
 "batch": "",
 "origin": "",
-"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% / Polyurethane 4 %",
-"cad": "High Resolution CAD"
+"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% /  Polyurethane 4 %",
+"cad": "High Resolution CAD",
+"img": "108df7677a04"
 },
 {
 "style": "27FWSC02",
@@ -11210,8 +12307,9 @@
 "krw": "29000",
 "batch": "",
 "origin": "",
-"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% / Polyurethane 4 %",
-"cad": "High Resolution CAD"
+"comp": "Acrylic 46 % / Polyester 36 % / Nylon 6 % / Wool 6% /  Polyurethane 4 %",
+"cad": "High Resolution CAD",
+"img": "f22482c9f10d"
 },
 {
 "style": "27FWSC03",
@@ -11228,8 +12326,9 @@
 "krw": "25000",
 "batch": "",
 "origin": "",
-"comp": "Polyester 97% / Polyurethane 3%",
-"cad": "Workbook CAD"
+"comp": "Polyester 97% /  Polyurethane 3%",
+"cad": "Workbook CAD",
+"img": "50586a4b5c85"
 },
 {
 "style": "27FWSC03",
@@ -11246,8 +12345,9 @@
 "krw": "25000",
 "batch": "",
 "origin": "",
-"comp": "Polyester 97% / Polyurethane 3%",
-"cad": "High Resolution CAD"
+"comp": "Polyester 97% /  Polyurethane 3%",
+"cad": "High Resolution CAD",
+"img": "926129cbd9df"
 },
 {
 "style": "27FWSC03",
@@ -11264,8 +12364,9 @@
 "krw": "25000",
 "batch": "",
 "origin": "",
-"comp": "Polyester 97% / Polyurethane 3%",
-"cad": "High Resolution CAD"
+"comp": "Polyester 97% /  Polyurethane 3%",
+"cad": "High Resolution CAD",
+"img": "adb0c5dae056"
 },
 {
 "style": "27FWSC04",
@@ -11282,8 +12383,9 @@
 "krw": "19000",
 "batch": "2027-01-30",
 "origin": "",
-"comp": "Cotton 70% / Polyester 27% / Polyurethane 3%",
-"cad": "High Resolution CAD"
+"comp": "Cotton 70% / Polyester 27% /  Polyurethane 3%",
+"cad": "High Resolution CAD",
+"img": "5d7820e07aa2"
 },
 {
 "style": "27FWSC04",
@@ -11300,8 +12402,9 @@
 "krw": "19000",
 "batch": "2027-01-30",
 "origin": "",
-"comp": "Cotton 70% / Polyester 27% / Polyurethane 3%",
-"cad": "High Resolution CAD"
+"comp": "Cotton 70% / Polyester 27% /  Polyurethane 3%",
+"cad": "High Resolution CAD",
+"img": "e7ca6029a313"
 },
 {
 "style": "27FWXX93",
@@ -11319,7 +12422,8 @@
 "batch": "",
 "origin": "",
 "comp": "Polyester 100%",
-"cad": "High Resolution CAD"
+"cad": "High Resolution CAD",
+"img": "a3b1150a087d"
 },
 {
 "style": "27FWXX94",
@@ -11336,8 +12440,9 @@
 "krw": "92000",
 "batch": "",
 "origin": "",
-"comp": "Shell 1 : Nylon 100 % Shell 2: Nylon 66% / Polyethylene 22% / Polyurethane 12% Lining : Polyester 100%",
-"cad": "High Resolution CAD"
+"comp": "Shell 1 : Nylon 100 % \nShell 2: Nylon 66% / Polyethylene 22% / Polyurethane 12%\nLining :  Polyester 100%",
+"cad": "High Resolution CAD",
+"img": "99523ceeea6c"
 },
 {
 "style": "CREST GTX",
@@ -11354,8 +12459,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Leather, Material 2 - 20% Synthetic Rubber \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Leather, Material 2 - 20% Synthetic Rubber\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "fb79e55913d8"
 },
 {
 "style": "CREST GTX",
@@ -11372,8 +12478,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Leather, Material 2 - 20% Synthetic Rubber \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Leather, Material 2 - 20% Synthetic Rubber\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "a19db0f75938"
 },
 {
 "style": "CREST GTX",
@@ -11390,8 +12497,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Leather, Material 2 - 20% Synthetic Rubber \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Leather, Material 2 - 20% Synthetic Rubber\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "e7b032557578"
 },
 {
 "style": "TRAIL- X FLIGHT TRAX",
@@ -11408,8 +12516,9 @@
 "krw": "259000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 100% Polyester \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 100% Polyester\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "26cd3cdfc653"
 },
 {
 "style": "TRAIL- X FLIGHT TRAX",
@@ -11426,8 +12535,9 @@
 "krw": "259000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 100% Polyester \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 100% Polyester\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "3f773f3a7532"
 },
 {
 "style": "TRAIL- X FLIGHT TRAX",
@@ -11444,8 +12554,9 @@
 "krw": "259000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 100% Polyester \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 100% Polyester\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "9f95812ee191"
 },
 {
 "style": "TRAIL-X SKY 2",
@@ -11462,8 +12573,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 85% Polyester, Material 2 - 15% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 85% Polyester, Material 2 - 15% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "28a6dfce332d"
 },
 {
 "style": "TRAIL-X SKY 2",
@@ -11480,8 +12592,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 85% Polyester, Material 2 - 15% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 85% Polyester, Material 2 - 15% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "fa1fe727dc36"
 },
 {
 "style": "TRAIL-X CROSS 02 D GTX",
@@ -11498,8 +12611,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film) \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film)\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "d094caac7853"
 },
 {
 "style": "TRAIL-X CROSS 02 D GTX",
@@ -11516,8 +12630,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film) \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film)\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "aa5a0257e5f0"
 },
 {
 "style": "TRAIL-X CROSS 02 D GTX",
@@ -11534,8 +12649,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film) \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film)\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "e816e6024e38"
 },
 {
 "style": "EXUM TR GTX",
@@ -11552,8 +12668,9 @@
 "krw": "319000",
 "batch": "",
 "origin": "Vietnam",
-"comp": "\\[UPPER\\] Material 1 - 65% Polyester, Material 2 - 35% TPU \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 65% Polyester, Material 2 - 35% TPU\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "ef6aed85f22c"
 },
 {
 "style": "EXUM TR GTX",
@@ -11570,8 +12687,9 @@
 "krw": "319000",
 "batch": "",
 "origin": "Vietnam",
-"comp": "\\[UPPER\\] Material 1 - 65% Polyester, Material 2 - 35% TPU \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 65% Polyester, Material 2 - 35% TPU\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "0ec04c4615ae"
 },
 {
 "style": "EXUM TR GTX",
@@ -11588,8 +12706,9 @@
 "krw": "319000",
 "batch": "2027-01-25",
 "origin": "Vietnam",
-"comp": "\\[UPPER\\] Material 1 - 65% Polyester, Material 2 - 35% TPU \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 65% Polyester, Material 2 - 35% TPU\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "30484f944ce3"
 },
 {
 "style": "EXUM TR LOW GTX",
@@ -11606,8 +12725,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "Vietnam",
-"comp": "\\[UPPER\\] Material 1 - 65% Polyester, Material 2 - 35% TPU \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 65% Polyester, Material 2 - 35% TPU\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "16d48ad081be"
 },
 {
 "style": "EXUM TR LOW GTX",
@@ -11624,8 +12744,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "Vietnam",
-"comp": "\\[UPPER\\] Material 1 - 65% Polyester, Material 2 - 35% TPU \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 65% Polyester, Material 2 - 35% TPU\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "f71b93b7cce3"
 },
 {
 "style": "EXUM TR LOW GTX",
@@ -11642,8 +12763,9 @@
 "krw": "299000",
 "batch": "",
 "origin": "Vietnam",
-"comp": "\\[UPPER\\] Material 1 - 65% Polyester, Material 2 - 35% TPU \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 65% Polyester, Material 2 - 35% TPU\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "a10055add102"
 },
 {
 "style": "343 NOVA STEP D GTX",
@@ -11660,8 +12782,9 @@
 "krw": "269000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film) \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film)\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "7ab7957059b4"
 },
 {
 "style": "343 NOVA STEP D GTX",
@@ -11678,8 +12801,9 @@
 "krw": "269000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film) \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 70% Polyester, Material 2 - 30% Polyurethane(TPU Film)\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "621196a62340"
 },
 {
 "style": "LOAF RIDGE GTX",
@@ -11696,8 +12820,9 @@
 "krw": "249000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Polyester, Material 2 - 20% Synthetic Rubber \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Polyester, Material 2 - 20% Synthetic Rubber\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "0bf2504d99c4"
 },
 {
 "style": "LOAF RIDGE GTX",
@@ -11714,8 +12839,9 @@
 "krw": "249000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Polyester, Material 2 - 20% Synthetic Rubber \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Polyester, Material 2 - 20% Synthetic Rubber\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "1ca8c5e3f14d"
 },
 {
 "style": "LOAF RIDGE GTX",
@@ -11732,8 +12858,9 @@
 "krw": "249000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Polyester, Material 2 - 20% Synthetic Rubber \\[LINING\\] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester) \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Polyester, Material 2 - 20% Synthetic Rubber\n[LINING] 70% Gore-tex(Nylon), 30% Gore-tex(Polyester)\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "44c88545c8e3"
 },
 {
 "style": "LOAF SLIP ON",
@@ -11750,8 +12877,9 @@
 "krw": "219000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 75% Polyester, Material 2 - 15% Synthetic Rubber, Material 3 - 10% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 75% Polyester, Material 2 - 15% Synthetic Rubber, Material 3 - 10% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "551cd1107c46"
 },
 {
 "style": "LOAF SLIP ON",
@@ -11768,8 +12896,9 @@
 "krw": "219000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 75% Polyester, Material 2 - 15% Synthetic Rubber, Material 3 - 10% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 75% Polyester, Material 2 - 15% Synthetic Rubber, Material 3 - 10% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "0f05e50d1fce"
 },
 {
 "style": "LOAF SLIP ON",
@@ -11786,8 +12915,9 @@
 "krw": "219000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 75% Polyester, Material 2 - 15% Synthetic Rubber, Material 3 - 10% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 75% Polyester, Material 2 - 15% Synthetic Rubber, Material 3 - 10% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "695a8ff2e938"
 },
 {
 "style": "STONE EMBER MULE",
@@ -11804,8 +12934,9 @@
 "krw": "119000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Polyester, Material 2 - 20% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Polyester,  Material 2 - 20% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "db25240b27d5"
 },
 {
 "style": "STONE EMBER MULE",
@@ -11822,8 +12953,9 @@
 "krw": "119000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Polyester, Material 2 - 20% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Polyester,  Material 2 - 20% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "a7c785d9b02c"
 },
 {
 "style": "STONE EMBER MULE",
@@ -11840,8 +12972,9 @@
 "krw": "119000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Polyester, Material 2 - 20% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Polyester,  Material 2 - 20% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "212169397c68"
 },
 {
 "style": "STONE EMBER MULE",
@@ -11858,8 +12991,9 @@
 "krw": "119000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Polyester, Material 2 - 20% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Polyester,  Material 2 - 20% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "229a4351066e"
 },
 {
 "style": "STONE EMBER MULE",
@@ -11876,7 +13010,8 @@
 "krw": "119000",
 "batch": "",
 "origin": "",
-"comp": "\\[UPPER\\] Material 1 - 80% Polyester, Material 2 - 20% Spandex \\[LINING\\] 100% Polyester \\[SOLE\\] Phylon, Synthetic Rubber",
-"cad": "High Resolution CAD"
+"comp": "[UPPER] Material 1 - 80% Polyester,  Material 2 - 20% Spandex\n[LINING] 100% Polyester\n[SOLE] Phylon, Synthetic Rubber",
+"cad": "High Resolution CAD",
+"img": "8f3202ba3b2b"
 }
 ]
