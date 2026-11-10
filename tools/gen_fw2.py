@@ -7,7 +7,9 @@ from gen2 import zh_color, twd, szkey, SZLABEL, FX
 out=sys.argv[1]
 SRC=json.load(open(HERE+'/fw2_src.json'))          # [{style,group,kr,en,cat,line,mat,gen,cc,color,size,krw,batch,origin,comp,cad}]
 OLD=json.load(open(HERE+'/fw_old_items.json'))     # 2026/10 版 150 筆（中文品名、說明、系列、CAD 對應）
-SAMPLE=set(json.load(open(HERE+'/fw_tagon_styles.json')))  # 中國 TAG-ON 清單上的款號＝有寄樣品
+SAMPLE=set(json.load(open(HERE+'/fw_tagon_styles.json')))
+TAGIMG=json.load(open(HERE+'/fw_tagon_img.json'))   # 原廠 RAWDATA 沒圖的款色，用中國 TAG-ON 清單上的圖補
+_nk=lambda x:re.sub(r'[^A-Z0-9]','',x.upper())  # 中國 TAG-ON 清單上的款號＝有寄樣品
 oz={o['style']:o for o in OLD}
 EXTRA={'L/SILVER':'淺銀','COBALT BLUE':'鈷藍','FOG':'霧灰綠','MUSTARD':'芥末黃','URBAN BLUE':'都會藍','GRAPE FRUIT':'葡萄柚粉','GRAPEFRUIT':'葡萄柚粉','L/GRAY':'淺灰','D/GRAY':'深灰','M/GRAY':'中灰','M.GRAY':'中灰','K/GRAY':'卡其灰','B/CHOCO':'巧克力','L/PURPLE':'淺紫','V/NAVY':'復古海軍藍','TEAL NAVY':'藍綠海軍','FRENCH GRAY':'法式灰','B/ROSE':'磚玫瑰','BLUE DEPTHS':'深海藍','CLAY':'陶土','ACID YELLOW':'螢光黃','DUSTY PINK':'霧粉','BITTER CHOCOLATE':'苦巧克力','RED BROWN':'紅棕','D/BROWN':'深棕','SAND':'沙','VIOLET':'紫羅蘭','MIX':'混色','D.NAVY':'深海軍藍','D/NAVY':'深海軍藍','B/CHARCOAL':'黑炭灰','L/BEIGE':'淺米','D/KHAKI':'深卡其','L/KHAKI':'淺卡其','OLIVE':'橄欖綠','WINE':'酒紅','CREAM':'奶油白','L/PINK':'淺粉','D/GREEN':'深綠','L/GREEN':'淺綠','LIME OLIVE':'萊姆橄欖','OLIVE GREEN':'橄欖綠','BONE':'骨白','DUSTY IVORY':'霧象牙白','TBD':'顏色待原廠提供','P.BLUE':'粉藍','BEIGE BROWN':'米棕','CRAPE FRUIT':'葡萄柚粉','GRAYISH VIOLET':'灰紫','MELANGE L/GRAY':'麻花淺灰','COLOUR PENDING':'顏色待原廠提供','COLOR PENDING':'顏色待原廠提供'}
 def zc(c):
@@ -129,8 +131,8 @@ for r in SRC:
     tm=tw_month(r['batch'])
     launch=f'{tm[0]}/{tm[1]:02d}' if tm else ''
     note=[]
-    if base in SAMPLE or key in SAMPLE: note.append('展示會有樣品')
-    elif r['group']=='Apparel': note.append('無樣品，請看款式圖下單')
+    if base in SAMPLE or key in SAMPLE or _nk(key) in SAMPLE: note.append('展示會有樣品')
+    else: note.append('無樣品，請看款式圖下單')
     if china: note.append('中國專屬款')
     if sizes==['ASSORTED']: note.append('尺寸段待原廠提供，先填總件數')
     if key in MULTI: note.append('原廠同一款號有兩種品名，下單請看品名')
@@ -144,7 +146,7 @@ for r in SRC:
     it=dict(id=iid,sheet=sheet,no='',mon=mon,monTag=(f'台灣預計 {tm[1]} 月上市' if tm else ''),theme=mon,drop=('DNS' if r['line']=='DNS' else 'FOOTWEAR' if sheet=='鞋款' else 'CORE'),cat=cat,gen=g,style=key,
         zh=f'{zh}（{g}）' if sheet in ('上身','下身') else zh,en=en or '英文品名待原廠提供',color=zc(col),cc=cc,sku=key+(('-'+cc) if cc else ''),icon=r['mat'],
         fab=clean(r['comp']),series=('產地 越南' if r['origin']=='Vietnam' else ''),ov=ov,dt='',tech='',note='；'.join(note),launch=launch,eta='',
-        krw=krw,sizes=sizes,doll=(r.get('img') or (o['doll'] if o else '')),run=key,part='top',whl=bool(hero),whlr=hero or '')
+        krw=krw,sizes=sizes,doll=(r.get('img') or (o['doll'] if o else '') or TAGIMG.get(iid,'')),run=key,part='top',whl=bool(hero),whlr=hero or '')
     it['price']=twd(krw); it['tw']=tw_note(it)
     it['krwRef']=None; it['krw']=None; it['price']=None   # 2026/11/10：台灣定價未定，先不顯示價格（來源檔仍保留韓國售價）
     runs.setdefault(key,[])
