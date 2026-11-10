@@ -30,6 +30,7 @@
  * Email 通知：每張新訂單／修改都會寄信到 NOTIFY_TO（多個收件人用逗號分隔，留空就不寄）
  */
 
+const LOGO_URL = 'https://emerswhl-restock.surge.sh/brand/logo-full.png';
 const NOTIFY_TO = 'marc_wang@emers.com,zero_wang@emers.com,zoe_chang@emers.com,vince_tian@emers.com,david_wu@emers.com,benson_wang@emers.com,max_lee@emers.com,kai_weng@emers.com';
 
 const ORDER_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '聯絡人', '電話', 'Email', '訂單備註', '款色數', '件數', '零售金額', '分店數', '分店', '狀態', '帳號 Email', '最後修改'];
@@ -400,6 +401,7 @@ function orderHtml_(d, rows, title, intro, footer) {
   const tr = list.map(g => `<tr>${hasBranch ? `<td>${esc(g.branch)}</td>` : ''}<td>${esc(g.style)}<br><span style="color:#888">${esc(g.sku)}</span></td><td>${esc(g.zh)}</td><td>${esc(g.color)}</td><td>${esc(g.sizes.join('  '))}</td><td style="text-align:right">${g.qty}</td><td style="text-align:right">${fmt(g.amt)}</td></tr>`).join('');
   const th = s => `<th style="background:#141414;color:#fff;padding:6px 8px;text-align:left;font-weight:600">${s}</th>`;
   return `<div style="font-family:Arial,'Microsoft JhengHei',sans-serif;font-size:14px;color:#222">
+  <div style="background:#15181c;padding:18px 22px"><img src="https://emerswhl-restock.surge.sh/brand/logo-full.png" alt="EMERS-WHL TW" width="220" style="height:auto;width:220px;display:block;border:0"></div>
   <h2 style="color:#141414;margin:0 0 8px">BLACK YAK 27FW ${esc(title)}</h2>
   ${intro ? `<p style="margin:0 0 12px">${intro}</p>` : ''}
   <table style="border-collapse:collapse;margin-bottom:12px">
@@ -472,7 +474,7 @@ function otpSend_(email) {
   c.put('otptry:' + em, '0', 600);
   c.put('otpwait:' + em, '1', 60);
   MailApp.sendEmail({ to: em, subject: `BLACK YAK 27FW 線上訂貨 登入驗證碼：${code}`, name: 'BLACK YAK 台灣',
-    htmlBody: `<div style="font-family:Arial,'Microsoft JhengHei',sans-serif;font-size:14px;color:#222"><h2 style="color:#141414;margin:0 0 8px">BLACK YAK 27FW 線上訂貨</h2><p>您的登入驗證碼是：</p><p style="font-size:28px;font-weight:bold;letter-spacing:6px;margin:8px 0">${code}</p><p style="color:#666">10 分鐘內有效。如果不是您本人要登入，請忽略這封信。</p></div>` });
+    htmlBody: `<div style="font-family:Arial,'Microsoft JhengHei',sans-serif;font-size:14px;color:#222"><div style="background:#15181c;padding:18px 22px"><img src="https://emerswhl-restock.surge.sh/brand/logo-full.png" alt="EMERS-WHL TW" width="220" style="height:auto;width:220px;display:block;border:0"></div><h2 style="color:#141414;margin:0 0 8px">BLACK YAK 27FW 線上訂貨</h2><p>您的登入驗證碼是：</p><p style="font-size:28px;font-weight:bold;letter-spacing:6px;margin:8px 0">${code}</p><p style="color:#666">10 分鐘內有效。如果不是您本人要登入，請忽略這封信。</p></div>` });
   return 'ok';
 }
 function otpVerify_(email, code) {
