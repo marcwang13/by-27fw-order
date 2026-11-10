@@ -315,9 +315,6 @@ tfoot td{font-weight:700;background:var(--sunk)}
       <button id="v-mine" aria-pressed="false">我的訂單</button>
       <button id="v-admin" aria-pressed="false" hidden>訂單彙整</button>
     </nav>
-    <div class="adm"><button id="adm-btn" type="button">管理者登入</button>
-      <form id="adm-form" hidden><label for="adm-pw">管理者密碼</label><input id="adm-pw" type="password" inputmode="numeric" autocomplete="current-password"><div class="e" id="adm-err"></div><button type="submit" id="adm-go">登入</button></form>
-    </div>
   </div>
 </header>
 
@@ -383,14 +380,23 @@ tfoot td{font-weight:700;background:var(--sunk)}
 (function(){
   const CFG=window.SDR_CONFIG||{}; const URL_=(CFG.SUBMIT_URL||'').trim();
   const HKEY='byf-27fw-sent-v1';
-  let ADMIN=''; try{ const q=new URLSearchParams(location.search); if(q.has('admin')){ const v=q.get('admin'); if(v&&v!=='off') localStorage.setItem('byf-admin',v); else localStorage.removeItem('byf-admin'); q.delete('admin'); history.replaceState(null,'',location.pathname+(q.toString()?'?'+q:'')+location.hash); } ADMIN=localStorage.getItem('byf-admin')||''; }catch(e){}
+  let ticket='', fromHash=false;
+  try{
+    const q=new URLSearchParams(location.search);
+    if(q.has('admin')){ q.delete('admin'); history.replaceState(null,'',location.pathname+(q.toString()?'?'+q:'')+location.hash); }
+    ['sdr-admin','dst-admin','bys-admin','byf-admin','ftw-admin'].forEach(k=>{ try{ localStorage.removeItem(k); }catch(e){} });
+    const hm=/^#admin=([^&]+)/.exec(location.hash||'');
+    if(hm){ fromHash=true; sessionStorage.setItem('pre-sso', decodeURIComponent(hm[1])); history.replaceState(null,'',location.pathname+location.search); }
+    ticket=sessionStorage.getItem('pre-sso')||'';
+  }catch(e){}
+  let ADMIN='';
   let ACACHE={};
   function toPageOrder(o){ const IT=window.SDR_ITEMS||[]; const key=l=>{ const it=IT.find(i=>i.sku===l.sku&&i.sheet===l.sheet)||IT.find(i=>i.sku===l.sku); return it?it.id:('x:'+l.sku+'|'+l.color); };
     const agg={}; const br={}; const brOrder=[];
     for(const l of o.lines||[]){ const k=key(l); const a=agg[k+'|'+l.size]=agg[k+'|'+l.size]||{k,sheet:l.sheet,mon:l.mon,style:l.style,sku:l.sku,en:l.en,zh:l.zh,color:l.color,size:l.size,qty:0,price:l.price}; a.qty+=l.qty;
       if(l.branch){ if(!br[l.branch]){ br[l.branch]=[]; brOrder.push(l.branch); } br[l.branch].push({k,size:l.size,qty:l.qty}); } }
     return {...o,uid:o.oid,lines:Object.values(agg),branches:brOrder.map(n=>({name:n,lines:br[n]}))}; }
-  async function adminList(){ const r=await fetch(URL_+(URL_.includes('?')?'&':'?')+'action=list&key='+encodeURIComponent(ADMIN)+'&t='+Date.now()); const j=await r.json(); if(j.error){ const err=new Error(j.error==='forbidden'?'管理金鑰不正確':j.error); err.code=j.error; throw err; } ACACHE={}; (j.orders||[]).forEach(o=>{ ACACHE[o.oid]=toPageOrder(o); }); return Object.values(ACACHE); }
+  async function adminList(){ await memberGate; if(!ADMIN){ const err=new Error('forbidden'); err.code='forbidden'; throw err; } const raw=await post({action:'list',ticket:ADMIN}); let j; try{ j=JSON.parse(raw); }catch(e){ j={error:'bad'}; } if(j.error){ const err=new Error(j.error==='forbidden'?'訂單彙整權限無效或已過期':j.error); err.code=j.error; throw err; } ACACHE={}; (j.orders||[]).forEach(o=>{ ACACHE[o.oid]=toPageOrder(o); }); return Object.values(ACACHE); }
   let dev=null; try{ dev=localStorage.getItem('byf-dev'); if(!dev){ dev='d'+Math.random().toString(36).slice(2,10); localStorage.setItem('byf-dev',dev); } }catch(e){ dev='d'+Math.random().toString(36).slice(2,10); }
   const hist=()=>{ try{ return JSON.parse(localStorage.getItem(HKEY)||'[]'); }catch(e){ return []; } };
   const AKEY='byf-auth'; let SRV=[];
@@ -399,6 +405,17 @@ tfoot td{font-weight:700;background:var(--sunk)}
   async function post(body){ const opt={method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)};
     try{ const r=await fetch(URL_,{...opt,redirect:'follow'}); return (await r.text()).trim(); }
     catch(e){ await fetch(URL_,{...opt,mode:'no-cors'}); return 'ok'; } }
+  const memberGate=(async()=>{
+    if(!ticket||!URL_) return;
+    try{
+      const raw=await post({action:'member',ticket});
+      const j=JSON.parse(raw);
+      if(j&&j.ok) ADMIN=ticket;
+      else { ticket=''; try{ sessionStorage.removeItem('pre-sso'); }catch(e){} }
+    }catch(e){ ticket=''; try{ sessionStorage.removeItem('pre-sso'); }catch(x){} }
+    window.SDR_ADMIN.on=!!ADMIN;
+    if(ADMIN&&fromHash){ let n=0; const iv=setInterval(()=>{ const v=document.getElementById('v-admin'); if(v&&!v.hidden){ clearInterval(iv); v.click(); } else if(++n>50) clearInterval(iv); },100); }
+  })();
   async function refreshMine(){ const a=auth(); if(!a||!URL_){ SRV=[]; emit(); return; } try{ const t=await post({action:'mine',auth:a}); const j=JSON.parse(t); if(j.error==='login_required'){ try{ localStorage.removeItem(AKEY); }catch(e){} SRV=[]; } else SRV=(j.orders||[]).map(toPageOrder); }catch(e){} emit(); }
   window.SDR_AUTH={ get:auth,
     async sendCode(email){ return await post({action:'otp_send',email}); },
@@ -407,10 +424,10 @@ tfoot td{font-weight:700;background:var(--sunk)}
   const KNOWN=['login_required','forbidden'];
   window.SDR_ADMIN={ on:!!ADMIN,
     async list(){ return await adminList(); },
-    async del(oid){ const res=await post({action:'admin_delete',oid,key:ADMIN}); if(res==='ok'||res==='deleted') return; const err=new Error(res==='forbidden'?'管理金鑰不正確':res==='void'?'這張訂單已作廢':res); err.code=res; throw err; },
-    async save(body){ const res=await post({...body,action:'admin_save',key:ADMIN}); delete body._xlsx; delete body._xlsxName;
-      if(res==='ok'||/<html/i.test(res)) return; const err=new Error(res==='forbidden'?'管理金鑰不正確':res==='deleted'?'這張訂單已不在試算表（客人可能已刪除）':res==='void'?'這張訂單已作廢':res); err.code=res; throw err; } };
-  const db={ doc(path){ const p=path.split('/'); return { async set(body){ if(p.length===4&&p[2]==='subs'){ const res=await post({...body,auth:auth()}); delete body._xlsx; delete body._xlsxName; if(KNOWN.includes(res)){ const err=new Error(res); err.code=res; throw err; } if(res==='deleted'||res==='void'){ try{ localStorage.setItem(HKEY,JSON.stringify(hist().filter(x=>x.oid!==body.oid))); }catch(e){} emit(); const err=new Error('order_closed'); err.code='order_closed'; throw err; } if(res&&res!=='ok'&&!/<html/i.test(res)) { const err=new Error(res); err.code='server'; throw err; } const h=hist().filter(x=>x.oid!==body.oid); h.push(body); try{ localStorage.setItem(HKEY,JSON.stringify(h)); }catch(e){} SRV=SRV.filter(x=>x.oid!==body.oid); emit(); refreshMine(); } }, async update(body){ if(p.length===4&&p[2]==='subs'&&ADMIN&&body&&body.status){ const res=await post({action:'status',oid:p[3],status:body.status,key:ADMIN}); if(res!=='ok'){ const err=new Error(res==='forbidden'?'管理金鑰不正確':res==='deleted'?'這張訂單已不在試算表':res); err.code=res; throw err; } if(ACACHE[p[3]]) ACACHE[p[3]].status=body.status; } }, async delete(){ if(p.length===4&&p[2]==='subs'){ const res=await post({action:'cancel',oid:p[3],auth:auth()}); if(KNOWN.includes(res)){ const err=new Error(res); err.code=res; throw err; } if(res&&res!=='ok'&&res!=='deleted'&&res!=='void'&&!/<html/i.test(res)){ const err=new Error(res); err.code='server'; throw err; } try{ localStorage.setItem(HKEY,JSON.stringify(hist().filter(x=>x.oid!==p[3]))); }catch(e){} SRV=SRV.filter(x=>x.oid!==p[3]); emit(); } }, async get(){ return {exists:false,data:()=>undefined}; } }; },
+    async del(oid){ const res=await post({action:'admin_delete',oid,ticket:ADMIN}); if(res==='ok'||res==='deleted') return; const err=new Error(res==='forbidden'?'訂單彙整權限無效或已過期':res==='void'?'這張訂單已作廢':res); err.code=res; throw err; },
+    async save(body){ const res=await post({...body,action:'admin_save',ticket:ADMIN}); delete body._xlsx; delete body._xlsxName;
+      if(res==='ok'||/<html/i.test(res)) return; const err=new Error(res==='forbidden'?'訂單彙整權限無效或已過期':res==='deleted'?'這張訂單已不在試算表（客人可能已刪除）':res==='void'?'這張訂單已作廢':res); err.code=res; throw err; } };
+  const db={ doc(path){ const p=path.split('/'); return { async set(body){ if(p.length===4&&p[2]==='subs'){ const res=await post({...body,auth:auth()}); delete body._xlsx; delete body._xlsxName; if(KNOWN.includes(res)){ const err=new Error(res); err.code=res; throw err; } if(res==='deleted'||res==='void'){ try{ localStorage.setItem(HKEY,JSON.stringify(hist().filter(x=>x.oid!==body.oid))); }catch(e){} emit(); const err=new Error('order_closed'); err.code='order_closed'; throw err; } if(res&&res!=='ok'&&!/<html/i.test(res)) { const err=new Error(res); err.code='server'; throw err; } const h=hist().filter(x=>x.oid!==body.oid); h.push(body); try{ localStorage.setItem(HKEY,JSON.stringify(h)); }catch(e){} SRV=SRV.filter(x=>x.oid!==body.oid); emit(); refreshMine(); } }, async update(body){ if(p.length===4&&p[2]==='subs'&&ADMIN&&body&&body.status){ const res=await post({action:'status',oid:p[3],status:body.status,ticket:ADMIN}); if(res!=='ok'){ const err=new Error(res==='forbidden'?'訂單彙整權限無效或已過期':res==='deleted'?'這張訂單已不在試算表':res); err.code=res; throw err; } if(ACACHE[p[3]]) ACACHE[p[3]].status=body.status; } }, async delete(){ if(p.length===4&&p[2]==='subs'){ const res=await post({action:'cancel',oid:p[3],auth:auth()}); if(KNOWN.includes(res)){ const err=new Error(res); err.code=res; throw err; } if(res&&res!=='ok'&&res!=='deleted'&&res!=='void'&&!/<html/i.test(res)){ const err=new Error(res); err.code='server'; throw err; } try{ localStorage.setItem(HKEY,JSON.stringify(hist().filter(x=>x.oid!==p[3]))); }catch(e){} SRV=SRV.filter(x=>x.oid!==p[3]); emit(); } }, async get(){ return {exists:false,data:()=>undefined}; } }; },
     collection(path){ const parts=String(path||'').split('/');
       if(path==='orders'){ const q={ orderBy(){ return q; }, limit(){ return q; }, where(){ return q; },
           onSnapshot(next,fail){ let stop=false; const run=async()=>{ try{ const os=await adminList(); if(!stop) next({docs:os.map(o=>({id:o.oid,exists:true,data:()=>({uid:o.oid,store:o.store,contact:o.contact,updatedAt:o.submittedAt})})),size:os.length,empty:!os.length,docChanges:()=>[]}); }catch(e){ if(!stop&&fail) fail(e); } }; run(); const t=setInterval(run,60000); return ()=>{ stop=true; clearInterval(t); }; },
@@ -418,7 +435,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
       if(parts.length===3&&parts[2]==='subs'&&ACACHE[parts[1]]){ const o=ACACHE[parts[1]]; const q={ orderBy(){ return q; }, limit(){ return q; }, where(){ return q; }, onSnapshot(next){ next({docs:[{id:o.oid,data:()=>o}]}); return ()=>{}; }, async get(){ return {docs:[{id:o.oid,data:()=>o}]}; } }; return q; }
       const q={ orderBy(){ return q; }, limit(){ return q; }, where(){ return q; }, onSnapshot(next){ subs.push(next); setTimeout(emit,0); refreshMine(); return ()=>{ const i=subs.indexOf(next); if(i>=0) subs.splice(i,1); }; }, async get(){ return {docs:[]}; } }; return q; } };
   const downloads={ async save({filename,data}){ const blob=data instanceof Blob?data:new Blob([data]); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=filename; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },3000); return {status:'saved'}; } };
-  const user={ id:async()=>dev, canEdit:async()=>!!(ADMIN&&URL_), isOwner:async()=>false, can:async()=>!!URL_ };
+  const user={ id:async()=>dev, canEdit:async()=>{ await memberGate; return !!(ADMIN&&URL_); }, isOwner:async()=>false, can:async()=>!!URL_ };
   window.claude={ use:async n=> n==='downloads'?downloads : n==='user'?user : n==='db'?(URL_?db:null) : null };
 })();
 </script>
@@ -900,14 +917,14 @@ $('#admin').addEventListener('click',async e=>{
   const ae=e.target.closest('[data-aedit]');
   const ad=e.target.closest('[data-adel]');
   if(ad){ const [u,id]=ad.dataset.adel.split('|');
-    if(!window.SDR_ADMIN?.on||!window.SDR_ADMIN.del){ msg('#admin-msg','err','請用含管理金鑰的網址（?admin=…）開啟頁面再刪除。'); return; }
+    if(!window.SDR_ADMIN?.on||!window.SDR_ADMIN.del){ msg('#admin-msg','err','請從內部站按「訂單彙整」重新開啟。'); return; }
     if(ad.dataset.armed!=='1'){ ad.dataset.armed='1'; ad.textContent='確定刪除？'; setTimeout(()=>{ if(ad.isConnected&&!ad.disabled){ ad.dataset.armed=''; ad.textContent='刪除訂單'; } },5000); return; }
     ad.disabled=true; ad.textContent='刪除中…';
     try{ await window.SDR_ADMIN.del(id); if(adminOrders[u]) adminOrders[u]=adminOrders[u].filter(x=>x.oid!==id); ADET.delete(id); renderAdmin(); msg('#admin-msg','ok',`訂單 ${id} 已刪除，取消通知已寄給業務與客人。`); }
     catch(err){ ad.disabled=false; ad.dataset.armed=''; ad.textContent='刪除訂單'; msg('#admin-msg','err','刪除沒有成功：'+(err.message||err)); }
     return; }
   if(ae){ const [u,id]=ae.dataset.aedit.split('|'); const o=(adminOrders[u]||[]).find(x=>x.oid===id); if(!o) return;
-    if(!window.SDR_ADMIN?.on){ msg('#admin-msg','err','請用含管理金鑰的網址（?admin=…）開啟頁面再編輯。'); return; }
+    if(!window.SDR_ADMIN?.on){ msg('#admin-msg','err','請從內部站按「訂單彙整」重新開啟。'); return; }
     const prev=adminEditing()?(S.admin.prev||null):snapForm();
     const miss=loadOrderToForm(o); S.admin={oid:o.oid,account:o.account||'',store:o.store||'',prev}; saveDraft();
     S.only=true; $('#only').checked=true; renderAll(); setView('order');
@@ -1270,25 +1287,6 @@ renderAll();
 </script>
 
 <script>
-/* 右上角管理者登入：密碼送後台驗證，對了就記在這台裝置 */
-(function(){
-  const K='byf-admin', b=document.getElementById('adm-btn'), f=document.getElementById('adm-form'), pw=document.getElementById('adm-pw'), er=document.getElementById('adm-err'), go=document.getElementById('adm-go');
-  let on=false; try{ on=!!localStorage.getItem(K); }catch(e){}
-  b.textContent=on?'登出管理者':'管理者登入';
-  b.onclick=e=>{ e.stopPropagation(); if(on){ try{ localStorage.removeItem(K); }catch(x){} location.reload(); return; } f.hidden=!f.hidden; if(!f.hidden){ er.textContent=''; pw.value=''; pw.focus(); } };
-  f.onclick=e=>e.stopPropagation();
-  document.addEventListener('click',()=>{ f.hidden=true; });
-  document.addEventListener('keydown',e=>{ if(e.key==='Escape') f.hidden=true; });
-  f.onsubmit=async e=>{ e.preventDefault(); const v=pw.value.trim(); if(!v) return;
-    const U=((window.SDR_CONFIG||{}).SUBMIT_URL||'').trim(); if(!U){ er.textContent='後台還沒接上'; return; }
-    go.disabled=true; er.textContent='';
-    try{ const r=await fetch(U+(U.includes('?')?'&':'?')+'action=list&key='+encodeURIComponent(v)+'&t='+Date.now()); const j=await r.json();
-      if(j.error){ er.textContent=j.error==='forbidden'?'密碼不對':j.error; pw.select(); }
-      else { try{ localStorage.setItem(K,v); sessionStorage.setItem('adm-open','1'); }catch(x){} location.reload(); return; }
-    }catch(x){ er.textContent='連不到後台，稍後再試'; }
-    go.disabled=false; };
-  try{ if(on&&sessionStorage.getItem('adm-open')){ sessionStorage.removeItem('adm-open'); let n=0; const t=setInterval(()=>{ const v=document.getElementById('v-admin'); if(v&&!v.hidden){ clearInterval(t); v.click(); } else if(++n>50) clearInterval(t); },100); } }catch(e){}
-})();
-</script>
+
 </body>
 </html>
