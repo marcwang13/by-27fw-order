@@ -344,7 +344,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
       <input type="file" id="x-file" accept=".xlsx" hidden>
       <span class="xlhint" id="x-msg"></span>
     </div>
-    <p class="sznote fxnote"><b>價格說明</b>台幣價＝韓國 MSRP × 0.0245 直接換算（四捨五入到 10 元），<b>尚未加關稅、運費等成本</b>，僅供下單參考，正式售價另行公告。</p><p class="sznote"><b>分類</b>上方分「上身／下身／配件／鞋款」，下一排依系列篩選。「台灣市場」是依台灣氣候給的下單建議；標「台灣主打」的是建議優先下的款，可以勾「只看台灣主打」。</p><p class="sznote"><b>上市月</b>卡片上的「台灣預計上市」是韓國入倉月往後一個月的估計，原廠還沒給批次的款式先不標。</p><p class="sznote"><b>數量</b>27FW 顏色已經開出來，服裝的尺寸段原廠還沒定，先填每個款色的總件數，尺寸確定後再分配；鞋款與配件可以直接填尺寸。備註寫「展示會有樣品」的款式現場看得到實品，其他請看款式圖下單。</p>
+    <p class="sznote"><b>分類</b>上方分「上身／下身／配件／鞋款」，下一排依系列篩選。「台灣市場」是依台灣氣候給的下單建議；標「台灣主打」的是建議優先下的款，可以勾「只看台灣主打」。</p><p class="sznote"><b>上市月</b>卡片上的「台灣預計上市」是估計月份，原廠還沒給批次的款式先不標。價格待台灣定價公告。</p><p class="sznote"><b>數量</b>27FW 顏色已經開出來，服裝的尺寸段原廠還沒定，先填每個款色的總件數，尺寸確定後再分配；鞋款與配件可以直接填尺寸。備註寫「展示會有樣品」的款式現場看得到實品，其他請看款式圖下單。</p>
   </div>
   <div class="rail">
     <div class="wrap">
@@ -368,7 +368,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
   <div class="wrap">
     <div class="stat"><small>款色</small><b class="num" id="t-sty">0</b></div>
     <div class="stat"><small id="t-qtyl">件數</small><b class="num" id="t-qty">0</b></div>
-    <div class="stat"><small>零售金額 TWD</small><b class="num" id="t-amt">0</b></div>
+    <div class="stat" hidden><small>零售金額 TWD</small><b class="num" id="t-amt">0</b></div>
     <div class="stat" id="t-br" hidden><small id="t-brn">本店</small><b class="num" id="t-brq">0</b></div>
     <div class="stat" id="t-edit" hidden><small>編輯中</small><b class="num" id="t-eid" style="font-size:13px"></b></div>
     <div class="act">
@@ -557,7 +557,7 @@ function itemHTML(it){
       ${open?`<div class="detail">${it.ov?`<div><h4>商品概述</h4><p>${esc(it.ov)}</p></div>`:''}${it.dt?`<div><h4>商品細節</h4><p>${esc(it.dt)}</p></div>`:''}${it.tech?`<div><h4>材質與科技</h4><p>${esc(it.tech)}</p></div>`:''}${it.fab?`<div><h4>布料</h4><p>${esc(it.fab)}</p></div>`:''}</div>`:''}
     </div>
     <div class="order">
-      <div class="ordtop"><div class="price">${it.krw?`<small>韓國 MSRP</small>₩${Number(it.krw).toLocaleString('en-US')}<br><small>台幣換算</small>${fmt(it.price)}`:'<small>售價待確認</small>'}</div><div class="sub" data-sub>${subHTML(it)}</div></div>
+      <div class="ordtop"><div class="sub" data-sub>${subHTML(it)}</div></div>
       ${sizesBlock}
       ${sh?`<div class="share">上季 尺寸銷售佔比參考・<b>${esc(sh.k)}</b>${it.cat==="短褲"?"（依長褲腰圍）":""}</div>`:""}
     </div>
@@ -683,7 +683,7 @@ document.addEventListener('click',e=>{ const b=e.target.closest('[data-ovg]'); i
 function openOverview(){
   const L=lines(S.qty); const t=totals();
   $('#overlay').innerHTML=`<div class="scrim"><div class="panel" role="dialog" aria-label="下單總覽"><div class="phead"><h2>下單總覽</h2><button class="btn sm x" data-close>關閉</button></div>
-  <div class="kpis"><div class="kpi"><small>款色</small><b>${t.sty}</b></div><div class="kpi"><small>件數</small><b>${fmt(t.qty)}</b></div><div class="kpi"><small>零售金額 TWD</small><b>${fmt(t.amt)}</b></div><div class="kpi"><small>品類數</small><b>${catRows(L).length}</b></div></div>
+  <div class="kpis"><div class="kpi"><small>款色</small><b>${t.sty}</b></div><div class="kpi"><small>件數</small><b>${fmt(t.qty)}</b></div><div class="kpi"><small>品類數</small><b>${catRows(L).length}</b></div></div>
   ${overviewHTML(L)}${branchTableHTML()}</div></div>`;
 }
 $('#b-review').addEventListener('click',openReview);
@@ -693,7 +693,7 @@ function openReview(){
   const rows=L.map(l=>`<tr><td>${esc(l.zh||l.en)}<div class="code">${esc(l.style)} ／ ${esc(l.sku)}</div></td><td>${esc(l.color)}</td><td>${esc(l.size)}</td><td class="r num">${l.qty}</td><td class="r num">${fmt(l.qty*l.price)}</td></tr>`).join('');
   $('#overlay').innerHTML=`<div class="scrim"><div class="panel" role="dialog" aria-label="檢視訂單">
     <div class="phead"><h2>${adminEditing()?'業務編輯訂單':S.editing?'更新訂單':'檢視訂單'}</h2><button class="btn sm x" data-close>關閉</button></div>
-    <div class="kpis"><div class="kpi"><small>款色</small><b>${t.sty}</b></div><div class="kpi"><small>件數</small><b>${fmt(t.qty)}</b></div><div class="kpi"><small>零售金額 TWD</small><b>${fmt(t.amt)}</b></div><div class="kpi"><small>經銷商</small><b style="font-family:var(--f-body);font-size:15px">${esc(S.dealer.store||'—')}</b></div></div>
+    <div class="kpis"><div class="kpi"><small>款色</small><b>${t.sty}</b></div><div class="kpi"><small>件數</small><b>${fmt(t.qty)}</b></div><div class="kpi"><small>經銷商</small><b style="font-family:var(--f-body);font-size:15px">${esc(S.dealer.store||'—')}</b></div></div>
     ${overviewHTML(L)}
     ${branchTableHTML()}
     <div class="tbl"><table><thead><tr><th>品名</th><th>顏色</th><th>尺寸</th><th class="r">數量</th><th class="r">零售金額</th></tr></thead><tbody>${rows}</tbody><tfoot><tr><td colspan="3">合計</td><td class="r num">${fmt(t.qty)}</td><td class="r num">${fmt(t.amt)}</td></tr></tfoot></table></div>
@@ -716,13 +716,13 @@ async function offlineDownload(){
   try{ ok=await exportBook(S.qty,{...S.dealer,oid:null,branches:branchesForExport()}); }catch(e){ btn.disabled=false; btn.textContent='下載 Excel 訂單本'; if(e?.code!=='declined'&&e?.code!=='cancelled') msg('#sub-msg','err',e.message||'下載未完成'); return; }
   btn.disabled=false; btn.textContent='下載 Excel 訂單本';
   if(ok){ const t=totals();
-    $('#overlay').innerHTML=`<div class="scrim"><div class="panel" style="height:auto;margin:auto;max-width:440px;border-radius:8px"><h2>訂單本已下載</h2><div class="msg ok">${esc(S.dealer.store)}：${t.sty} 款色、${fmt(t.qty)} 件，零售金額 ${fmt(t.amt)}。</div><p style="margin:0">請把剛下載的 Excel 檔用 <b>LINE 或 Email</b> 傳給 BLACK YAK 業務，業務收到後會幫你登錄訂單。</p><p style="margin:0;color:var(--muted);font-size:12px">頁面上的數量會保留在這台裝置，之後要修改可以直接改完再下載一次。</p><div style="display:flex;justify-content:flex-end"><button class="btn pri" data-close>好</button></div></div></div>`; }
+    $('#overlay').innerHTML=`<div class="scrim"><div class="panel" style="height:auto;margin:auto;max-width:440px;border-radius:8px"><h2>訂單本已下載</h2><div class="msg ok">${esc(S.dealer.store)}：${t.sty} 款色、${fmt(t.qty)} 件。</div><p style="margin:0">請把剛下載的 Excel 檔用 <b>LINE 或 Email</b> 傳給 BLACK YAK 業務，業務收到後會幫你登錄訂單。</p><p style="margin:0;color:var(--muted);font-size:12px">頁面上的數量會保留在這台裝置，之後要修改可以直接改完再下載一次。</p><div style="display:flex;justify-content:flex-end"><button class="btn pri" data-close>好</button></div></div></div>`; }
 }
 function brList(qty,meta){ return (meta&&meta.branches&&meta.branches.length)?meta.branches:[{name:'',qty}]; }
 function orderText(qty,meta){ const L=[]; let sty=0,tq=0,ta=0; const agg=lines(qty); const ks=new Set(); agg.forEach(l=>{ ks.add(l.k); tq+=l.qty; ta+=l.qty*l.price; }); sty=ks.size;
   L.push(`【BLACK YAK 27FW 訂單】${meta.store||''}｜${meta.contact||''}${meta.phone?'｜'+meta.phone:''}${meta.oid?'｜'+meta.oid:''}`); if(meta.note) L.push('備註：'+meta.note);
   for(const b of brList(qty,meta)){ if(b.name) L.push('',`■ ${b.name}`); let cur=null; for(const l of lines(b.qty)){ if(l.k!==cur){ L.push(`${l.style} ${l.sku} ${l.zh||l.en} ${l.color}`); cur=l.k; } L[L.length-1]+=` ${l.size}×${l.qty}`; } }
-  L.push('',`合計 ${sty} 款色、${tq} 件、零售金額 ${fmt(ta)}`); return L.join('\n'); }
+  L.push('',`合計 ${sty} 款色、${tq} 件`); return L.join('\n'); }
 function orderTSV(qty,meta){ const R=[['經銷商／店名',meta.store||''],['聯絡人',meta.contact||''],['電話',meta.phone||''],['訂單備註',meta.note||''],[]];
   R.push(['分店','分頁','款號','色碼 SKU','英文品名','中文品名','顏色','尺寸','數量','台灣建議售價','零售金額']);
   for(const b of brList(qty,meta)) for(const l of lines(b.qty)) R.push([b.name||(meta.store||''),l.sheet,l.style,l.sku,l.en,l.zh,l.color,l.size,l.qty,l.price,l.qty*l.price]);
@@ -789,7 +789,7 @@ async function submit(){
     await db.doc(`orders/${uid}`).set({uid,store:body.store,contact:body.contact,updatedAt:body.submittedAt});
     const doneQty=S.qty, doneDealer={...S.dealer}, doneBr=branchesForExport();
     S.qty={}; S.bq={}; S.editing=null; saveDraft(); renderAll();
-    $('#overlay').innerHTML=`<div class="scrim"><div class="panel" style="height:auto;margin:auto;max-width:440px;border-radius:8px"><h2>訂單已送出</h2><div class="msg ok">訂單編號 <b class="num">${esc(oid)}</b>：${t.sty} 款色、${fmt(t.qty)} 件，零售金額 ${fmt(t.amt)}。</div><p style="margin:0;color:var(--muted)">${AUTH?'訂單確認信和 Excel 訂單本已寄到 <b>'+esc(AUTH.get()?.email||'')+'</b>（沒看到請檢查垃圾郵件匣）。':''}之後要改或刪除，到上方「我的訂單」操作即可。</p><div style="display:flex;justify-content:flex-end;gap:8px"><button class="btn" id="b-done-xls">下載 Excel 訂單本</button><button class="btn pri" data-close>好</button></div><div id="done-msg"></div></div></div>`;
+    $('#overlay').innerHTML=`<div class="scrim"><div class="panel" style="height:auto;margin:auto;max-width:440px;border-radius:8px"><h2>訂單已送出</h2><div class="msg ok">訂單編號 <b class="num">${esc(oid)}</b>：${t.sty} 款色、${fmt(t.qty)} 件。</div><p style="margin:0;color:var(--muted)">${AUTH?'訂單確認信和 Excel 訂單本已寄到 <b>'+esc(AUTH.get()?.email||'')+'</b>（沒看到請檢查垃圾郵件匣）。':''}之後要改或刪除，到上方「我的訂單」操作即可。</p><div style="display:flex;justify-content:flex-end;gap:8px"><button class="btn" id="b-done-xls">下載 Excel 訂單本</button><button class="btn pri" data-close>好</button></div><div id="done-msg"></div></div></div>`;
     $('#b-done-xls').onclick=async()=>{ try{ await exportBook(doneQty,{...doneDealer,oid,branches:doneBr}); }catch(e){ if(e?.code!=='declined'&&e?.code!=='cancelled') msg('#done-msg','err',e.message||'下載未完成'); } };
   }catch(e){
     if(e?.code==='order_closed'){ const old=S.editing; S.editing=null; saveDraft(); renderTally(); msg('#sub-msg','err',`這張訂單（${old||''}）已被 BLACK YAK 業務刪除或作廢，無法再修改。已改成新訂單，請再按一次送出；如有疑問請聯絡業務。`); const b=$('#b-submit'); if(b){ b.disabled=false; b.textContent='送出訂單'; } return; }
@@ -831,7 +831,7 @@ async function adminSubmit(){
   try{
     await window.SDR_ADMIN.save(body);
     const acc=S.admin&&S.admin.account; exitAdminEdit();
-    $('#overlay').innerHTML=`<div class="scrim"><div class="panel" style="height:auto;margin:auto;max-width:440px;border-radius:8px"><h2>修改已儲存</h2><div class="msg ok">訂單 <b class="num">${esc(oid)}</b>：${t.sty} 款色、${fmt(t.qty)} 件，零售金額 ${fmt(t.amt)}。</div><p style="margin:0;color:var(--muted)">試算表的訂單、明細和店名分頁都已更新。${notifyCustomer&&acc?'調整通知和 Excel 已寄給 <b>'+esc(acc)+'</b>。':'這次沒有通知客人。'}</p><div style="display:flex;justify-content:flex-end"><button class="btn pri" data-close>回訂單彙整</button></div></div></div>`;
+    $('#overlay').innerHTML=`<div class="scrim"><div class="panel" style="height:auto;margin:auto;max-width:440px;border-radius:8px"><h2>修改已儲存</h2><div class="msg ok">訂單 <b class="num">${esc(oid)}</b>：${t.sty} 款色、${fmt(t.qty)} 件。</div><p style="margin:0;color:var(--muted)">試算表的訂單、明細和店名分頁都已更新。${notifyCustomer&&acc?'調整通知和 Excel 已寄給 <b>'+esc(acc)+'</b>。':'這次沒有通知客人。'}</p><div style="display:flex;justify-content:flex-end"><button class="btn pri" data-close>回訂單彙整</button></div></div></div>`;
     reloadAdmin();
   }catch(e){ msg('#sub-msg','err','儲存沒有成功（'+(e?.message||e?.code||'未知錯誤')+'）。改好的數量都還在，請稍後再試。'); btn.disabled=false; btn.textContent='儲存修改'; }
 }
@@ -908,7 +908,7 @@ function renderAdmin(){
   for(const o of os){ T.qty+=o.qty||0; T.amt+=o.amount||0; for(const l of o.lines||[]){ const k=l.k; const a=agg[k]=agg[k]||{l,qty:0,stores:new Set(),sz:{}}; a.qty+=l.qty; a.stores.add(o.store); a.sz[l.size]=(a.sz[l.size]||0)+l.qty; } }
   const aggRows=Object.values(agg).sort((x,y)=>SHEETS.indexOf(x.l.sheet)-SHEETS.indexOf(y.l.sheet)||y.qty-x.qty);
   box.innerHTML=`<div class="section-title" style="margin-top:0">訂單彙整</div>
-  <div class="kpis"><div class="kpi"><small>訂單</small><b>${T.orders}</b></div><div class="kpi"><small>經銷商</small><b>${T.stores}</b></div><div class="kpi"><small>總件數</small><b>${fmt(T.qty)}</b></div><div class="kpi"><small>零售金額 TWD</small><b>${fmt(T.amt)}</b></div></div>
+  <div class="kpis"><div class="kpi"><small>訂單</small><b>${T.orders}</b></div><div class="kpi"><small>經銷商</small><b>${T.stores}</b></div><div class="kpi"><small>總件數</small><b>${fmt(T.qty)}</b></div></div>
   <div style="margin-top:12px">${overviewHTML(os.flatMap(o=>o.lines||[]))}</div>
   <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap"><button class="btn pri" id="a-handoff" ${os.length?'':'disabled'}>一鍵統整交單</button><button class="btn" id="a-csv-all" ${os.length?'':'disabled'}>下載全部明細 CSV</button><button class="btn" id="a-csv-sku" ${os.length?'':'disabled'}>下載款色彙總 CSV</button></div>
   <div id="admin-msg" style="margin-top:10px"></div>
@@ -973,11 +973,11 @@ async function buildBook(qty, meta){
     const head=[...FIXED,...sizes,'訂購總數','零售金額 TWD'];
     const cTot=FIXED.length+sizes.length+1, cAmt=cTot+1, cPrice=FIXED.indexOf('台灣建議售價')+1, cS0=FIXED.length+1, cS1=FIXED.length+sizes.length;
     ws.getCell('B1').value=`BLACK YAK 27FW 訂單本｜${sh}`; ws.getCell('B1').font={name:'Arial',size:16,bold:true,color:{argb:'FF141414'}};
-    ws.getCell('B2').value='台灣建議售價＝韓國 MSRP × 0.0245 直接換算，尚未加關稅、運費等成本。黃色格填訂購數量，灰色為無此尺寸。請勿更動欄位順序與隱藏的 A 欄（KEY），以便重新匯入下單頁。'; ws.getCell('B2').font={...F,color:{argb:'FF6B6B70'}};
+    ws.getCell('B2').value='黃色格填訂購數量，灰色為無此尺寸。請勿更動欄位順序與隱藏的 A 欄（KEY），以便重新匯入下單頁。'; ws.getCell('B2').font={...F,color:{argb:'FF6B6B70'}};
     const hr=ws.getRow(4); head.forEach((h,k)=>{ const c=hr.getCell(k+1); c.value=h; c.font={name:'Arial',size:10,bold:true,color:{argb:'FFFFFFFF'}}; c.fill=fill('FF141414'); c.alignment={horizontal:'center',vertical:'middle',wrapText:true}; c.border=border; }); hr.height=30;
     const widths={'KEY':10,'No.':5,'款式圖':14,'實體圖':14,'月份':7,'主題':16,'Drop':9,'品類':11,'性別':6,'款號':12,'中文品名':22,'英文品名':24,'顏色':16,'色號':7,'色碼 SKU':10,'Icon':12,'布料':22,'系列／尺寸':22,'商品概述':34,'商品細節':40,'材質與科技':26,'備註':30,'韓國入倉':10,'韓國售價 MSRP(KRW)':12,'台灣建議售價':10};
     head.forEach((h,k)=>{ ws.getColumn(k+1).width = widths[h] || (k+1===cTot?9:k+1===cAmt?13:6.5); });
-    ws.getColumn(1).hidden=true;
+    ws.getColumn(1).hidden=true; ['韓國入倉','韓國售價 MSRP(KRW)','台灣建議售價'].forEach(h=>{ const k=head.indexOf(h); if(k>=0) ws.getColumn(k+1).hidden=true; }); ws.getColumn(cAmt).hidden=true;
     let r=5;
     for(const it of its){
       const row=ws.getRow(r); const q=qty[it.id]||{};
@@ -1010,7 +1010,7 @@ async function buildBook(qty, meta){
     ws.getCell('B1').value='BLACK YAK 27FW 分店配貨'; ws.getCell('B1').font={name:'Arial',size:16,bold:true,color:{argb:'FF141414'}};
     ws.getCell('B2').value='每列一個款色尺寸，各分店一欄。請勿更動隱藏的 A 欄（KEY）與欄位順序，以便重新匯入。'; ws.getCell('B2').font={...F,color:{argb:'FF6B6B70'}};
     const hr=ws.getRow(4); head.forEach((h,k)=>{ const c=hr.getCell(k+1); c.value=h; c.font={name:'Arial',size:10,bold:true,color:{argb:'FFFFFFFF'}}; c.fill=fill('FF141414'); c.alignment={horizontal:'center',vertical:'middle',wrapText:true}; c.border=border; }); hr.height=30;
-    [10,9,12,10,26,24,16,8].forEach((w,k)=>ws.getColumn(k+1).width=w); for(let c=c0;c<=c1;c++) ws.getColumn(c).width=11; ws.getColumn(cT).width=8; ws.getColumn(cP).width=11; ws.getColumn(cA).width=13; ws.getColumn(1).hidden=true;
+    [10,9,12,10,26,24,16,8].forEach((w,k)=>ws.getColumn(k+1).width=w); for(let c=c0;c<=c1;c++) ws.getColumn(c).width=11; ws.getColumn(cT).width=8; ws.getColumn(cP).width=11; ws.getColumn(cA).width=13; ws.getColumn(1).hidden=true; ws.getColumn(cP).hidden=true; ws.getColumn(cA).hidden=true;
     let r=5;
     for(const it of ITEMS){ for(const z of it.sizes){ const vals=B.map(b=>(b.qty[it.id]||{})[z]||0); if(!vals.some(v=>v>0)) continue;
       const row=ws.getRow(r); [it.id,it.sheet,it.style||'',it.sku||'',it.en,it.zh||'',it.color,z].forEach((v,k)=>{ const c=row.getCell(k+1); c.value=v; c.font=F; c.border=border; });
@@ -1293,7 +1293,9 @@ renderAll();
 })();
 </script>
 
-<script>
-
+<script>/* NOPRICE-SWEEP：台灣定價未定，先隱藏金額欄 */
+(function(){ function sweep(){ document.querySelectorAll('table').forEach(function(t){ var th=t.querySelector('thead th:last-child'); if(!th||th.textContent.trim().indexOf('零售金額')!==0) return; t.querySelectorAll('tr').forEach(function(r){ var c=r.lastElementChild; if(c&&!c.hidden) c.hidden=true; }); }); }
+new MutationObserver(sweep).observe(document.documentElement,{childList:true,subtree:true}); sweep(); })();
+</script>
 </body>
 </html>

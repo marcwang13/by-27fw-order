@@ -47,6 +47,8 @@ HERO={
  '27FWKS02':'品牌長銷背包，30L 是台灣單日百岳與郊山最常用容量',
  '27FWXX19':'腰包、斜背兩用，低單價好帶',
  '27FWHT06':'美麗諾羊毛毛帽，低單價的冬季加購品',
+ '27FWXX04':'美麗諾羊毛頸圍，輕薄好帶，登山與騎車都用得到','27FWGV02':'POWER STRETCH 薄手套，可觸控，台灣冬季騎車與登山夠用',
+ '27FWSC01':'羊毛中筒登山襪，搭鞋款做組合','27FWHT02':'BCC 針織毛帽，生活線的入門配件',
 }
 def tw_note(it):
     n=(it['en']+' '+it['zh']+' '+it['icon']+' '+it['ov']).upper(); c=it['cat']; ln=it['mon']
@@ -129,8 +131,7 @@ for r in SRC:
     note=[]
     if base in SAMPLE or key in SAMPLE: note.append('展示會有樣品')
     elif r['group']=='Apparel': note.append('無樣品，請看款式圖下單')
-    if china: note.append('中國專屬款，韓國售價待原廠提供' if not r['krw'] else '中國專屬款')
-    elif not r['krw']: note.append('售價待原廠提供')
+    if china: note.append('中國專屬款')
     if sizes==['ASSORTED']: note.append('尺寸段待原廠提供，先填總件數')
     if key in MULTI: note.append('原廠同一款號有兩種品名，下單請看品名')
     if re.match(r'\d{4}-',r['batch'] or ''): note.append('延續款')
@@ -145,6 +146,7 @@ for r in SRC:
         fab=clean(r['comp']),series=('產地 越南' if r['origin']=='Vietnam' else ''),ov=ov,dt='',tech='',note='；'.join(note),launch=launch,eta='',
         krw=krw,sizes=sizes,doll=(r.get('img') or (o['doll'] if o else '')),run=key,part='top',whl=bool(hero),whlr=hero or '')
     it['price']=twd(krw); it['tw']=tw_note(it)
+    it['krwRef']=None; it['krw']=None; it['price']=None   # 2026/11/10：台灣定價未定，先不顯示價格（來源檔仍保留韓國售價）
     runs.setdefault(key,[])
     for z in sizes:
         if z not in runs[key]: runs[key].append(z)
