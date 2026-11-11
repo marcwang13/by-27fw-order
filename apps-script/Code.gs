@@ -31,7 +31,8 @@
  */
 
 const LOGO_URL = 'https://emerswhl-restock.surge.sh/brand/logo-full.png';
-const NOTIFY_TO = 'marc_wang@emers.com,zero_wang@emers.com,zoe_chang@emers.com,vince_tian@emers.com,david_wu@emers.com,benson_wang@emers.com,max_lee@emers.com,kai_weng@emers.com';
+const NOTIFY_TO = 'emerswhl-members@googlegroups.com';   // 11/11 起寄 EMERS WHL 會員群組（所有會員，排除只有體系權限）
+const REPLY_TO = 'marc_wang@emers.com';   // 客人回信給業務（群組只有系統能發文，不能當回信地址）
 
 const SHOW_PRICE = false; // 台灣定價公告前，通知信與 Excel 不顯示金額（2026/11/10）
 const ORDER_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '聯絡人', '電話', 'Email', '訂單備註', '款色數', '件數', '零售金額', '分店數', '分店', '狀態', '帳號 Email', '最後修改'];
@@ -442,7 +443,7 @@ function customerMail_(d, rows, kind, to, att) {
     ? `BLACK YAK 業務已依雙方討論調整這張訂單，以下是調整後的內容。${att ? '最新的 Excel 訂單本在附件。' : ''}如有疑問請直接回覆此信。`
     : `感謝您的訂購，${kind === '訂單已更新' ? '訂單已更新為以下內容' : '我們已收到您的訂單'}。${att ? '完整的 Excel 訂單本在附件。' : ''}如需修改或刪除，請到下單網站的「我的訂單」操作。`;
   const html = orderHtml_(d, rows, kind, intro, '<p style="color:#888;font-size:12px">此信由系統自動寄出，有任何問題請直接回覆此信或聯絡 BLACK YAK 業務。</p>');
-  const msg = { to: to, subject: `【BLACK YAK 27FW】${kind}｜${d.oid}`, htmlBody: html, name: 'BLACK YAK 台灣', replyTo: NOTIFY_TO.split(',')[0].trim() };
+  const msg = { to: to, subject: `【BLACK YAK 27FW】${kind}｜${d.oid}`, htmlBody: html, name: 'BLACK YAK 台灣', replyTo: REPLY_TO };
   if (att) msg.attachments = [att];
   MailApp.sendEmail(msg);
 }
