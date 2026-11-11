@@ -32,7 +32,7 @@
 
 const LOGO_URL = 'https://emerswhl-restock.surge.sh/brand/logo-full.png';
 const NOTIFY_TO = 'emerswhl-members@googlegroups.com';   // 11/11 起寄 EMERS WHL 會員群組（所有會員，排除只有體系權限）
-const REPLY_TO = 'marc_wang@emers.com';   // 客人回信給業務（群組只有系統能發文，不能當回信地址）
+const REPLY_TO = 'emerswhlsystem.marc@gmail.com';   // 客人回信寄到系統信箱（群組只有系統能發文，不能當回信地址）
 
 const SHOW_PRICE = false; // 台灣定價公告前，通知信與 Excel 不顯示金額（2026/11/10）
 const ORDER_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '聯絡人', '電話', 'Email', '訂單備註', '款色數', '件數', '零售金額', '分店數', '分店', '狀態', '帳號 Email', '最後修改'];
