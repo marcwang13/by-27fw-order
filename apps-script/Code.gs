@@ -33,7 +33,7 @@
 const LOGO_URL = 'https://emerswhl-restock.surge.sh/brand/logo-full.png';
 const NOTIFY_TO = 'marc_wang@emers.com,zero_wang@emers.com,zoe_chang@emers.com,vince_tian@emers.com,david_wu@emers.com,benson_wang@emers.com,max_lee@emers.com,kai_weng@emers.com';
 
-const SHOW_PRICE = false; // 台灣定價公告前，通知信與 Excel 不顯示金額（2026/11/10）
+const SHOW_PRICE = true; // 台灣售價已確定（2026/11/12），通知信與 Excel 顯示金額
 const ORDER_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '聯絡人', '電話', 'Email', '訂單備註', '款色數', '件數', '零售金額', '分店數', '分店', '狀態', '帳號 Email', '最後修改'];
 const LINE_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '分店', '分頁', '月份', '款號', '色碼 SKU', '英文品名', '中文品名', '顏色', '尺寸', '數量', '台灣建議售價', '零售金額'];
 
