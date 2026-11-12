@@ -956,7 +956,7 @@ let ejP=null;
 function loadExcelJS(){ if(window.ExcelJS) return Promise.resolve(window.ExcelJS); if(!ejP) ejP=new Promise((res,rej)=>{ const s=document.createElement('script'); s.src='https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js'; s.onload=()=>res(window.ExcelJS); s.onerror=()=>{ ejP=null; rej(new Error('Excel 元件載入失敗，請檢查網路後再試一次。')); }; document.head.appendChild(s); }); return ejP; }
 const imgDims=src=>new Promise(r=>{ const im=new Image(); im.onload=()=>r([im.naturalWidth,im.naturalHeight]); im.onerror=()=>r([1,1]); im.src=src; });
 const colL=n=>{ let s=''; while(n>0){ const m=(n-1)%26; s=String.fromCharCode(65+m)+s; n=Math.floor((n-1)/26); } return s; };
-const FIXED=['KEY','No.','款式圖','實體圖','月份','主題','Drop','品類','性別','款號','中文品名','英文品名','顏色','色號','色碼 SKU','Icon','布料','系列／尺寸','商品概述','商品細節','材質與科技','備註','韓國入倉','韓國售價 MSRP(KRW)','台灣建議售價'];
+const FIXED=['KEY','No.','款式圖','實體圖','月份','主題','Drop','品類','性別','款號','中文品名','英文品名','顏色','色號','色碼 SKU','Icon','布料','系列／尺寸','商品概述','商品細節','材質與科技','備註','台灣上市月','韓國售價 MSRP(KRW)','台灣建議售價'];
 async function buildBook(qty, meta){
   const EJ=await loadExcelJS();
   const wb=new EJ.Workbook(); wb.creator='BLACK YAK 27FW'; wb.created=new Date();
@@ -975,13 +975,13 @@ async function buildBook(qty, meta){
     ws.getCell('B1').value=`BLACK YAK 27FW 訂單本｜${sh}`; ws.getCell('B1').font={name:'Arial',size:16,bold:true,color:{argb:'FF141414'}};
     ws.getCell('B2').value='台灣建議售價為台幣。黃色格填訂購數量，灰色為無此尺寸。請勿更動欄位順序與隱藏的 A 欄（KEY），以便重新匯入下單頁。'; ws.getCell('B2').font={...F,color:{argb:'FF6B6B70'}};
     const hr=ws.getRow(4); head.forEach((h,k)=>{ const c=hr.getCell(k+1); c.value=h; c.font={name:'Arial',size:10,bold:true,color:{argb:'FFFFFFFF'}}; c.fill=fill('FF141414'); c.alignment={horizontal:'center',vertical:'middle',wrapText:true}; c.border=border; }); hr.height=30;
-    const widths={'KEY':10,'No.':5,'款式圖':14,'實體圖':14,'月份':7,'主題':16,'Drop':9,'品類':11,'性別':6,'款號':12,'中文品名':22,'英文品名':24,'顏色':16,'色號':7,'色碼 SKU':10,'Icon':12,'布料':22,'系列／尺寸':22,'商品概述':34,'商品細節':40,'材質與科技':26,'備註':30,'韓國入倉':10,'韓國售價 MSRP(KRW)':12,'台灣建議售價':10};
+    const widths={'KEY':10,'No.':5,'款式圖':14,'實體圖':14,'月份':7,'主題':16,'Drop':9,'品類':11,'性別':6,'款號':12,'中文品名':22,'英文品名':24,'顏色':16,'色號':7,'色碼 SKU':10,'Icon':12,'布料':22,'系列／尺寸':22,'商品概述':34,'商品細節':40,'材質與科技':26,'備註':30,'台灣上市月':10,'韓國售價 MSRP(KRW)':12,'台灣建議售價':10};
     head.forEach((h,k)=>{ ws.getColumn(k+1).width = widths[h] || (k+1===cTot?9:k+1===cAmt?13:6.5); });
-    ws.getColumn(1).hidden=true; ['韓國入倉','韓國售價 MSRP(KRW)'].forEach(h=>{ const k=head.indexOf(h); if(k>=0) ws.getColumn(k+1).hidden=true; });
+    ws.getColumn(1).hidden=true; ['韓國售價 MSRP(KRW)'].forEach(h=>{ const k=head.indexOf(h); if(k>=0) ws.getColumn(k+1).hidden=true; });
     let r=5;
     for(const it of its){
       const row=ws.getRow(r); const q=qty[it.id]||{};
-      const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',[it.note,it.whl?'台灣主打：'+(it.whlr||''):'',it.tw?'台灣市場：'+it.tw:''].filter(Boolean).join('\n'),it.launch||'',it.krw||null,it.price||null];
+      const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',[it.note,it.whl?'台灣主打：'+(it.whlr||''):'',it.tw?'台灣市場：'+it.tw:''].filter(Boolean).join('\n'),(it.monTag||'').replace('台灣預計 ','').replace('上市',''),it.krw||null,it.price||null];
       vals.forEach((v,k)=>{ const c=row.getCell(k+1); c.value=v; c.font=F; c.border=border; c.alignment={vertical:k>=16&&k<=21?'top':'middle',wrapText:k>=5}; }); if((it.note||'').startsWith('展示會有樣品')){ [13,22].forEach(n=>{ const c=row.getCell(n); c.fill=fill('FFD9EAD3'); c.font={...F,bold:true}; }); }
       row.getCell(cPrice).numFmt='#,##0'; row.getCell(cPrice-1).numFmt='#,##0';
       sizes.forEach((z,j)=>{ const c=row.getCell(cS0+j); c.border=border; c.alignment={horizontal:'center',vertical:'middle'}; c.font={...F,bold:true};
