@@ -23,9 +23,9 @@ for i in it:
     if i.get('doll'): nm.setdefault((key(i),i['cat'],i['sheet']),i['doll'])
 for i in it:
     if i.get('doll'): continue
-    if i['style'] in st: i['doll']=st[i['style']]; cnt['同款其他色']+=1
+    if i['style'] in st: i['doll']=st[i['style']]; i['ref']=1; cnt['同款其他色']+=1
     elif prev.get(i['id']): i['doll']=prev[i['id']]; cnt['原小圖']+=1
-    elif (key(i),i['cat'],i['sheet']) in nm: i['doll']=nm[(key(i),i['cat'],i['sheet'])]; cnt['同名他性別']+=1
+    elif (key(i),i['cat'],i['sheet']) in nm: i['doll']=nm[(key(i),i['cat'],i['sheet'])]; i['ref']=2; cnt['同名他性別']+=1
 # 同款借圖後，同款色可能還有 prev 小圖，不再處理
 left=[i['id'] for i in it if not i.get('doll')]
 print('原本沒圖',n0,'補圖',cnt,'仍沒圖',len(left),left[:40])
