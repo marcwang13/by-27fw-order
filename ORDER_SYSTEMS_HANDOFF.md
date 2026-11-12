@@ -29,7 +29,7 @@ Marc 同時用 Claude 和 Grok Bot 維護這四套系統，一次只會有一邊
 | SDR | SUN DAY RED FW27 | 上線收單中（範本） | https://marcwang13.github.io/sdr-fw27-order/ | marcwang13/sdr-fw27-order | 207／105 | `FW27-` | `#610e0e` 酒紅 | `sdr-` |
 | DST | DESCENTE 27FW Early Buy | 上線收單中 | https://marcwang13.github.io/dst-27fw-order/ | marcwang13/dst-27fw-order | 69／23 | `DST27-` | `#0a3f94` 藍 | `dst-` |
 | BYS | BLACK YAK 27SS | 未完成（已上線，未正式開放） | https://marcwang13.github.io/by-27ss-order/ | marcwang13/by-27ss-order | 747／349 | `BYS27-` | `#141414` 黑 | `bys-` |
-| BYF | BLACK YAK 27FW | 未完成（已上線，未正式開放） | https://marcwang13.github.io/by-27fw-order/ | marcwang13/by-27fw-order | 685／271 | `BYF27-` | `#141414` 黑 | `byf-` |
+| BYF | BLACK YAK 27FW | 未完成（已上線，未正式開放） | https://marcwang13.github.io/by-27fw-order/ | marcwang13/by-27fw-order | 605／240 | `BYF27-` | `#141414` 黑 | `byf-` |
 
 ### 各系統後端
 
@@ -274,6 +274,7 @@ Marc 要把四套系統（含後台、管理頁）串進另一個入口網站。
 
 | 日期 | AI | 系統 | 內容 | commit |
 |---|---|---|---|---|
+| 2026-11-12 | Claude | BY27FW | 中國專屬款整個拿掉（80 款色／31 款）：data.js 移除、`months` 清單移除該系列、拿掉「售價待確認」說明。原始資料仍在 `tools/fw2_src.json`，重產（gen_fw2.py）時要再排除中國專屬款。 | （本次） |
 | 2026-11-12 | Claude | BY27SS、BY27FW | 所有 Excel／CSV 輸出都加「上市月」欄：下載訂單本（原隱藏的韓國入倉欄改名顯示）、CSV 明細／款色彙總、複製用 TSV、一鍵統整交單（月份後面插一欄）、Apps Script 的「明細」分頁（`LINE_HEAD` 最後新增「上市月」，舊資料為空）與每張訂單分頁。**Code.gs 要貼進編輯器並部署新版本才生效** | （本次） |
 | 2026-11-12 | Claude | BY27SS、BY27FW | 上方分類篩選列（月份／系列 chip，id=`months`）由複選改單選：點一顆會取代前一顆，再點同一顆回到「全部」。只改 index.html 的 `#months` click handler，篩選條件 `S.months` 仍是 Set（最多一個值）| （本次） |
 | 2026-11-12 | Claude | BY27SS、BY27FW | 沒有上市月的款式一律補上相近款的月份：27FW 509 款色（208 款）、27SS 35 款色（26 款）。27FW 依「同品名→同系列＋同品類＋款號最近」找參考款；配件與鞋款（56 款）同季沒有已知款，用全季最多款的 11 月。27SS 依「同品類＋同系列＋同性別＋款號最近」。對照表在 `tools/launch_infer.csv`（改月份只要改 data.js 的 `monTag`／`launch`）；頁面說明文字改成「月份參考相近款推估」| （本次） |
