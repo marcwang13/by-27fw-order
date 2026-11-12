@@ -490,7 +490,7 @@ function renderTabs(){
   $('#months').innerHTML = `<button class="chip" data-m="" aria-pressed="${S.months.size===0}">全部</button>` + ms.map(m=>`<button class="chip" data-m="${m}" aria-pressed="${S.months.has(m)}">${m}</button>`).join('');
 }
 $('#tabs').addEventListener('click',e=>{ const b=e.target.closest('[data-s]'); if(!b) return; S.sheet=b.dataset.s; S.months.clear(); renderTabs(); renderList(); window.scrollTo({top:$('.rail').offsetTop-1}); });
-$('#months').addEventListener('click',e=>{ const b=e.target.closest('[data-m]'); if(!b) return; const m=b.dataset.m; if(!m) S.months.clear(); else S.months.has(m)?S.months.delete(m):S.months.add(m); renderTabs(); renderList(); });
+$('#months').addEventListener('click',e=>{ const b=e.target.closest('[data-m]'); if(!b) return; const m=b.dataset.m; if(!m||S.months.has(m)) S.months.clear(); else { S.months.clear(); S.months.add(m); } renderTabs(); renderList(); });
 let qT=null; $('#q').addEventListener('input',e=>{ clearTimeout(qT); qT=setTimeout(()=>{ S.q=e.target.value.trim().toLowerCase(); renderList(); },150); });
 $('#only').addEventListener('change',e=>{ S.only=e.target.checked; renderList(); });
 if($('#whlonly')) $('#whlonly').addEventListener('change',e=>{ S.whl=e.target.checked; renderTabs(); renderList(); });
