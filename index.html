@@ -554,7 +554,7 @@ function itemHTML(it){
       <div class="meta"><span class="tag c">${esc(it.color)}${it.cc?' · '+esc(it.cc):''}</span>${it.monTag?`<span class="tag m">${esc(it.monTag)}${it.eta?' · '+esc(it.eta):''}</span>`:''}${it.drop==='DNS'?'<span class="tag">DNS</span>':''}${it.cat?`<span class="tag">${esc(it.cat)}</span>`:''}${it.gen?`<span class="tag">${esc(it.gen)}</span>`:''}${it.whl?'<span class="tag w">台灣主打</span>':''}${it.icon?`<span class="tag">${esc(it.icon)}</span>`:''}</div>
       <div class="code">${esc(it.style||'')}${it.sku?' ／ '+esc(it.sku):''}${it.theme&&it.theme!=='CORE'?' ／ '+esc(it.theme)+(it.drop?' '+esc(it.drop):''):''}</div>
       ${it.ov?`<p class="ov">${esc(it.ov)}</p>`:''}
-      ${it.note?`<div class="note${it.note.startsWith('展示會有樣品')?' smp':''}">${esc(it.note)}</div>`:''}${it.whl?`<div class="whl"><b>台灣主打</b>　${esc(it.whlr||'')}</div>`:''}${it.tw?`<div class="tw"><b>台灣市場</b>　${esc(it.tw)}</div>`:''}
+      ${it.note?`<div class="note${/^(展示會有樣品|此款)/.test(it.note)?' smp':''}">${esc(it.note)}</div>`:''}${it.whl?`<div class="whl"><b>台灣主打</b>　${esc(it.whlr||'')}</div>`:''}${it.tw?`<div class="tw"><b>台灣市場</b>　${esc(it.tw)}</div>`:''}
       ${(it.dt||it.tech||it.fab)?`<button class="more" data-more>${open?'收合':'商品細節與材質'}</button>`:''}
       ${open?`<div class="detail">${it.ov?`<div><h4>商品概述</h4><p>${esc(it.ov)}</p></div>`:''}${it.dt?`<div><h4>商品細節</h4><p>${esc(it.dt)}</p></div>`:''}${it.tech?`<div><h4>材質與科技</h4><p>${esc(it.tech)}</p></div>`:''}${it.fab?`<div><h4>布料</h4><p>${esc(it.fab)}</p></div>`:''}</div>`:''}
     </div>
@@ -998,7 +998,7 @@ async function buildBook(qty, meta){
     for(const it of its){
       const row=ws.getRow(r); const q=qty[it.id]||{};
       const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',[it.note,it.whl?'台灣主打：'+(it.whlr||''):'',it.tw?'台灣市場：'+it.tw:''].filter(Boolean).join('\n'),launchM(it),it.krw||null,it.price||null];
-      vals.forEach((v,k)=>{ const c=row.getCell(k+1); c.value=v; c.font=F; c.border=border; c.alignment={vertical:k>=16&&k<=21?'top':'middle',wrapText:k>=5}; }); if((it.note||'').startsWith('展示會有樣品')){ [13,22].forEach(n=>{ const c=row.getCell(n); c.fill=fill('FFD9EAD3'); c.font={...F,bold:true}; }); }
+      vals.forEach((v,k)=>{ const c=row.getCell(k+1); c.value=v; c.font=F; c.border=border; c.alignment={vertical:k>=16&&k<=21?'top':'middle',wrapText:k>=5}; }); if(/^(展示會有樣品|此款)/.test(it.note||'')){ [13,22].forEach(n=>{ const c=row.getCell(n); c.fill=fill('FFD9EAD3'); c.font={...F,bold:true}; }); }
       row.getCell(cPrice).numFmt='#,##0'; row.getCell(cPrice-1).numFmt='#,##0';
       sizes.forEach((z,j)=>{ const c=row.getCell(cS0+j); c.border=border; c.alignment={horizontal:'center',vertical:'middle'}; c.font={...F,bold:true};
         if(it.sizes.includes(z)){ c.fill=fill('FFFFF2CC'); c.value=q[z]||null; c.dataValidation={type:'whole',operator:'greaterThanOrEqual',formulae:[0],allowBlank:true,showErrorMessage:true,error:'請輸入 0 以上的整數'}; }
