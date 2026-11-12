@@ -35,7 +35,7 @@ const NOTIFY_TO = 'marc_wang@emers.com,zero_wang@emers.com,zoe_chang@emers.com,v
 
 const SHOW_PRICE = true; // 台灣售價已確定（2026/11/12），通知信與 Excel 顯示金額
 const ORDER_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '聯絡人', '電話', 'Email', '訂單備註', '款色數', '件數', '零售金額', '分店數', '分店', '狀態', '帳號 Email', '最後修改'];
-const LINE_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '分店', '分頁', '月份', '款號', '色碼 SKU', '英文品名', '中文品名', '顏色', '尺寸', '數量', '台灣建議售價', '零售金額'];
+const LINE_HEAD = ['送出時間', '訂單編號', '經銷商／店名', '分店', '分頁', '月份', '款號', '色碼 SKU', '英文品名', '中文品名', '顏色', '尺寸', '數量', '台灣建議售價', '零售金額', '上市月'];
 
 // 管理者金鑰存在「專案設定 → 指令碼屬性」的 ADMIN_KEY（不寫在程式裡）
 function adminOk_(key) {
@@ -87,7 +87,7 @@ function listOrders_(ss) {
   const byOid = {};
   (ln < 2 ? [] : ls.getRange(2, 1, ln - 1, LINE_HEAD.length).getValues()).forEach(r => {
     (byOid[String(r[1])] = byOid[String(r[1])] || []).push({ branch: String(r[3] || ''), sheet: r[4], mon: r[5], style: r[6], sku: r[7], en: r[8], zh: r[9],
-      color: r[10], size: String(r[11]), qty: Number(r[12] || 0), price: Number(r[13] || 0) });
+      color: r[10], size: String(r[11]), qty: Number(r[12] || 0), price: Number(r[13] || 0), launch: String(r[15] || '') });
   });
   return os.getRange(2, 1, on - 1, ORDER_HEAD.length).getValues().filter(o => o[1]).map(o => ({
     oid: String(o[1]), submittedAt: iso(o[0]), store: String(o[2] || ''), contact: String(o[3] || ''), phone: String(o[4] || ''),
@@ -182,7 +182,7 @@ function saveOrder_(ss, d, acct, byAdmin) {
   const push = (branch, l, qty) => {
     const x = info[l.k] || l;
     rows.push([t, d.oid, d.store || '', branch, x.sheet || '', x.mon || '', x.style || '', x.sku || '', x.en || '', x.zh || '', x.color || '',
-      l.size, qty, x.price || 0, qty * (x.price || 0)]);
+      l.size, qty, x.price || 0, qty * (x.price || 0), x.launch || '']);
   };
   if (branches.length) {
     branches.forEach(b => (b.lines || []).forEach(l => push(b.name, l, l.qty)));
@@ -277,7 +277,7 @@ function tabName_(ss, log, oid, store) {
   return name;
 }
 
-// rows 欄位同 LINE_HEAD：0時間 1編號 2店名 3分店 4分頁 5月份 6款號 7SKU 8英文 9中文 10顏色 11尺寸 12數量 13售價 14金額
+// rows 欄位同 LINE_HEAD：0時間 1編號 2店名 3分店 4分頁 5月份 6款號 7SKU 8英文 9中文 10顏色 11尺寸 12數量 13售價 14金額 15上市月
 function writeOrderTab_(ss, log, oid, m, rows) {
   const name = tabName_(ss, log, oid, m.store);
   const sh = ss.getSheetByName(name) || ss.insertSheet(name, ss.getNumSheets());
@@ -313,10 +313,10 @@ function writeOrderTab_(ss, log, oid, m, rows) {
   sh.getRange(8, 2).setFontWeight('bold');
 
   const top = info.length + 2;
-  const head = (hasBranch ? ['分店'] : []).concat(['分頁', '月份', '款號', '色碼 SKU', '中文品名', '英文品名', '顏色'], sizes, ['件數', '台灣建議售價', '零售金額']);
+  const head = (hasBranch ? ['分店'] : []).concat(['分頁', '月份', '上市月', '款號', '色碼 SKU', '中文品名', '英文品名', '顏色'], sizes, ['件數', '台灣建議售價', '零售金額']);
   const body = order.map(k => {
     const g = groups[k], r = g.r;
-    return (hasBranch ? [r[3]] : []).concat([r[4], r[5], r[6], r[7], r[9], r[8], r[10]], sizes.map(s => g.q[s] || ''), [g.qty, r[13], g.amt]);
+    return (hasBranch ? [r[3]] : []).concat([r[4], r[5], r[15] || '', r[6], r[7], r[9], r[8], r[10]], sizes.map(s => g.q[s] || ''), [g.qty, r[13], g.amt]);
   });
   const tq = order.reduce((s, k) => s + groups[k].qty, 0), ta = order.reduce((s, k) => s + groups[k].amt, 0);
   const foot = head.map((_, i) => '');

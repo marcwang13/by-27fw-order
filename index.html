@@ -627,9 +627,10 @@ $('#b-clear').addEventListener('click',()=>{
 });
 
 // ---------- lines / CSV ----------
-function lines(qty){ const out=[]; for(const it of ITEMS){ const m=qty[it.id]; if(!m) continue; for(const sz of it.sizes){ const q=m[sz]; if(q>0) out.push({k:it.id,sheet:it.sheet,mon:it.mon,style:it.style||'',sku:it.sku||'',en:it.en,zh:it.zh||'',color:it.color,size:sz,qty:q,price:it.price||0}); } } return out; }
-const CSV_HEAD=['經銷商','聯絡人','訂單編號','送出時間','分頁','月份','款號','色碼 SKU','英文品名','中文品名','顏色','尺寸','數量','台灣建議售價','零售金額'];
-function csvRows(o){ return (o.lines||[]).map(l=>[o.store,o.contact,o.oid,fmtTime(o.submittedAt),l.sheet,l.mon,l.style,l.sku,l.en,l.zh,l.color,l.size,l.qty,l.price,l.qty*l.price]); }
+function lines(qty){ const out=[]; for(const it of ITEMS){ const m=qty[it.id]; if(!m) continue; for(const sz of it.sizes){ const q=m[sz]; if(q>0) out.push({k:it.id,sheet:it.sheet,mon:it.mon,style:it.style||'',sku:it.sku||'',en:it.en,zh:it.zh||'',color:it.color,size:sz,qty:q,price:it.price||0,launch:launchM(it)}); } } return out; }
+const launchM=it=>String((it&&it.monTag)||'').replace('台灣預計 ','').replace('上市','');
+const CSV_HEAD=['經銷商','聯絡人','訂單編號','送出時間','分頁','月份','上市月','款號','色碼 SKU','英文品名','中文品名','顏色','尺寸','數量','台灣建議售價','零售金額'];
+function csvRows(o){ return (o.lines||[]).map(l=>[o.store,o.contact,o.oid,fmtTime(o.submittedAt),l.sheet,l.mon,l.launch||launchM(BY[l.k]),l.style,l.sku,l.en,l.zh,l.color,l.size,l.qty,l.price,l.qty*l.price]); }
 function toCSV(rows){ return '﻿'+rows.map(r=>r.map(v=>{ v=String(v??''); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }).join(',')).join('\r\n'); }
 function fmtTime(t){ if(!t) return ''; const d=new Date(t); const p=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}/${p(d.getMonth()+1)}/${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; }
 async function saveCSV(name,rows){
@@ -724,8 +725,8 @@ function orderText(qty,meta){ const L=[]; let sty=0,tq=0,ta=0; const agg=lines(q
   for(const b of brList(qty,meta)){ if(b.name) L.push('',`■ ${b.name}`); let cur=null; for(const l of lines(b.qty)){ if(l.k!==cur){ L.push(`${l.style} ${l.sku} ${l.zh||l.en} ${l.color}`); cur=l.k; } L[L.length-1]+=` ${l.size}×${l.qty}`; } }
   L.push('',`合計 ${sty} 款色、${tq} 件、零售金額 ${fmt(ta)}`); return L.join('\n'); }
 function orderTSV(qty,meta){ const R=[['經銷商／店名',meta.store||''],['聯絡人',meta.contact||''],['電話',meta.phone||''],['訂單備註',meta.note||''],[]];
-  R.push(['分店','分頁','款號','色碼 SKU','英文品名','中文品名','顏色','尺寸','數量','台灣建議售價','零售金額']);
-  for(const b of brList(qty,meta)) for(const l of lines(b.qty)) R.push([b.name||(meta.store||''),l.sheet,l.style,l.sku,l.en,l.zh,l.color,l.size,l.qty,l.price,l.qty*l.price]);
+  R.push(['分店','分頁','上市月','款號','色碼 SKU','英文品名','中文品名','顏色','尺寸','數量','台灣建議售價','零售金額']);
+  for(const b of brList(qty,meta)) for(const l of lines(b.qty)) R.push([b.name||(meta.store||''),l.sheet,l.launch||launchM(BY[l.k]),l.style,l.sku,l.en,l.zh,l.color,l.size,l.qty,l.price,l.qty*l.price]);
   return R.map(r=>r.map(v=>String(v??'').replace(/[\t\n\r]+/g,' ')).join('\t')).join('\n'); }
 function openCopyPanel(qty,meta,timedOut){ let mode='tsv'; const get=()=>mode==='tsv'?orderTSV(qty,meta):orderText(qty,meta);
   const d=document.createElement('div'); d.className='scrim'; d.style.zIndex=60;
@@ -917,7 +918,7 @@ function renderAdmin(){
   ${aggRows.length?`<div class="section-title">款色彙總</div><div class="tbl"><table><thead><tr><th>分頁</th><th>品名</th><th>顏色</th><th>尺寸分布</th><th class="r">店數</th><th class="r">件數</th><th class="r">零售金額</th></tr></thead><tbody>${aggRows.map(a=>`<tr><td>${esc(a.l.sheet)}</td><td>${esc(a.l.zh||a.l.en)}<div class="code">${esc(a.l.style)} ／ ${esc(a.l.sku)}</div></td><td>${esc(a.l.color)}</td><td class="num" style="font-size:12px">${Object.entries(a.sz).map(([k,v])=>esc(k)+':'+v).join(' ')}</td><td class="r num">${a.stores.size}</td><td class="r num">${a.qty}</td><td class="r num">${fmt(a.qty*a.l.price)}</td></tr>`).join('')}</tbody></table></div>`:''}`;
   $('#a-handoff').onclick=async()=>{ const b=$('#a-handoff'); b.disabled=true; b.textContent='讀取最新訂單…'; try{ let use=os; if(window.SDR_ADMIN&&window.SDR_ADMIN.list){ use=await window.SDR_ADMIN.list(); } const bad=handoffCheck(use); if(bad.length){ throw new Error('有訂單的明細還沒完整寫進試算表，交單檔先不產生，請等 1～2 分鐘後再按一次：'+bad.join('、')); } b.textContent='整理中…'; const out=await exportHandoff(use); if(out) msg('#admin-msg','ok','交單檔已下載：'+out.map(([t,q,n])=>`${t} ${fmt(q)} 件${n?'（'+n+' 店）':''}`).join('、')+'。'); }catch(e){ msg('#admin-msg','err',e.message||'交單檔產生失敗'); } b.disabled=false; b.textContent='一鍵統整交單'; };
   $('#a-csv-all').onclick=async()=>{ try{ await saveCSV('BLACKYAK_27FW_全部訂單明細.csv',[CSV_HEAD,...os.flatMap(csvRows)]); }catch(e){ if(e?.code!=='declined'&&e?.code!=='cancelled') msg('#admin-msg','err',e.message||'下載未完成'); } };
-  $('#a-csv-sku').onclick=async()=>{ const sizesAll=[]; aggRows.forEach(a=>Object.keys(a.sz).forEach(s=>{ if(!sizesAll.includes(s)) sizesAll.push(s); })); try{ await saveCSV('BLACKYAK_27FW_款色彙總.csv',[['分頁','月份','款號','色碼 SKU','英文品名','中文品名','顏色','店數','件數','台灣建議售價','零售金額',...sizesAll],...aggRows.map(a=>[a.l.sheet,a.l.mon,a.l.style,a.l.sku,a.l.en,a.l.zh,a.l.color,a.stores.size,a.qty,a.l.price,a.qty*a.l.price,...sizesAll.map(s=>a.sz[s]||'')])]); }catch(e){ if(e?.code!=='declined'&&e?.code!=='cancelled') msg('#admin-msg','err',e.message||'下載未完成'); } };
+  $('#a-csv-sku').onclick=async()=>{ const sizesAll=[]; aggRows.forEach(a=>Object.keys(a.sz).forEach(s=>{ if(!sizesAll.includes(s)) sizesAll.push(s); })); try{ await saveCSV('BLACKYAK_27FW_款色彙總.csv',[['分頁','月份','上市月','款號','色碼 SKU','英文品名','中文品名','顏色','店數','件數','台灣建議售價','零售金額',...sizesAll],...aggRows.map(a=>[a.l.sheet,a.l.mon,launchM(BY[a.l.k]),a.l.style,a.l.sku,a.l.en,a.l.zh,a.l.color,a.stores.size,a.qty,a.l.price,a.qty*a.l.price,...sizesAll.map(s=>a.sz[s]||'')])]); }catch(e){ if(e?.code!=='declined'&&e?.code!=='cancelled') msg('#admin-msg','err',e.message||'下載未完成'); } };
 }
 $('#admin').addEventListener('click',async e=>{
   const c=e.target.closest('[data-acsv]'); const ok=e.target.closest('[data-ok]'); const ax=e.target.closest('[data-axls]');
@@ -981,7 +982,7 @@ async function buildBook(qty, meta){
     let r=5;
     for(const it of its){
       const row=ws.getRow(r); const q=qty[it.id]||{};
-      const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',[it.note,it.whl?'台灣主打：'+(it.whlr||''):'',it.tw?'台灣市場：'+it.tw:''].filter(Boolean).join('\n'),(it.monTag||'').replace('台灣預計 ','').replace('上市',''),it.krw||null,it.price||null];
+      const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',[it.note,it.whl?'台灣主打：'+(it.whlr||''):'',it.tw?'台灣市場：'+it.tw:''].filter(Boolean).join('\n'),launchM(it),it.krw||null,it.price||null];
       vals.forEach((v,k)=>{ const c=row.getCell(k+1); c.value=v; c.font=F; c.border=border; c.alignment={vertical:k>=16&&k<=21?'top':'middle',wrapText:k>=5}; }); if((it.note||'').startsWith('展示會有樣品')){ [13,22].forEach(n=>{ const c=row.getCell(n); c.fill=fill('FFD9EAD3'); c.font={...F,bold:true}; }); }
       row.getCell(cPrice).numFmt='#,##0'; row.getCell(cPrice-1).numFmt='#,##0';
       sizes.forEach((z,j)=>{ const c=row.getCell(cS0+j); c.border=border; c.alignment={horizontal:'center',vertical:'middle'}; c.font={...F,bold:true};
@@ -1075,7 +1076,7 @@ async function buildHandoff(os){
   const NUM='#,##0;-#,##0;;@', L=colL;
   const sum=wb.addWorksheet('總表',{views:[{showGridLines:false}]}); sum.pageSetup={orientation:'landscape',paperSize:9,fitToPage:true,fitToWidth:1,fitToHeight:0};
   const DISC=`'總表'!$B$4`;
-  const INFO=[['STYLE NO.',13,'style'],['STYLE & COLOR',21,'sku'],['COLOR',8,'cc'],['顏色',12,'color'],['CATEGORY',12,'cat'],['IMAGE',13,null],['STYLE NAME',34,'en'],['中文品名',22,'zh'],['GENDER',8,'gen'],['月份',7,'mon'],['TW-SRP\n(NTD)',11,'price']];
+  const INFO=[['STYLE NO.',13,'style'],['STYLE & COLOR',21,'sku'],['COLOR',8,'cc'],['顏色',12,'color'],['CATEGORY',12,'cat'],['IMAGE',13,null],['STYLE NAME',34,'en'],['中文品名',22,'zh'],['GENDER',8,'gen'],['月份',7,'mon'],['上市月',8,'__launch'],['TW-SRP\n(NTD)',11,'price']];
   const imgCache={}; const out=[]; const refs={};   // refs[tab][label]=SRP TTL 儲存格
   for(const [dv,tab] of HO_DIVS){
     refs[tab]={};
@@ -1120,7 +1121,7 @@ async function buildHandoff(os){
     blk.forEach(b=>{ sizes.forEach((z,j)=>H(b.s+j,isNaN(+z)?z:+z,j===0)); H(b.t,'TTL',false,true); });
     // 商品列
     for(let k=0;k<its.length;k++){ const it=its[k], r=R0+k, row=ws.getRow(r); row.height=62;
-      INFO.forEach(([h,,f],j)=>{ const c=row.getCell(j+1); c.value=f?(it[f]??''):null; if(f==='price'){ c.value=it.price||null; c.numFmt='#,##0'; } c.font=F; c.border=bd; c.alignment={horizontal:j===6||j===7?'left':'center',vertical:'middle',wrapText:true}; });
+      INFO.forEach(([h,,f],j)=>{ const c=row.getCell(j+1); c.value=f==='__launch'?launchM(it):(f?(it[f]??''):null); if(f==='price'){ c.value=it.price||null; c.numFmt='#,##0'; } c.font=F; c.border=bd; c.alignment={horizontal:j===6||j===7?'left':'center',vertical:'middle',wrapText:true}; });
       sizes.forEach((z,j)=>{ const has=it.sizes.includes(z); const L0=j===0;
         const w=row.getCell(c0+j); w.value=blk.length?{formula:blk.map(b=>`${L(b.s+j)}${r}`).join('+')}:0; w.numFmt='0;-0;;@'; w.font={...F,bold:true}; w.alignment={horizontal:'center',vertical:'middle'}; w.fill=fill(has?BLUE:GREY); w.border={...bd,left:L0?med:hair};
         blk.forEach(b=>{ const c=row.getCell(b.s+j); const v=((b.u.q[it.id]||{})[z])||0; c.value=v||null; c.numFmt='0;-0;;@'; c.font={...F,bold:true}; c.alignment={horizontal:'center',vertical:'middle'}; c.border={...bd,left:L0?med:hair}; if(!has) c.fill=fill(GREY); }); });
