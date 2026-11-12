@@ -274,6 +274,7 @@ Marc 要把四套系統（含後台、管理頁）串進另一個入口網站。
 
 | 日期 | AI | 系統 | 內容 | commit |
 |---|---|---|---|---|
+| 2026-11-12 | Claude | BY27SS、BY27FW | 上方分類篩選列（月份／系列 chip，id=`months`）由複選改單選：點一顆會取代前一顆，再點同一顆回到「全部」。只改 index.html 的 `#months` click handler，篩選條件 `S.months` 仍是 Set（最多一個值）| （本次） |
 | 2026-11-12 | Claude | BY27SS、BY27FW | 沒有上市月的款式一律補上相近款的月份：27FW 509 款色（208 款）、27SS 35 款色（26 款）。27FW 依「同品名→同系列＋同品類＋款號最近」找參考款；配件與鞋款（56 款）同季沒有已知款，用全季最多款的 11 月。27SS 依「同品類＋同系列＋同性別＋款號最近」。對照表在 `tools/launch_infer.csv`（改月份只要改 data.js 的 `monTag`／`launch`）；頁面說明文字改成「月份參考相近款推估」| （本次） |
 | 2026-11-12 | Claude | BY27SS、BY27FW | 台灣建議售價定案（公司 TW-SRP 價格表，一款色一價）：data.js 的 `price` 填入（27SS 747 款色全有；27FW 645 款色，40 個中國專屬款色表上沒填，卡片顯示「售價待確認」）；卡片、小計、總計、Excel 訂單本的價格欄與零售金額放回來（韓國入倉、韓國 MSRP 欄仍隱藏、仍是空的）；拿掉 index.html 結尾的 NOPRICE-SWEEP；Apps Script `SHOW_PRICE` 改 true（**要貼進 Apps Script 編輯器並部署新版本才生效**）| （本次） |
 | 2026-11-10 | Claude | BY27FW | 讀中國 TAG-ON 清單 xlsx 本體：補 11 個款色的圖（還有 56 個沒圖）；配件 46 款、鞋款 8 款補上「展示會有樣品」，其餘標「無樣品，請看款式圖下單」。對照在 tools/fw_tagon_img.json、fw_tagon_styles.json | （本次） |
