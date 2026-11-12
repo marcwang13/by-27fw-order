@@ -950,7 +950,20 @@ const RUNS=window.BY_RUNS||{};
 const SZ_NUM={};
 const SIZE_COLS={};
 const SZ_LBL=CFG.szLabel||{};
-function SZL(z,it){ const l=SZ_LBL[z]; return esc(l||z)+(l&&l!==z&&z!=='ASSORTED'?`<small class="szn">${esc(z)}</small>`:''); }
+const SZ_TOP_M={85:'XS',90:'S',95:'M',100:'L',105:'XL',110:'2XL',115:'3XL',120:'4XL',125:'5XL',130:'6XL'};
+const SZ_TOP_W={85:'S',90:'M',95:'L',100:'XL',105:'2XL',110:'3XL'};
+const SZ_WAIST={66:'26"',69:'27"',71:'28"',74:'29"',76:'30"',79:'31"',81:'32"',84:'33"',86:'34"',91:'36"',96:'38"',101:'40"',106:'42"'};
+const SZ_SHOE_M={250:'US7',255:'US7.5',260:'US8',265:'US8.5',270:'US9',275:'US9.5',280:'US10',285:'US10.5',290:'US11',295:'US11.5',300:'US12'};
+const SZ_SHOE_W={230:'US6',235:'US6.5',240:'US7',245:'US7.5',250:'US8',255:'US8.5',260:'US9'};
+function szConv(z,it){ const n=Number(z); if(!isFinite(n)||String(z)!==String(n)) return '';
+  const w=it&&it.gen==='女', shoe=it&&it.sheet==='鞋款', low=it&&it.sheet==='下身';
+  if(shoe) return (w?SZ_SHOE_W:SZ_SHOE_M)[n]||'';
+  if(n in SZ_WAIST && (low || !(n in SZ_TOP_M))) return SZ_WAIST[n];
+  if(n>=85&&n<=130) return (w?SZ_TOP_W:SZ_TOP_M)[n]||'';
+  if(n>=54&&n<=62) return '頭圍';
+  if(n>=20&&n<=30) return 'cm';
+  return ''; }
+function SZL(z,it){ const l=SZ_LBL[z]; if(l&&l!==z&&z!=='ASSORTED') return esc(l)+`<small class="szn">${esc(z)}</small>`; const c=szConv(z,it); return esc(l||z)+(c?`<small class="szn">${esc(c)}</small>`:''); }
 function fullSizes(it){ const all=RUNS[it.run]||SZ_ORDER; const extra=it.sizes.filter(z=>!all.includes(z)); return [...all,...extra]; }
 function sheetSizes(sh){ const u=new Set(); ITEMS.filter(i=>i.sheet===sh).forEach(i=>(RUNS[i.run]||i.sizes).forEach(z=>u.add(z))); if(u.size) return SZ_ORDER.filter(z=>u.has(z)).concat([...u].filter(z=>!SZ_ORDER.includes(z))); const used=new Set(); ITEMS.filter(i=>i.sheet===sh).forEach(i=>i.sizes.forEach(z=>used.add(z))); const base=(SIZE_COLS[sh]||[]).filter(z=>used.has(z)); used.forEach(z=>{ if(!base.includes(z)) base.push(z); }); return base; }
 let ejP=null;
