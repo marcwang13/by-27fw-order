@@ -26,6 +26,7 @@ Marc 同時用 Claude 和 Grok Bot 維護這四套系統，一次只會有一邊
 
 | 代號 | 品牌／季 | 狀態 | 客戶網址 | repo | 商品筆數（款色）／款數 | 訂單編號前綴 | 主題色 | localStorage 前綴 |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-13 | Claude | BY27FW | 中國專屬款 74 款色對上北京樣品清單（Beijing Invoice 1109_update1，款號＋顏色逐筆），備註前面加「展示會有樣品；」（標綠）。沒對上的只有 27WWPD690-PB。清單轉錄檔不放 repo。 | （本次） |
 | SDR | SUN DAY RED FW27 | 上線收單中（範本） | https://marcwang13.github.io/sdr-fw27-order/ | marcwang13/sdr-fw27-order | 207／105 | `FW27-` | `#610e0e` 酒紅 | `sdr-` |
 | DST | DESCENTE 27FW Early Buy | 上線收單中 | https://marcwang13.github.io/dst-27fw-order/ | marcwang13/dst-27fw-order | 69／23 | `DST27-` | `#0a3f94` 藍 | `dst-` |
 | BYS | BLACK YAK 27SS | 未完成（已上線，未正式開放） | https://marcwang13.github.io/by-27ss-order/ | marcwang13/by-27ss-order | 747／349 | `BYS27-` | `#141414` 黑 | `bys-` |
