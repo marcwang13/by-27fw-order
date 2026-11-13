@@ -345,7 +345,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
       <input type="file" id="x-file" accept=".xlsx" hidden>
       <span class="xlhint" id="x-msg"></span>
     </div>
-    <p class="sznote"><b>價格說明</b>卡片與訂單本上的「台灣建議售價」是台幣售價。</p><p class="sznote"><b>分類</b>上方分「上身／下身／配件／鞋款」，下一排依系列篩選。「台灣市場」是依台灣氣候給的下單建議；標「台灣主打」的是建議優先下的款，可以勾「只看台灣主打」。</p><p class="sznote"><b>樣品</b>備註寫「展示會有樣品」的款式現場看得到實品，其他請看款式圖下單。</p>
+    <p class="sznote"><b>價格說明</b>卡片與訂單本上的「台灣建議售價」是台幣售價。標「價格原廠待定」的款式（中國專屬款）價格原廠尚未確定，確定後另行通知。</p><p class="sznote"><b>分類</b>上方分「上身／下身／配件／鞋款」，下一排依系列篩選。「台灣市場」是依台灣氣候給的下單建議；標「台灣主打」的是建議優先下的款，可以勾「只看台灣主打」。</p><p class="sznote"><b>樣品</b>備註寫「展示會有樣品」的款式現場看得到實品，其他請看款式圖下單。</p>
   </div>
   <div class="rail">
     <div class="wrap">
@@ -559,7 +559,7 @@ function itemHTML(it){
       ${open?`<div class="detail">${it.ov?`<div><h4>商品概述</h4><p>${esc(it.ov)}</p></div>`:''}${it.dt?`<div><h4>商品細節</h4><p>${esc(it.dt)}</p></div>`:''}${it.tech?`<div><h4>材質與科技</h4><p>${esc(it.tech)}</p></div>`:''}${it.fab?`<div><h4>布料</h4><p>${esc(it.fab)}</p></div>`:''}</div>`:''}
     </div>
     <div class="order">
-      <div class="ordtop"><div class="price">${it.price?`<small>台灣建議售價</small>${fmt(it.price)}`:'<small>售價待確認</small>'}</div><div class="sub" data-sub>${subHTML(it)}</div></div>
+      <div class="ordtop"><div class="price">${it.price?`<small>台灣建議售價</small>${fmt(it.price)}`:'<small>價格原廠待定</small>'}</div><div class="sub" data-sub>${subHTML(it)}</div></div>
       ${sizesBlock}
       ${sh?`<div class="share">上季 尺寸銷售佔比參考・<b>${esc(sh.k)}</b>${it.cat==="短褲"?"（依長褲腰圍）":""}</div>`:""}
     </div>
