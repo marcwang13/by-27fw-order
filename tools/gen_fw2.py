@@ -131,8 +131,7 @@ for r in SRC:
     tm=tw_month(r['batch'])
     launch=f'{tm[0]}/{tm[1]:02d}' if tm else ''
     note=[]
-    if base in SAMPLE or key in SAMPLE or _nk(key) in SAMPLE: note.append('展示會有樣品')
-    else: note.append('無樣品，請看款式圖下單')
+    if not (base in SAMPLE or key in SAMPLE or _nk(key) in SAMPLE): note.append('無樣品，請看款式圖下單')
     if china: note.append('中國專屬款')
     if sizes==['ASSORTED']: note.append('尺寸段待原廠提供，先填總件數')
     if key in MULTI: note.append('原廠同一款號有兩種品名，下單請看品名')
