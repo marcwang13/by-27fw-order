@@ -10,7 +10,7 @@ D = {  # key: (標章名, 簡述, 說明)
  'GTX_PRO3L': ('GORE-TEX PRO 3L','防水透氣・專業級','三層貼合結構（外布＋防水透氣膜＋內層合為一體）。GORE-TEX 最耐用、透氣性最好的等級，給長時間待在惡劣天候的登山者使用，附「保證讓您乾爽」承諾。'),
  'GTX_3L':    ('GORE-TEX 3L','防水透氣・三層貼合','三層貼合結構，外布、防水透氣膜、內層貼合成一體，沒有鬆散內裡，比 2L 輕、耐用、透氣。持久防水、完全防風。'),
  'GTX_2L':    ('GORE-TEX 2L','防水透氣・兩層','兩層結構：外布與防水透氣膜貼合，內側另加獨立內裡。穿起來柔軟、適合日常與雪地使用。持久防水、完全防風。'),
- 'GTX':       ('GORE-TEX','防水透氣','防水透氣膜：持久防水、完全防風，同時讓汗氣排出，濕冷天氣也不悶。層數規格原廠未註明。'),
+ 'GTX':       ('GORE-TEX','防水透氣','防水透氣膜：持久防水、完全防風，同時讓汗氣排出，濕冷天氣也不悶。'),
  'GTX_SHOE':  ('GORE-TEX 鞋款','防水透氣內襯','鞋內襯使用 GORE-TEX 防水透氣膜，防水、防風，同時讓腳汗氣散出。'),
  'GTX_INVIS': ('GORE-TEX INVISIBLE FIT','防水透氣・內襯貼合鞋面','GORE-TEX 鞋款技術：防水透氣膜與鞋面直接貼合，不另加內套，鞋身較輕、貼腳。'),
  'WSP':       ('GORE-TEX WINDSTOPPER','全防風・透氣保暖','正式名 WINDSTOPPER by GORE-TEX LABS（前稱 GORE-TEX INFINIUM）：持久防風、透氣、保暖舒適，適合多風寒冷或陣雨天氣；不保證完全防水。'),
@@ -21,9 +21,9 @@ D = {  # key: (標章名, 簡述, 說明)
  'PT_STRETCH':('POLARTEC POWER STRETCH','四向彈性','美國 Polartec 雙面針織：四向彈性、保形、透氣、排汗、快乾，動作不受限。'),
  'PT_TP':     ('POLARTEC THERMAL PRO','柔軟保暖刷毛','美國 Polartec 保暖刷毛系列：柔軟、保暖、透氣、耐用。'),
  'PT_FLEECE': ('POLARTEC FLEECE','刷毛保暖','美國 Polartec 刷毛布料：柔軟保暖，用於中層或單穿。'),
- 'PT_GEN':    ('POLARTEC','機能布料','美國 Polartec 機能布料，依系列分為排汗、保暖、透氣等；本款原廠未註明是哪個系列。'),
- 'PERTEX':    ('PERTEX','輕量防風・抗潑水','英國 Pertex 高密度輕量布料：輕、柔軟、有抗潑水處理，常用於輕量外套與羽絨表布（依系列另有防風、防水款，本款規格原廠未註明）。'),
- 'PRIMALOFT': ('PRIMALOFT','合成保暖棉','PrimaLoft 超細纖維合成保暖棉（原為美軍開發）：濕了仍保暖、快乾、防潑水、可壓縮收納。填充規格以原廠品名為準。'),
+ 'PT_GEN':    ('POLARTEC','機能布料','美國 Polartec 機能布料，依系列分為排汗、保暖、透氣等。'),
+ 'PERTEX':    ('PERTEX','輕量防風・抗潑水','英國 Pertex 高密度輕量布料：輕、柔軟、有抗潑水處理，常用於輕量外套與羽絨表布（依系列另有防風、防水款）。'),
+ 'PRIMALOFT': ('PRIMALOFT','合成保暖棉','PrimaLoft 超細纖維合成保暖棉（原為美軍開發）：濕了仍保暖、快乾、防潑水、可壓縮收納。'),
  'GLOFT':     ('G-LOFT Si','合成保暖填充','G-LOFT Si 合成纖維保暖填充：不吸濕，濕冷環境保暖力穩定，有形狀記憶、洗後仍蓬鬆，輕量好收納。'),
  'DOWN':      ('羽絨 DOWN','羽絨保暖','羽絨保暖填充。「90/10」是 90% 絨＋10% 羽毛；FP 是蓬鬆度（Fill Power），數字越高越輕、保暖效率越好。'),
  'CORDURA':   ('CORDURA','高耐磨尼龍','高強度耐磨尼龍布（INVISTA 出品）：耐磨、耐撕裂、耐用，常用於背包、褲子膝臀等容易摩擦處，質輕且多有抗潑水處理。'),
@@ -45,7 +45,7 @@ def down_desc(T):
     short = ' '.join([typ] + ([f'FP{fp.group(1)}'] if fp else []) + ([f'{r.group(1)}/{r.group(2)}'] if r else [])).strip() or '羽絨保暖'
     spec = '、'.join(parts)
     base = D['DOWN'][2]
-    return short, (f'本款：{spec}。' if spec else '本款絨種與蓬鬆度原廠未註明。') + base
+    return short, (f'本款：{spec}。' if spec else '') + base
 
 def detect(items):
     icon = ' '.join(i.get('icon') or '' for i in items).upper()
@@ -98,14 +98,46 @@ def fab_zh(s):
     o = o.replace('\0', '')
     return re.sub(r'[ \t]+', ' ', o).replace(' :', '：').replace(': ', '：').replace(':', '：').strip()
 
+def common(a,b):
+    n=0
+    for x,y in zip(a,b):
+        if x!=y: break
+        n+=1
+    return n
+
+def pick_similar(st, its, pool):
+    """pool: {style: (items, value)}；回傳最相近款的 value 與款號（同分頁、同品類為底線）"""
+    me=its[0]; best=None
+    for s2,(its2,val) in pool.items():
+        o=its2[0]
+        if o['sheet']!=me['sheet'] or o['cat']!=me['cat']: continue
+        sc=(4 if o['en'] and o['en']==me['en'] else 0)+(2 if o['mon']==me['mon'] else 0)+(1 if o['gen']==me['gen'] else 0)
+        key=(sc, common(st,s2))
+        if best is None or key>best[0]: best=(key,s2,val)
+    return (best[2],best[1]) if best else (None,None)
+
 def run(path):
     s = open(path).read()
     m = re.match(r'(window\.SDR_ITEMS=)(\[.*?\])(;\s*window.*)$', s, re.S)
     items = json.loads(m.group(2)); by = {}
     for i in items: by.setdefault(i['style'], []).append(i)
-    n_tg = 0
+    n_tg = 0; det = {st: detect(its) for st, its in by.items()}; borrowed = []
+    GEN = {'GTX':['GTX_PRO3L','GTX_3L','GTX_2L'], 'PT_GEN':['PT_ALPHA','PT_DELTA','PT_GRID','PT_DRY','PT_STRETCH','PT_TP','PT_FLEECE']}
+    for g, specs in GEN.items():
+        pool = {st: (by[st], [k for k in d[0] if k in specs][0]) for st, d in det.items() if any(k in specs for k in d[0])}
+        for st, (keys, T, non) in det.items():
+            if g in keys:
+                v, src = pick_similar(st, by[st], pool)
+                if v: keys[keys.index(g)] = v; borrowed.append((st, g, v, src))
+    dpool = {}
+    for st, (keys, T, non) in det.items():
+        if 'DOWN' in keys and re.search(r'FP\s?\d{3}|鵝絨|鴨絨', non): dpool[st] = (by[st], non)
+    for st, (keys, T, non) in list(det.items()):
+        if 'DOWN' in keys and not re.search(r'FP\s?\d{3}|鵝絨|鴨絨', non):
+            v, src = pick_similar(st, by[st], dpool)
+            if v: det[st] = (keys, T, v); borrowed.append((st, 'DOWN', '', src))
     for st, its in by.items():
-        keys, T, non = detect(its)
+        keys, T, non = det[st]
         tg = []
         for k in keys:
             n, sh, d = D[k]
@@ -120,6 +152,7 @@ def run(path):
             i['fab'] = (fab_zh(f) + '\n原文：' + f) if f else ''
     open(path, 'w').write(m.group(1) + json.dumps(items, ensure_ascii=False) + m.group(3))
     print(path, 'styles', len(by), 'with 機能素材', n_tg)
+    for b in borrowed: print('  借相近款', b)
 
 if __name__ == '__main__':
     for p in sys.argv[1:]: run(p)
