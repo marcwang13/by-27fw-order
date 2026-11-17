@@ -134,7 +134,6 @@ for r in SRC:
     if not (base in SAMPLE or key in SAMPLE or _nk(key) in SAMPLE): note.append('無樣品，請看款式圖下單')
     if china: note.append('中國專屬款')
     if sizes==['ASSORTED']: note.append('尺寸段待原廠提供，先填總件數')
-    if key in MULTI: note.append('原廠同一款號有兩種品名，下單請看品名')
     if re.match(r'\d{4}-',r['batch'] or ''): note.append('延續款')
     if r['batch']=='비시즌': note.append('原廠標示：非當季款')
     krw=int(r['krw']) if r['krw'] else None
