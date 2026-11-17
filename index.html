@@ -462,6 +462,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
 <script>
 (function(){
 const ITEMS = window.SDR_ITEMS || [];
+ITEMS.sort((a,b)=>(a.no||1e9)-(b.no||1e9)); // 依訂單目錄編號排序（Array.sort 為穩定排序，同款各色維持原順序）
 const IMG = window.SDR_IMG || {};
 const PHOTOS = window.BY_PHOTOS || {};
 for(const it of ITEMS){ const p=PHOTOS[it.id]; if(p&&p.length && !(it.photos&&it.photos.length)) it.photos=p.slice(); }
