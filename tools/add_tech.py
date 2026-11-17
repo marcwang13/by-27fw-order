@@ -87,7 +87,7 @@ def detect(items):
     return [k for k in ORDER if k in keys], T, non
 
 FIB = [('Merino Wool','美麗諾羊毛'),('Goat Leather','山羊皮'),('Synthetic Rubber','合成橡膠'),('Polyurethane(TPU Film)','聚氨酯 PU（TPU 膜）'),
- ('Polyurethane','聚氨酯 PU'),('Polyuretane','聚氨酯 PU'),('Polyester','聚酯纖維'),('Polyethylene','聚乙烯'),('Nylon','尼龍'),('Mylon','尼龍（原廠寫 Mylon）'),
+ ('Polyurethane','聚氨酯 PU'),('Polyuretane','聚氨酯 PU'),('Polyester','聚酯纖維'),('Polyethylene','聚乙烯'),('Nylon','尼龍'),('Mylon','尼龍'),
  ('Acrylic','壓克力纖維'),('Wool','羊毛'),('Cotton','棉'),('Modal','莫代爾'),('Tencell','天絲 Tencel'),('Rayon','嫘縈'),('Spandex','彈性纖維 Spandex'),
  ('Span','彈性纖維 Spandex'),('Leather','皮革'),('Gore-tex','GORE-TEX'),('Phylon','Phylon 中底'),('TPU','TPU')]
 LAB = [('[UPPER]','鞋面'),('[LINING]','鞋內裡'),('[SOLE]','鞋底'),('Material','材質'),('Contrast','拼接'),('Shell','外層'),('Sell','外層'),('Lining','內裡'),('Filling','填充'),('Thumb','拇指'),('Palm','掌心')]
