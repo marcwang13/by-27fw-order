@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<script>(function(){var V='20261118071401';try{var q=new URLSearchParams(location.search),x=new XMLHttpRequest();x.open('GET','version.json?t='+Date.now(),false);x.setRequestHeader('Cache-Control','no-cache');x.send();if(x.status===200){var L=JSON.parse(x.responseText).v;if(L&&L!==V&&q.get('v')!==L){q.set('v',L);location.replace(location.pathname+'?'+q.toString()+location.hash);}}}catch(e){}})();</script>
+<script>(function(){var V='20261118071852';try{var q=new URLSearchParams(location.search),x=new XMLHttpRequest();x.open('GET','version.json?t='+Date.now(),false);x.setRequestHeader('Cache-Control','no-cache');x.send();if(x.status===200){var L=JSON.parse(x.responseText).v;if(L&&L!==V&&q.get('v')!==L){q.set('v',L);location.replace(location.pathname+'?'+q.toString()+location.hash);}}}catch(e){}})();</script>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -426,7 +426,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
 
 <div id="overlay"></div>
 
-<script src="config.js?v=20261118071401"></script>
+<script src="config.js?v=20261118071852"></script>
 <script>
 /* GitHub Pages 版：以本機模擬原本 Claude 頁面的能力；送單改送到 Google Apps Script */
 (function(){
@@ -491,10 +491,10 @@ tfoot td{font-weight:700;background:var(--sunk)}
   window.claude={ use:async n=> n==='downloads'?downloads : n==='user'?user : n==='db'?(URL_?db:null) : null };
 })();
 </script>
-<script src="story.js?v=20261118071401"></script>
-<script src="data.js?v=20261118071401"></script>
-<script src="imgs.js?v=20261118071401"></script>
-<script src="photos.js?v=20261118071401"></script>
+<script src="story.js?v=20261118071852"></script>
+<script src="data.js?v=20261118071852"></script>
+<script src="imgs.js?v=20261118071852"></script>
+<script src="photos.js?v=20261118071852"></script>
 <script>
 (function(){
 const ITEMS = window.SDR_ITEMS || [];
@@ -633,7 +633,7 @@ function filtered(){
 }
 function seriesInfoHTML(sheet,mon){
   const T=(window.BY_STORY&&window.BY_STORY.series)||{}; const x=T[sheet+'|'+mon]||T[mon]; if(!x) return '';
-  return `<details class="sinfo"><summary><b>商品資訊</b><span>${esc(x.gist||'')}</span></summary><ul>${(x.lines||[]).map(l=>`<li>${esc(l)}</li>`).join('')}</ul></details>`;
+  return `<details class="sinfo" open><summary><b>商品資訊</b><span>${esc(x.gist||'')}</span></summary><ul>${(x.lines||[]).map(l=>`<li>${esc(l)}</li>`).join('')}</ul></details>`;
 }
 function storyHTML(){
   const D=(window.BY_STORY&&window.BY_STORY.season)||null; if(!D) return '';
