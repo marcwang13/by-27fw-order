@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<script>(function(){var V='20261117034554';try{var q=new URLSearchParams(location.search),x=new XMLHttpRequest();x.open('GET','version.json?t='+Date.now(),false);x.setRequestHeader('Cache-Control','no-cache');x.send();if(x.status===200){var L=JSON.parse(x.responseText).v;if(L&&L!==V&&q.get('v')!==L){q.set('v',L);location.replace(location.pathname+'?'+q.toString()+location.hash);}}}catch(e){}})();</script>
+<script>(function(){var V='20261118071401';try{var q=new URLSearchParams(location.search),x=new XMLHttpRequest();x.open('GET','version.json?t='+Date.now(),false);x.setRequestHeader('Cache-Control','no-cache');x.send();if(x.status===200){var L=JSON.parse(x.responseText).v;if(L&&L!==V&&q.get('v')!==L){q.set('v',L);location.replace(location.pathname+'?'+q.toString()+location.hash);}}}catch(e){}})();</script>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -168,6 +168,31 @@ main{padding-block:12px}
 .tgd{font-size:12px;line-height:1.6;color:var(--muted);margin-top:6px}
 .tgd div+div{margin-top:3px}
 .tgd b{color:var(--fg)}
+/* 商品資訊（原廠季節策略） */
+.pinfo{font-size:12px;line-height:1.6;color:var(--fg);background:var(--sunk);border-left:3px solid var(--acc);border-radius:4px;padding:6px 10px;margin-top:6px}
+.pinfo b{display:block;color:var(--acc);font-size:12px;letter-spacing:.06em;margin-bottom:2px}
+.pinfo p{margin:0}.pinfo p+p{margin-top:2px}
+.sinfo{margin:0 0 10px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.sinfo summary{cursor:pointer;list-style:none;padding:8px 12px;font-size:13px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.sinfo summary::-webkit-details-marker{display:none}
+.sinfo summary::after{content:"展開";margin-left:auto;font-size:12px;color:var(--acc)}
+.sinfo[open] summary::after{content:"收合"}
+.sinfo summary b{color:var(--acc);letter-spacing:.06em;font-size:12px}
+.sinfo ul{margin:0;padding:2px 14px 10px 30px;font-size:13px;line-height:1.65;color:var(--fg)}
+.sinfo li+li{margin-top:2px}
+.story h3{margin:18px 0 6px;font-family:var(--f-disp);font-size:18px;letter-spacing:.05em;font-weight:700}
+.story .lead{margin:0;font-size:14px;line-height:1.7}
+.story .snote{margin:0 0 8px;font-size:12px;color:var(--muted)}
+.story .tbl{overflow-x:auto}
+.story table{border-collapse:collapse;width:100%;font-size:12.5px;background:var(--surface)}
+.story th,.story td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.story th{background:var(--sunk);font-weight:600;white-space:nowrap}
+.story .scards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.story .scard{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:10px 12px}
+.story .scard h4{margin:0 0 4px;font-size:13px;color:var(--acc)}
+.story .scard ul{margin:0;padding-left:16px;font-size:12.5px;line-height:1.6}
+.story .sfoot{margin:16px 0 0;font-size:12px;color:var(--muted)}
+@media (max-width:640px){.story .scards{grid-template-columns:1fr}}
 .ov{font-size:13px;color:var(--muted);margin:2px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .note{font-size:12px;color:var(--warn)}.note.smp{color:#1e6b3a;font-weight:600}
 .tw{font-size:12px;color:var(--fg);background:var(--sunk);border-radius:4px;padding:4px 8px;margin-top:4px}.tw b{color:var(--acc)}
@@ -339,6 +364,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
       <button id="v-order" aria-pressed="true">下單</button>
       <button id="v-mine" aria-pressed="false">我的訂單</button>
       <button id="v-admin" aria-pressed="false" hidden>訂單彙整</button>
+      <button id="v-story" type="button">季節商品資訊</button>
     </nav>
   </div>
 </header>
@@ -400,7 +426,7 @@ tfoot td{font-weight:700;background:var(--sunk)}
 
 <div id="overlay"></div>
 
-<script src="config.js?v=20261117034554"></script>
+<script src="config.js?v=20261118071401"></script>
 <script>
 /* GitHub Pages 版：以本機模擬原本 Claude 頁面的能力；送單改送到 Google Apps Script */
 (function(){
@@ -465,9 +491,10 @@ tfoot td{font-weight:700;background:var(--sunk)}
   window.claude={ use:async n=> n==='downloads'?downloads : n==='user'?user : n==='db'?(URL_?db:null) : null };
 })();
 </script>
-<script src="data.js?v=20261117034554"></script>
-<script src="imgs.js?v=20261117034554"></script>
-<script src="photos.js?v=20261117034554"></script>
+<script src="story.js?v=20261118071401"></script>
+<script src="data.js?v=20261118071401"></script>
+<script src="imgs.js?v=20261118071401"></script>
+<script src="photos.js?v=20261118071401"></script>
 <script>
 (function(){
 const ITEMS = window.SDR_ITEMS || [];
@@ -583,6 +610,7 @@ function itemHTML(it){
       <div class="code">${esc(it.style||'')}${it.sku?' ／ '+esc(it.sku):''}${it.theme&&it.theme!=='CORE'?' ／ '+esc(it.theme)+(it.drop?' '+esc(it.drop):''):''}</div>
       ${it.ov?`<p class="ov">${esc(it.ov)}</p>`:''}
       ${it.note?`<div class="note">${esc(it.note)}</div>`:''}${it.whl?`<div class="whl"><b>台灣主打</b>　${esc(it.whlr||'')}</div>`:''}${it.tw?`<div class="tw"><b>台灣市場</b>　${esc(it.tw)}</div>`:''}
+      ${it.info?`<div class="pinfo"><b>商品資訊</b>${it.info.split('\n').map(l=>`<p>${esc(l)}</p>`).join('')}</div>`:''}
       ${(it.dt||(it.tech&&!it.tg)||it.fab)?`<button class="more" data-more>${open?'收合':'商品細節與材質'}</button>`:''}
       ${open?`<div class="detail">${it.ov?`<div><h4>商品概述</h4><p>${esc(it.ov)}</p></div>`:''}${it.dt?`<div><h4>商品細節</h4><p>${esc(it.dt)}</p></div>`:''}${(it.tech&&!it.tg)?`<div><h4>材質與科技</h4><p>${esc(it.tech)}</p></div>`:''}${it.fab?`<div><h4>布料</h4><p>${esc(it.fab)}</p></div>`:''}</div>`:''}
     </div>
@@ -599,16 +627,27 @@ function filtered(){
     else if(i.sheet!==S.sheet) return false;
     if(S.months.size && !S.months.has(i.mon)) return false;
     if(S.whl && !i.whl) return false;
-    if(S.q){ const hay=[i.no?('編號 '+i.no):'',(i.tg||[]).map(x=>x[0]+' '+x[1]).join(' '),i.zh,i.en,i.style,i.sku,i.color,i.cc,i.cat,i.theme,i.icon,i.tw,i.whlr].join(' ').toLowerCase(); if(!hay.includes(S.q)) return false; }
+    if(S.q){ const hay=[i.no?('編號 '+i.no):'',(i.tg||[]).map(x=>x[0]+' '+x[1]).join(' '),i.zh,i.en,i.style,i.sku,i.color,i.cc,i.cat,i.theme,i.icon,i.tw,i.whlr,i.info].join(' ').toLowerCase(); if(!hay.includes(S.q)) return false; }
     return true;
   });
 }
+function seriesInfoHTML(sheet,mon){
+  const T=(window.BY_STORY&&window.BY_STORY.series)||{}; const x=T[sheet+'|'+mon]||T[mon]; if(!x) return '';
+  return `<details class="sinfo"><summary><b>商品資訊</b><span>${esc(x.gist||'')}</span></summary><ul>${(x.lines||[]).map(l=>`<li>${esc(l)}</li>`).join('')}</ul></details>`;
+}
+function storyHTML(){
+  const D=(window.BY_STORY&&window.BY_STORY.season)||null; if(!D) return '';
+  const tbl=t=>`<div class="tbl"><table><thead><tr>${t.head.map(h=>`<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  return `<div class="story"><p class="lead">${esc(D.lead)}</p>${D.sections.map(sec=>`<h3>${esc(sec.h)}</h3>${sec.note?`<p class="snote">${esc(sec.note)}</p>`:''}${sec.table?tbl(sec.table):''}${sec.cards?`<div class="scards">${sec.cards.map(c=>`<div class="scard"><h4>${esc(c.t)}</h4><ul>${c.b.map(l=>`<li>${esc(l)}</li>`).join('')}</ul></div>`).join('')}</div>`:''}`).join('')}<p class="sfoot">${esc(D.foot||'')}</p></div>`;
+}
+function openStory(){ $('#overlay').innerHTML=`<div class="scrim"><div class="panel" role="dialog" aria-label="季節商品資訊"><div class="phead"><h2>${esc((window.BY_STORY&&window.BY_STORY.season.title)||'季節商品資訊')}</h2><button class="btn sm x" data-close>關閉</button></div>${storyHTML()}</div></div>`; }
+$('#v-story').addEventListener('click',openStory);
 function renderList(){
   const arr=filtered();
   if(!arr.length){ $('#list').innerHTML=`<div class="empty">${S.only?'還沒有下單的商品。在各分頁的尺寸格輸入數量即可。':'沒有符合條件的商品。'}</div>`; return; }
   const groups=[]; let key=null;
   for(const it of arr){ const k=(S.only?it.sheet+' · ':'')+it.mon; if(k!==key){ groups.push({k,mon:it.mon,sheet:it.sheet,items:[]}); key=k; } groups[groups.length-1].items.push(it); }
-  $('#list').innerHTML = groups.map(g=>{ const themes=[...new Set(g.items.map(i=>i.theme).filter(t=>t&&t!=='CORE'))]; return `<section class="group"><div class="ghead"><h2>${esc(g.k)}</h2><span>${g.items.length} 款色${themes.length?' ・ '+esc(themes.join('、')):''}</span></div><div class="list">${g.items.map(itemHTML).join('')}</div></section>`; }).join('');
+  $('#list').innerHTML = groups.map(g=>{ const themes=[...new Set(g.items.map(i=>i.theme).filter(t=>t&&t!=='CORE'))]; return `<section class="group"><div class="ghead"><h2>${esc(g.k)}</h2><span>${g.items.length} 款色${themes.length?' ・ '+esc(themes.join('、')):''}</span></div>${seriesInfoHTML(g.sheet,g.mon)}<div class="list">${g.items.map(itemHTML).join('')}</div></section>`; }).join('');
 }
 function renderTally(){
   const t=totals();
@@ -1131,7 +1170,7 @@ async function packImage(wb, cache, h){
   cache[h]=pack; return pack;
 }
 const colL=n=>{ let s=''; while(n>0){ const m=(n-1)%26; s=String.fromCharCode(65+m)+s; n=Math.floor((n-1)/26); } return s; };
-const FIXED=['KEY','No.','款式圖','實體圖','月份','主題','Drop','品類','性別','款號','中文品名','英文品名','顏色','色號','色碼 SKU','Icon','布料','系列／尺寸','商品概述','商品細節','材質與科技','備註','台灣上市月','韓國售價 MSRP(KRW)','台灣建議售價'];
+const FIXED=['KEY','No.','款式圖','實體圖','月份','主題','Drop','品類','性別','款號','中文品名','英文品名','顏色','色號','色碼 SKU','Icon','布料','系列／尺寸','商品概述','商品細節','材質與科技','商品資訊','備註','台灣上市月','韓國售價 MSRP(KRW)','台灣建議售價'];
 async function buildBook(qty, meta){
   const EJ=await loadExcelJS();
   const wb=new EJ.Workbook(); wb.creator='BLACK YAK 27FW'; wb.created=new Date();
@@ -1150,7 +1189,7 @@ async function buildBook(qty, meta){
     ws.getCell('B1').value=`BLACK YAK 27FW 訂單本｜${sh}`; ws.getCell('B1').font={name:'Arial',size:16,bold:true,color:{argb:'FF141414'}};
     ws.getCell('B2').value='台灣建議售價為台幣。黃色格填訂購數量，灰色為無此尺寸。請勿更動欄位順序與隱藏的 A 欄（KEY），以便重新匯入下單頁。'; ws.getCell('B2').font={...F,color:{argb:'FF6B6B70'}};
     const hr=ws.getRow(4); head.forEach((h,k)=>{ const c=hr.getCell(k+1); c.value=h; c.font={name:'Arial',size:10,bold:true,color:{argb:'FFFFFFFF'}}; c.fill=fill('FF141414'); c.alignment={horizontal:'center',vertical:'middle',wrapText:true}; c.border=border; }); hr.height=30;
-    const widths={'KEY':10,'No.':5,'款式圖':14,'實體圖':14,'月份':7,'主題':16,'Drop':9,'品類':11,'性別':6,'款號':12,'中文品名':22,'英文品名':24,'顏色':16,'色號':7,'色碼 SKU':10,'Icon':12,'布料':22,'系列／尺寸':22,'商品概述':34,'商品細節':40,'材質與科技':26,'備註':30,'台灣上市月':10,'韓國售價 MSRP(KRW)':12,'台灣建議售價':10};
+    const widths={'KEY':10,'No.':5,'款式圖':14,'實體圖':14,'月份':7,'主題':16,'Drop':9,'品類':11,'性別':6,'款號':12,'中文品名':22,'英文品名':24,'顏色':16,'色號':7,'色碼 SKU':10,'Icon':12,'布料':22,'系列／尺寸':22,'商品概述':34,'商品細節':40,'材質與科技':26,'商品資訊':44,'備註':30,'台灣上市月':10,'韓國售價 MSRP(KRW)':12,'台灣建議售價':10};
     head.forEach((h,k)=>{ ws.getColumn(k+1).width = widths[h] || (k+1===cTot?9:k+1===cAmt?13:6.5); });
     ws.getColumn(1).hidden=true; ['韓國售價 MSRP(KRW)'].forEach(h=>{ const k=head.indexOf(h); if(k>=0) ws.getColumn(k+1).hidden=true; });
     ws.getColumn(cSer).hidden=true; ws.getColumn(cSzN).hidden=true; ws.getColumn(cSer).width=18; ws.getColumn(cSzN).width=10;
@@ -1160,8 +1199,8 @@ async function buildBook(qty, meta){
     let r=5;
     for(const it of its){
       const row=ws.getRow(r); const q=qty[it.id]||{};
-      const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',[it.note,it.whl?'台灣主打：'+(it.whlr||''):'',it.tw?'台灣市場：'+it.tw:''].filter(Boolean).join('\n'),launchM(it),it.krw||null,it.price||null];
-      vals.forEach((v,k)=>{ const c=row.getCell(k+1); c.value=v; c.font=F; c.border=border; c.alignment={vertical:k>=16&&k<=21?'top':'middle',wrapText:k>=5}; });
+      const vals=[it.id,it.no||'',null,null,it.mon||'',it.theme||'',it.drop||'',it.cat||'',it.gen||'',it.style||'',it.zh||'',it.en,it.color,it.cc||'',it.sku||'',it.icon||'',it.fab||'',it.series||'',it.ov||'',it.dt||'',it.tech||'',it.info||'',[it.note,it.whl?'台灣主打：'+(it.whlr||''):'',it.tw?'台灣市場：'+it.tw:''].filter(Boolean).join('\n'),launchM(it),it.krw||null,it.price||null];
+      vals.forEach((v,k)=>{ const c=row.getCell(k+1); c.value=v; c.font=F; c.border=border; c.alignment={vertical:k>=16&&k<=22?'top':'middle',wrapText:k>=5}; });
       row.getCell(cPrice).numFmt='#,##0'; row.getCell(cPrice-1).numFmt='#,##0';
       sizes.forEach((z,j)=>{ const c=row.getCell(cS0+j); c.border=border; c.alignment={horizontal:'center',vertical:'middle'}; c.font={...F,bold:true};
         if(it.sizes.includes(z)){ c.fill=fill('FFFFF2CC'); c.value=q[z]||null; c.dataValidation={type:'whole',operator:'greaterThanOrEqual',formulae:[0],allowBlank:true,showErrorMessage:true,error:'請輸入 0 以上的整數'}; }
